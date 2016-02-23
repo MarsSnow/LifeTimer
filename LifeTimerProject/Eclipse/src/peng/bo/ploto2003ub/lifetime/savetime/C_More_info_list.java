@@ -1,4 +1,4 @@
-/**¸ü¶àÑ¡Ïî½çÃæ**/
+ï»¿/**æ›´å¤šé€‰é¡¹ç•Œé¢**/
 
 package peng.bo.ploto2003ub.lifetime.savetime;
 
@@ -26,35 +26,35 @@ public class C_More_info_list extends Activity {
 	protected void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
 
-		// Ç¿ÖÆÈ«ÆÁ
+		// å¼ºåˆ¶å…¨å±
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-		// ÉèÖÃÊúÆÁÄ£Ê½
+		// è®¾ç½®ç«–å±æ¨¡å¼
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
 
 		setContentView(R.layout.all_hero_list);
 
-		// µ÷ÓÃ¼ÓÔØlistView
+		// è°ƒç”¨åŠ è½½listView
 		this.LoadListView();
 
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu) {
-		menu.add(0, 1, 0, "¸ÄÉÆ½¨Òé").setIcon(android.R.drawable.ic_menu_help);
-		menu.add(0, 2, 0, "»ı·Ö²éÑ¯").setIcon(android.R.drawable.ic_menu_search);
+		menu.add(0, 1, 0, "æ”¹å–„å»ºè®®").setIcon(android.R.drawable.ic_menu_help);
+		menu.add(0, 2, 0, "ç§¯åˆ†æŸ¥è¯¢").setIcon(android.R.drawable.ic_menu_search);
 
 		return super.onCreateOptionsMenu(menu);
 	}
 
 	public boolean onOptionsItemSelected(MenuItem menuitem) {
 		switch (menuitem.getItemId()) {
-		// ¸ÄÉÆ½¨Òé
+		// æ”¹å–„å»ºè®®
 		case 1: //
 			AppConnect.getInstance(this).showFeedback();
 
 			break;
-		// »ı·Ö²éÑ¯
+		// ç§¯åˆ†æŸ¥è¯¢
 		case 2: //
 			getpoint();
 			break;
@@ -63,22 +63,22 @@ public class C_More_info_list extends Activity {
 			return super.onOptionsItemSelected(menuitem);
 	}
 
-	// ´ò¿ªÑ¡Ïî²Ëµ¥£¨¸ÄÉÆ½¨Òé£©£¨¾¯±¨¶Ô»°¿ò£©
+	// æ‰“å¼€é€‰é¡¹èœå•ï¼ˆæ”¹å–„å»ºè®®ï¼‰ï¼ˆè­¦æŠ¥å¯¹è¯æ¡†ï¼‰
 	private void OpenSuggestDialog() {
 		(new android.app.AlertDialog.Builder(this))
 
 				.setIcon(android.R.drawable.ic_menu_help)
-				// ÉèÖÃÍ¼±ê
-				.setTitle("¹ØÓÚ")
-				// ÉèÖÃÎÄ±¾
+				// è®¾ç½®å›¾æ ‡
+				.setTitle("å…³äº")
+				// è®¾ç½®æ–‡æœ¬
 				.setMessage(
-						"¿ª·¢Õß£º" + "\n" + "pluto2003ub" + "\n" + "\n" + "ÁªÏµÓÊÏä£º"
+						"å¼€å‘è€…ï¼š" + "\n" + "pluto2003ub" + "\n" + "\n" + "è”ç³»é‚®ç®±ï¼š"
 								+ "\n" + "851104757@qq.com" + "\n"
 								+ "2278048953@qq.com").show();
 
 	}
 
-	// »ñÈ¡»ı·ÖÒ³Ãæ£¨¹ã¸æÇ½£©
+	// è·å–ç§¯åˆ†é¡µé¢ï¼ˆå¹¿å‘Šå¢™ï¼‰
 	private void getpoint() {
 
 		AppConnect.getInstance(this).showOffers(this);
@@ -106,7 +106,7 @@ public class C_More_info_list extends Activity {
 
 	}
 
-	// ¼ÓÔØlistView·½·¨
+	// åŠ è½½listViewæ–¹æ³•
 	private void LoadListView() {
 
 		// TODO Auto-generated method stub
@@ -157,15 +157,15 @@ public class C_More_info_list extends Activity {
 				}
 
 				case 3: {
-					Intent intent = new Intent(Intent.ACTION_SEND); // Æô¶¯·ÖÏí·¢ËÍµÄÊôĞÔ
-					intent.setType("text/plain"); // ·ÖÏí·¢ËÍµÄÊı¾İÀàĞÍ
-					intent.putExtra(Intent.EXTRA_SUBJECT, "subject"); // ·ÖÏíµÄÖ÷Ìâ
+					Intent intent = new Intent(Intent.ACTION_SEND); // å¯åŠ¨åˆ†äº«å‘é€çš„å±æ€§
+					intent.setType("text/plain"); // åˆ†äº«å‘é€çš„æ•°æ®ç±»å‹
+					intent.putExtra(Intent.EXTRA_SUBJECT, "subject"); // åˆ†äº«çš„ä¸»é¢˜
 					intent.putExtra(
 							Intent.EXTRA_TEXT,
-							"ÏòÄãÍÆ¼öÒ»¿îÈí¼ş[ÈËÉú¼ÆÊ±Æ÷]£¡ÏÂÔØµØÖ·£ºhttp://pan.baidu.com/share/link?shareid=436786&uk=3590869423"); // ·ÖÏíµÄÄÚÈİ
+							"å‘ä½ æ¨èä¸€æ¬¾è½¯ä»¶[äººç”Ÿè®¡æ—¶å™¨]ï¼ä¸‹è½½åœ°å€ï¼šhttp://pan.baidu.com/share/link?shareid=436786&uk=3590869423"); // åˆ†äº«çš„å†…å®¹
 					intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 					ThisContext.startActivity(Intent
-							.createChooser(intent, "·ÖÏí"));// Ä¿±êÓ¦ÓÃÑ¡Ôñ¶Ô»°¿òµÄ±êÌâ
+							.createChooser(intent, "åˆ†äº«"));// ç›®æ ‡åº”ç”¨é€‰æ‹©å¯¹è¯æ¡†çš„æ ‡é¢˜
 
 					break;
 				}
@@ -187,7 +187,7 @@ public class C_More_info_list extends Activity {
 					 startActivity(intent);
 					break;
 				}
-
+				//å»BBS
 				case 6: {
 					Intent intent = new Intent();
 					intent.putExtra("ObjectName", "/life-time-bbs.txt");
@@ -215,7 +215,7 @@ public class C_More_info_list extends Activity {
 				}
 				//
 				case 10: {
-					Toast.makeText(ThisContext, "×óÉÏ½ÇÎªÄúµÄ½ğ±Ò¶î¶È£¡",
+					Toast.makeText(ThisContext, "å·¦ä¸Šè§’ä¸ºæ‚¨çš„é‡‘å¸é¢åº¦ï¼",
 							Toast.LENGTH_LONG).show();
 					AppConnect.getInstance(ThisContext).showOffers(ThisContext);
 					break;
@@ -248,204 +248,204 @@ public class C_More_info_list extends Activity {
 		ArrayList arraylist = new ArrayList();
 
 		HashMap hashmap = new HashMap();
-		hashmap.put("title", "1.°æ±¾¸üĞÂĞÅÏ¢");
+		hashmap.put("title", "1.ç‰ˆæœ¬æ›´æ–°ä¿¡æ¯");
 		hashmap.put("info", "");
 
 		arraylist.add(hashmap);
 
 		HashMap hashmap1 = new HashMap();
-		hashmap1.put("title", "2.¹ØÓÚ");
+		hashmap1.put("title", "2.å…³äº");
 		hashmap1.put("info", " ");
 		//
 		 arraylist.add(hashmap1);
 		//
 		 HashMap hashmap2 = new HashMap();
-		 hashmap2.put("title", "3.ÊÔÊÔÎÒµÄÆäËûÓ¦ÓÃ");
+		 hashmap2.put("title", "3.è¯•è¯•æˆ‘çš„å…¶ä»–åº”ç”¨");
 		 hashmap2.put("info", " ");
 		
 		 arraylist.add(hashmap2);
 		 HashMap hashmap3 = new HashMap();
-		 hashmap3.put("title", "4.·ÖÏí¸øºÃÓÑ");
+		 hashmap3.put("title", "4.åˆ†äº«ç»™å¥½å‹");
 		 hashmap3.put("info", " ");
 		//
 		 arraylist.add(hashmap3);
 		 HashMap hashmap4 = new HashMap();
-		 hashmap4.put("title", "5.¼ì²â¸üĞÂ");
+		 hashmap4.put("title", "5.æ£€æµ‹æ›´æ–°");
 		 hashmap4.put("info", "");
 		
 		 arraylist.add(hashmap4);
 		//
 		 HashMap hashmap5 = new HashMap();
-		 hashmap5.put("title", "6.×ÀÃæĞ¡¿Ø¼ş");
-		 hashmap5.put("info", "");
-		
+		 hashmap5.put("title", "6.æ¡Œé¢å°æ§ä»¶");
+		 hashmap5.put("info", "");		
 		 arraylist.add(hashmap5);
-		 HashMap hashmap6 = new HashMap();
-		 hashmap6.put("title", "7.½»Á÷·´À¡°æ");
-		 hashmap6.put("info", "");
-		//
-		 arraylist.add(hashmap6);
+		 
+//		 HashMap hashmap6 = new HashMap();
+//		 hashmap6.put("title", "7.äº¤æµåé¦ˆç‰ˆ");
+//		 hashmap6.put("info", "");
+// 		arraylist.add(hashmap6);
+		 
 		// HashMap hashmap7 = new HashMap();
-		// hashmap7.put("title", "8.·ÖÏí¸øºÃÓÑ");
+		// hashmap7.put("title", "8.åˆ†äº«ç»™å¥½å‹");
 		// hashmap7.put("info", "");
 		//
 		// arraylist.add(hashmap7);
 		// HashMap hashmap8 = new HashMap();
-		// hashmap8.put("title", "9.ÊÔÊÔÎÒµÄÆäËûÓ¦ÓÃ");
+		// hashmap8.put("title", "9.è¯•è¯•æˆ‘çš„å…¶ä»–åº”ç”¨");
 		// hashmap8.put("info", "");
 		//
 		// arraylist.add(hashmap8);
 		// HashMap hashmap9 = new HashMap();
-		// hashmap9.put("title", "10.¼ì²â¸üĞÂ");
+		// hashmap9.put("title", "10.æ£€æµ‹æ›´æ–°");
 		// hashmap9.put("info", "");
 		//
 		// arraylist.add(hashmap9);
 		// HashMap hashmap10 = new HashMap();
-		// hashmap10.put("title", "11.½ğ±Ò²éÑ¯");
+		// hashmap10.put("title", "11.é‡‘å¸æŸ¥è¯¢");
 		// hashmap10.put("info", "");
 		//
 		// arraylist.add(hashmap10);
 		// HashMap hashmap11 = new HashMap();
-		// hashmap11.put("title", "12.Ïà¹ØÒôÆµ");
+		// hashmap11.put("title", "12.ç›¸å…³éŸ³é¢‘");
 		// hashmap11.put("info", "");
 		//
 		// arraylist.add(hashmap11);
 		// HashMap hashmap12 = new HashMap();
-		// hashmap12.put("title", "13.¼¼ÄÜÄ£ÄâÆ÷");
+		// hashmap12.put("title", "13.æŠ€èƒ½æ¨¡æ‹Ÿå™¨");
 		// hashmap12.put("info", "");
 		//
 		// arraylist.add(hashmap12);
 		// HashMap hashmap13 = new HashMap();
-		// hashmap13.put("title", "14.³ÌĞò¸Ä¶¯ÈÕÖ¾");
+		// hashmap13.put("title", "14.ç¨‹åºæ”¹åŠ¨æ—¥å¿—");
 		// hashmap13.put("info", "");
 		// hashmap13.put("img", Integer.valueOf(R.drawable.pvl1014));
 		// arraylist.add(hashmap13);
 		// HashMap hashmap14 = new HashMap();
-		// hashmap14.put("title", "15.ÄÜÔ´¸ïÃü");
+		// hashmap14.put("title", "15.èƒ½æºé©å‘½");
 		// hashmap14.put("info", "");
 		// hashmap14.put("img", Integer.valueOf(R.drawable.pvl1015));
 		// arraylist.add(hashmap14);
 		// HashMap hashmap15 = new HashMap();
-		// hashmap15.put("title", "16.¿É³ÖĞø·¢Õ¹");
+		// hashmap15.put("title", "16.å¯æŒç»­å‘å±•");
 		// hashmap15.put("info", "");
 		// hashmap15.put("img", Integer.valueOf(R.drawable.pvl1016));
 		// arraylist.add(hashmap15);
 		// HashMap hashmap16 = new HashMap();
-		// hashmap16.put("title", "17.¹¦");
+		// hashmap16.put("title", "17.åŠŸ");
 		// hashmap16.put("info", "");
 		// hashmap16.put("img", Integer.valueOf(R.drawable.pvl1017));
 		// arraylist.add(hashmap16);
 		// HashMap hashmap17 = new HashMap();
-		// hashmap17.put("title", "18.»úĞµĞ§ÂÊ");
+		// hashmap17.put("title", "18.æœºæ¢°æ•ˆç‡");
 		// hashmap17.put("info", "");
 		// hashmap17.put("img", Integer.valueOf(R.drawable.pvl1018));
 		// arraylist.add(hashmap17);
 		// HashMap hashmap18 = new HashMap();
-		// hashmap18.put("title", "19.¹¦ÂÊ");
+		// hashmap18.put("title", "19.åŠŸç‡");
 		// hashmap18.put("info", "");
 		// hashmap18.put("img", Integer.valueOf(R.drawable.pvl1019));
 		// arraylist.add(hashmap18);
 		// HashMap hashmap19 = new HashMap();
-		// hashmap19.put("title", "20.¶¯ÄÜ");
+		// hashmap19.put("title", "20.åŠ¨èƒ½");
 		// hashmap19.put("info", "");
 		// hashmap19.put("img", Integer.valueOf(R.drawable.pvl1020));
 		// arraylist.add(hashmap19);
 		// HashMap hashmap20 = new HashMap();
-		// hashmap20.put("title", "21.ÊÆÄÜ");
+		// hashmap20.put("title", "21.åŠ¿èƒ½");
 		// hashmap20.put("info", "");
 		// hashmap20.put("img", Integer.valueOf(R.drawable.pvl1021));
 		// arraylist.add(hashmap20);
 		// HashMap hashmap21 = new HashMap();
-		// hashmap21.put("title", "22.Ë«Í·Áú");
-		// hashmap21.put("info", " Ë×³Æ£ºË«Í·Áú   ¼ò³Æ£ºTHD");
+		// hashmap21.put("title", "22.åŒå¤´é¾™");
+		// hashmap21.put("info", " ä¿—ç§°ï¼šåŒå¤´é¾™   ç®€ç§°ï¼šTHD");
 		// hashmap21.put("img", Integer.valueOf(R.drawable.thd));
 		// arraylist.add(hashmap21);
 		// HashMap hashmap22 = new HashMap();
-		// hashmap22.put("title", "23.Î×Ò½");
-		// hashmap22.put("info", " Ë×³Æ£º51   ¼ò³Æ£ºWD");
+		// hashmap22.put("title", "23.å·«åŒ»");
+		// hashmap22.put("info", " ä¿—ç§°ï¼š51   ç®€ç§°ï¼šWD");
 		// hashmap22.put("img", Integer.valueOf(R.drawable.wd));
 		// arraylist.add(hashmap22);
 		// HashMap hashmap23 = new HashMap();
-		// hashmap23.put("title", "24.¼«º®ÓÄ»ê");
-		// hashmap23.put("info", " Ë×³Æ£º±ù»ê   ¼ò³Æ£ºAA");
+		// hashmap23.put("title", "24.æå¯’å¹½é­‚");
+		// hashmap23.put("info", " ä¿—ç§°ï¼šå†°é­‚   ç®€ç§°ï¼šAA");
 		// hashmap23.put("img", Integer.valueOf(R.drawable.aa));
 		// arraylist.add(hashmap23);
 		// HashMap hashmap24 = new HashMap();
-		// hashmap24.put("title", "25.ºÚ°µÏÍÕß");
-		// hashmap24.put("info", " Ë×³Æ£ºÍÃ×Ó   ¼ò³Æ£ºDS");
+		// hashmap24.put("title", "25.é»‘æš—è´¤è€…");
+		// hashmap24.put("info", " ä¿—ç§°ï¼šå…”å­   ç®€ç§°ï¼šDS");
 		// hashmap24.put("img", Integer.valueOf(R.drawable.ds));
 		// arraylist.add(hashmap24);
 		// HashMap hashmap25 = new HashMap();
-		// hashmap25.put("title", "26.ËÀÍöÏÈÖª");
-		// hashmap25.put("info", " Ë×³Æ£º´µ·çÆÅ   ¼ò³Æ£ºDP");
+		// hashmap25.put("title", "26.æ­»äº¡å…ˆçŸ¥");
+		// hashmap25.put("info", " ä¿—ç§°ï¼šå¹é£å©†   ç®€ç§°ï¼šDP");
 		// hashmap25.put("img", Integer.valueOf(R.drawable.dp));
 		// arraylist.add(hashmap25);
 		// HashMap hashmap26 = new HashMap();
-		// hashmap26.put("title", "27.¶ñÄ§Î×Ê¦");
-		// hashmap26.put("info", " Ë×³Æ£ºÀ³¶÷   ¼ò³Æ£ºLION");
+		// hashmap26.put("title", "27.æ¶é­”å·«å¸ˆ");
+		// hashmap26.put("info", " ä¿—ç§°ï¼šè±æ©   ç®€ç§°ï¼šLION");
 		// hashmap26.put("img", Integer.valueOf(R.drawable.lion));
 		// arraylist.add(hashmap26);
 		// HashMap hashmap27 = new HashMap();
-		// hashmap27.put("title", "28.ÃÕÍÅ");
-		// hashmap27.put("info", " Ë×³Æ£ºÃÕÍÅ   ¼ò³Æ£ºENI");
+		// hashmap27.put("title", "28.è°œå›¢");
+		// hashmap27.put("info", " ä¿—ç§°ï¼šè°œå›¢   ç®€ç§°ï¼šENI");
 		// hashmap27.put("img", Integer.valueOf(R.drawable.eni));
 		// arraylist.add(hashmap27);
 		// HashMap hashmap28 = new HashMap();
-		// hashmap28.put("title", "29.Î×Ñı");
-		// hashmap28.put("info", " Ë×³Æ£ºÎ×Ñı   ¼ò³Æ£ºLICH");
+		// hashmap28.put("title", "29.å·«å¦–");
+		// hashmap28.put("info", " ä¿—ç§°ï¼šå·«å¦–   ç®€ç§°ï¼šLICH");
 		// hashmap28.put("img", Integer.valueOf(R.drawable.lich));
 		// arraylist.add(hashmap28);
 		// HashMap hashmap29 = new HashMap();
-		// hashmap29.put("title", "30.ËÀÁé·¨Ê¦");
-		// hashmap29.put("info", " Ë×³Æ£ºËÀÁé   ¼ò³Æ£ºNEC");
+		// hashmap29.put("title", "30.æ­»çµæ³•å¸ˆ");
+		// hashmap29.put("info", " ä¿—ç§°ï¼šæ­»çµ   ç®€ç§°ï¼šNEC");
 		// hashmap29.put("img", Integer.valueOf(R.drawable.nec));
 		// arraylist.add(hashmap29);
 		// HashMap hashmap30 = new HashMap();
-		// hashmap30.put("title", "31.ÒÅÍü·¨Ê¦");
-		// hashmap30.put("info", " Ë×³Æ£º¹Ç·¨   ¼ò³Æ£ºPUGNA");
+		// hashmap30.put("title", "31.é—å¿˜æ³•å¸ˆ");
+		// hashmap30.put("info", " ä¿—ç§°ï¼šéª¨æ³•   ç®€ç§°ï¼šPUGNA");
 		// hashmap30.put("img", Integer.valueOf(R.drawable.pugna));
 		// arraylist.add(hashmap30);
 		// HashMap hashmap31 = new HashMap();
-		// hashmap31.put("title", "32.ºÚê×»ÙÃğÕß");
-		// hashmap31.put("info", " Ë×³Æ£ººÚÄñ   ¼ò³Æ£ºOD");
+		// hashmap31.put("title", "32.é»‘æ›œæ¯ç­è€…");
+		// hashmap31.put("info", " ä¿—ç§°ï¼šé»‘é¸Ÿ   ç®€ç§°ï¼šOD");
 		// hashmap31.put("img", Integer.valueOf(R.drawable.od));
 		// arraylist.add(hashmap31);
 		// HashMap hashmap32 = new HashMap();
-		// hashmap32.put("title", "33.Í´¿àÅ®Íõ");
-		// hashmap32.put("info", " Ë×³Æ£º°¢¿¨É¯   ¼ò³Æ£ºQOP");
+		// hashmap32.put("title", "33.ç—›è‹¦å¥³ç‹");
+		// hashmap32.put("info", " ä¿—ç§°ï¼šé˜¿å¡è   ç®€ç§°ï¼šQOP");
 		// hashmap32.put("img", Integer.valueOf(R.drawable.qop));
 		// arraylist.add(hashmap32);
 		// HashMap hashmap33 = new HashMap();
-		// hashmap33.put("title", "34.ÊõÊ¿");
-		// hashmap33.put("info", " Ë×³Æ£ºÊõÊ¿   ¼ò³Æ£ºWL");
+		// hashmap33.put("title", "34.æœ¯å£«");
+		// hashmap33.put("info", " ä¿—ç§°ï¼šæœ¯å£«   ç®€ç§°ï¼šWL");
 		// hashmap33.put("img", Integer.valueOf(R.drawable.wl));
 		// arraylist.add(hashmap33);
 		// HashMap hashmap34 = new HashMap();
-		// hashmap34.put("title", "35.°µÓ°¶ñÄ§");
-		// hashmap34.put("info", " Ë×³Æ£º¶¾¹·   ¼ò³Æ£ºSD");
+		// hashmap34.put("title", "35.æš—å½±æ¶é­”");
+		// hashmap34.put("info", " ä¿—ç§°ï¼šæ¯’ç‹—   ç®€ç§°ï¼šSD");
 		// hashmap34.put("img", Integer.valueOf(R.drawable.sd));
 		// arraylist.add(hashmap34);
 		// HashMap hashmap35 = new HashMap();
-		// hashmap35.put("title", "36.Í´¿àÖ®Ô´");
-		// hashmap35.put("info", " Ë×³Æ£ºÍ´¿à   ¼ò³Æ£ºBE");
+		// hashmap35.put("title", "36.ç—›è‹¦ä¹‹æº");
+		// hashmap35.put("info", " ä¿—ç§°ï¼šç—›è‹¦   ç®€ç§°ï¼šBE");
 		// hashmap35.put("img", Integer.valueOf(R.drawable.bane));
 		// arraylist.add(hashmap35);
 		//
 		// HashMap hashmap36 = new HashMap();
-		// hashmap36.put("title", "37.´óÄ§µ¼Ê¦");
-		// hashmap36.put("info", " Ë×³Æ£º´óÄ§µ¼   ¼ò³Æ£ºGM");
+		// hashmap36.put("title", "37.å¤§é­”å¯¼å¸ˆ");
+		// hashmap36.put("info", " ä¿—ç§°ï¼šå¤§é­”å¯¼   ç®€ç§°ï¼šGM");
 		// hashmap36.put("img", Integer.valueOf(R.drawable.gm));
 		// arraylist.add(hashmap36);
 		//
 		// HashMap hashmap37 = new HashMap();
-		// hashmap37.put("title", "38.Ôú¹±ÄÉË¹");
-		// hashmap37.put("info", " Ë×³Æ£ºÌìÅ­·¨Ê¦   ¼ò³Æ£ºSM");
+		// hashmap37.put("title", "38.æ‰è´¡çº³æ–¯");
+		// hashmap37.put("info", " ä¿—ç§°ï¼šå¤©æ€’æ³•å¸ˆ   ç®€ç§°ï¼šSM");
 		// hashmap37.put("img", Integer.valueOf(R.drawable.tiannufashi));
 		// arraylist.add(hashmap37);
 		//
 		// HashMap hashmap38 = new HashMap();
-		// hashmap38.put("title", "39.°ÁÂåË¹ ");
-		// hashmap38.put("info", " Ë×³Æ£ºº®¶¬·ÉÁú   ¼ò³Æ£ºWW");
+		// hashmap38.put("title", "39.å‚²æ´›æ–¯ ");
+		// hashmap38.put("info", " ä¿—ç§°ï¼šå¯’å†¬é£é¾™   ç®€ç§°ï¼šWW");
 		// hashmap38.put("img", Integer.valueOf(R.drawable.ice_dragen));
 		// arraylist.add(hashmap38);
 

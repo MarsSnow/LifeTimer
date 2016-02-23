@@ -1,10 +1,10 @@
-//ÉèÖÃactivity
+ï»¿//è®¾ç½®activity
 // Decompiled by Jad v1.5.8e2. Copyright 2001 Pavel K
 // Jad home page: http://kpdus.tripod.com/jad.html
 // Decompiler options: packimports(3) fieldsfirst ansi space 
 // Source File Name:   SetActivity.java
 
-//ÉèÖÃÊ±¼äµÄactivity
+//è®¾ç½®æ—¶é—´çš„activity
 
 package peng.bo.ploto2003ub.lifetime.savetime;
 
@@ -73,7 +73,7 @@ public class E_BBSActivity extends Activity {
 	String value;
 	String FirstString = "first";
 	Context ThisContext = E_BBSActivity.this;
-	static String host = "bcs.duapp.com";// Ä¬ÈÏ²»±ä
+	static String host = "bcs.duapp.com";// é»˜è®¤ä¸å˜
 	// static String accessKey = "2f4c285cff80949341438a10dbb774c9";
 	// static String secretKey = "06db3c0343c1caa9094f75dc4c374611  ";
 
@@ -96,7 +96,7 @@ public class E_BBSActivity extends Activity {
 	String birthday;
 	String[] sArray;
 	String tempblackiplist;
-	private Dialog mProgressDialogcircle;// ×Ô¶¨ÒåÔ²ĞÎ½ø¶ÈÈ¦
+	private Dialog mProgressDialogcircle;// è‡ªå®šä¹‰åœ†å½¢è¿›åº¦åœˆ
 	static String datetimestr;
 	String name;
 	static String shoumingtemp;
@@ -108,22 +108,22 @@ public class E_BBSActivity extends Activity {
 	Button localButton1;
 	Button localButton2;
 	EditText editname;
-	public static String hostip; // ±¾»úIP
-	public static String hostmac; // ±¾»úMAC
+	public static String hostip; // æœ¬æœºIP
+	public static String hostmac; // æœ¬æœºMAC
 	private TextView textname = null;
 
 	public void onCreate(Bundle bundle) {
 
 		super.onCreate(bundle);
 
-		// Ç¿ÖÆÈ«ÆÁ
+		// å¼ºåˆ¶å…¨å±
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		// ÉèÖÃÊúÆÁÄ£Ê½
+		// è®¾ç½®ç«–å±æ¨¡å¼
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
 		setContentView(R.layout.bbs);
 
-		Intent localIntent = getIntent();// »ñµÃIntent
+		Intent localIntent = getIntent();// è·å¾—Intent
 		// String fileName = localIntent.getStringExtra("ObjectName");
 
 		object = localIntent.getStringExtra("ObjectName");
@@ -139,66 +139,67 @@ public class E_BBSActivity extends Activity {
 		switch (i) {
 
 		case 0: {
-			Toast.makeText(ThisContext, "ÄúµÄÍøÂçÃ»ÈÎºÎÁ¬½Ó£¬Çë²é¿´ÄúÊÖ»úµÄÍøÂçÁ¬½Ó£¡",
+			Toast.makeText(ThisContext, "æ‚¨çš„ç½‘ç»œæ²¡ä»»ä½•è¿æ¥ï¼Œè¯·æŸ¥çœ‹æ‚¨æ‰‹æœºçš„ç½‘ç»œè¿æ¥ï¼",
 					Toast.LENGTH_LONG).show();
 			break;
 		}
 		case 1: {
 
-			// Toast.makeText(ThisContext, "Ç×£¡ÇëÉÔµÈ£¡",
+			// Toast.makeText(ThisContext, "äº²ï¼è¯·ç¨ç­‰ï¼",
 			// Toast.LENGTH_LONG).show();
 			// Intent intent = new Intent(ThisContext,
 			// _GetWebResoureActivity.class);
 			// startActivity(intent);
-			// Í¨¹ıAndroidManifestÎÄ¼ş¶ÁÈ¡WAPS_IDºÍWAPS_PID
+			// é€šè¿‡AndroidManifestæ–‡ä»¶è¯»å–WAPS_IDå’ŒWAPS_PID
 			// AppConnect.getInstance(ThisContext); //
-			// ±ØĞëÈ·±£AndroidManifestÎÄ¼şÄÚÅäÖÃÁËWAPS_ID
+			// å¿…é¡»ç¡®ä¿AndroidManifestæ–‡ä»¶å†…é…ç½®äº†WAPS_ID
 			// findView();
 			// SetListener();
-			// GetIpAndMAC();// »ñÈ¡ip
+			// GetIpAndMAC();// è·å–ip
 			// JudgeIpBlackList();
 			// GetPhoneInfo();
 
-			// GetBBSContent();// ´Ó·şÎñÆ÷¶Ë»ñÈ¡Êı¾İ
-			// textname.setText(objectMetadataString);// °ÑÊı¾İÏÔÊ¾ÔÚtextViewÖĞ
-			// ĞÂ½¨Ò»¸öÈÎÎñ
+			// GetBBSContent();// ä»æœåŠ¡å™¨ç«¯è·å–æ•°æ®
+			// textname.setText(objectMetadataString);// æŠŠæ•°æ®æ˜¾ç¤ºåœ¨textViewä¸­
+			// æ–°å»ºä¸€ä¸ªä»»åŠ¡
 			PageTask task = new PageTask(ThisContext);
-			// Æô¶¯ÈÎÎñ
-			task.execute(null);
-
+			// å¯åŠ¨ä»»åŠ¡
+			String taskStr = "";
+			task.execute(taskStr);
+			//Runnable 
 			break;
 		}
 
 		case 2: {
 
-			Toast.makeText(ThisContext, "Ç×£¡ÄúÊ¹ÓÃµÄÊÇ3GÍøÂç£¬¼ÓÔØËÙ¶È»áÉÔÂı£¡½¨ÒéÄúÊ¹ÓÃwifiÍøÂç£¡£¡",
+			Toast.makeText(ThisContext, "äº²ï¼æ‚¨ä½¿ç”¨çš„æ˜¯3Gç½‘ç»œï¼ŒåŠ è½½é€Ÿåº¦ä¼šç¨æ…¢ï¼å»ºè®®æ‚¨ä½¿ç”¨wifiç½‘ç»œï¼ï¼",
 					Toast.LENGTH_LONG).show();
 			// Intent intent = new Intent(ThisContext,
 			// _GetWebResoureActivitySeach.class);
 			// startActivity(intent);
-			// Í¨¹ıAndroidManifestÎÄ¼ş¶ÁÈ¡WAPS_IDºÍWAPS_PID
+			// é€šè¿‡AndroidManifestæ–‡ä»¶è¯»å–WAPS_IDå’ŒWAPS_PID
 			// AppConnect.getInstance(ThisContext); //
-			// ±ØĞëÈ·±£AndroidManifestÎÄ¼şÄÚÅäÖÃÁËWAPS_ID
+			// å¿…é¡»ç¡®ä¿AndroidManifestæ–‡ä»¶å†…é…ç½®äº†WAPS_ID
 			// findView();
 			// SetListener();
 			// JudgeIpBlackList();
 			//
-			// GetIpAndMAC();// »ñÈ¡ip
+			// GetIpAndMAC();// è·å–ip
 			// GetPhoneInfo();
-			// GetBBSContent();// ´Ó·şÎñÆ÷¶Ë»ñÈ¡Êı¾İ
-			// textname.setText(objectMetadataString);// °ÑÊı¾İÏÔÊ¾ÔÚtextViewÖĞ
-			// ĞÂ½¨Ò»¸öÈÎÎñ
+			// GetBBSContent();// ä»æœåŠ¡å™¨ç«¯è·å–æ•°æ®
+			// textname.setText(objectMetadataString);// æŠŠæ•°æ®æ˜¾ç¤ºåœ¨textViewä¸­
+			// æ–°å»ºä¸€ä¸ªä»»åŠ¡
 			PageTask task = new PageTask(ThisContext);
-			// Æô¶¯ÈÎÎñ
-			task.execute(null);
-
+			// å¯åŠ¨ä»»åŠ¡
+			String taskStr = "";
+			task.execute(taskStr);
 			break;
 		}
 
 		}
 	}
 
-	// ¼ì²éÍøÂç×´Ì¬
+	// æ£€æŸ¥ç½‘ç»œçŠ¶æ€
 	public int CheckNetworkState() {
 
 		boolean flag = false;
@@ -212,7 +213,7 @@ public class E_BBSActivity extends Activity {
 			return 1;
 		}
 
-		// Èç¹û3G¡¢wifi¡¢2GµÈÍøÂç×´Ì¬ÊÇÁ¬½ÓµÄ£¬Ôò·µ»Ø1
+		// å¦‚æœ3Gã€wifiã€2Gç­‰ç½‘ç»œçŠ¶æ€æ˜¯è¿æ¥çš„ï¼Œåˆ™è¿”å›1
 		if (mobile == State.CONNECTED || mobile == State.CONNECTING) {
 
 			return 2;
@@ -231,7 +232,7 @@ public class E_BBSActivity extends Activity {
 //
 //		// Toast.makeText(ThisContext, hostip, Toast.LENGTH_LONG).show();
 //		if (value != null) {
-//			bucket = "pluto2003ub";// ´íÎóµØÖ·£¬0¸Ä³ÉÁËO
+//			bucket = "pluto2003ub";// é”™è¯¯åœ°å€ï¼Œ0æ”¹æˆäº†O
 //
 //		} else {
 //			try{
@@ -242,7 +243,7 @@ public class E_BBSActivity extends Activity {
 //			for (int i = 0; i < sArray.length; i++) {
 //				tempblackiplist = sArray[i];
 //				if (tempblackiplist.equals(hostip)) {
-//					bucket = "pluto2OO3ub";// ´íÎóµØÖ·£¬0¸Ä³ÉÁËO
+//					bucket = "pluto2OO3ub";// é”™è¯¯åœ°å€ï¼Œ0æ”¹æˆäº†O
 //					// Toast.makeText(ThisContext, bucket,
 //					// Toast.LENGTH_LONG).show();
 //
@@ -254,44 +255,44 @@ public class E_BBSActivity extends Activity {
 	}
 
 	private void GetPhoneInfo() {
-		// ÊÖ»úĞÍºÅºÍ°æ±¾ºÅ£º
-		PhoneVersionString = android.os.Build.MODEL + "£¬" + "v_"
+		// æ‰‹æœºå‹å·å’Œç‰ˆæœ¬å·ï¼š
+		PhoneVersionString = android.os.Build.MODEL + "ï¼Œ" + "v_"
 				+ android.os.Build.VERSION.RELEASE;
 
-		// ÊÖ»úĞÍºÅ
+		// æ‰‹æœºå‹å·
 		PhoneVersionString = android.os.Build.MODEL + "";
 
-		// SIM¿¨ĞÅÏ¢
+		// SIMå¡ä¿¡æ¯
 		SIMCardInfo siminfo = new SIMCardInfo(getApplicationContext());
-		ProvidersNameString = siminfo.getProvidersName();// ÔËÓªÉÌ
+		ProvidersNameString = siminfo.getProvidersName();// è¿è¥å•†
 		NativePhoneNumberString = siminfo.getNativePhoneNumber();//
 
 	}
 
 	private void SetListener() {
-		// È·¶¨°´Å¥
+		// ç¡®å®šæŒ‰é’®
 		localButton1.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View paramView) {
 				FirstString = "no_first";
-				GetDate();// »ñÈ¡·¢ÑÔÈÕÆÚ
+				GetDate();// è·å–å‘è¨€æ—¥æœŸ
 
 				shoumingtemp = editname.getText().toString();
 				if (shoumingtemp.equals("")) {
-					Toast.makeText(getApplicationContext(), "ÊäÈë²»ÄÜÎª¿Õ",
+					Toast.makeText(getApplicationContext(), "è¾“å…¥ä¸èƒ½ä¸ºç©º",
 							Toast.LENGTH_SHORT).show();
 
 				} else {
 
-					// ĞÂ½¨Ò»¸öÈÎÎñ
+					// æ–°å»ºä¸€ä¸ªä»»åŠ¡
 					PageTask task = new PageTask(ThisContext);
-					// Æô¶¯ÈÎÎñ
+					// å¯åŠ¨ä»»åŠ¡
 					task.execute("task");
 
 				}
 
 			}
 		});
-		// ·µ»Ø°´Å¥
+		// è¿”å›æŒ‰é’®
 		localButton2.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View paramView) {
 				E_BBSActivity.this.finish();
@@ -300,7 +301,7 @@ public class E_BBSActivity extends Activity {
 
 	}
 
-	// Éú³ÉÉÏ´«µÄÊı¾İ
+	// ç”Ÿæˆä¸Šä¼ çš„æ•°æ®
 	private static File createSampleFile() {
 		try {
 
@@ -310,17 +311,17 @@ public class E_BBSActivity extends Activity {
 			Writer writer = new OutputStreamWriter(new FileOutputStream(file));
 			// writer.write(shoumingtemp);
 
-			// writer.append("ÓÃ»§£º"+ProvidersNameString + ",IMSIÂë:" +
+			// writer.append("ç”¨æˆ·ï¼š"+ProvidersNameString + ",IMSIç :" +
 			// NativePhoneNumberString
-			// + "\n" + PhoneVersionString + "\n" + "IP£º" + hostip+ "\n" + "¡¾" +
-			// shoumingtemp + "¡¿" + "\n"
+			// + "\n" + PhoneVersionString + "\n" + "IPï¼š" + hostip+ "\n" + "ã€" +
+			// shoumingtemp + "ã€‘" + "\n"
 			// + datetimestr
 			// + "\n");
-			// ½öÏÔÊ¾ip£¬ĞÍºÅ
+			// ä»…æ˜¾ç¤ºipï¼Œå‹å·
 
-			writer.append("¡¾" + PhoneVersionString + "£¬" + hostip + "¡¿" + "\n"
-					+ "" + "        " + shoumingtemp + "\n" + "¡¾" + datetimestr
-					+ "¡¿" + "\n" + "\n" + "\n");
+			writer.append("ã€" + PhoneVersionString + "ï¼Œ" + hostip + "ã€‘" + "\n"
+					+ "" + "        " + shoumingtemp + "\n" + "ã€" + datetimestr
+					+ "ã€‘" + "\n" + "\n" + "\n");
 			writer.write(objectMetadataString);
 			writer.close();
 
@@ -334,19 +335,19 @@ public class E_BBSActivity extends Activity {
 	private void GetDate() {
 		SimpleDateFormat formatter = new SimpleDateFormat(
 				"yyyy-MM-dd   HH:mm:ss");
-		Date curDate = new Date(System.currentTimeMillis());// »ñÈ¡µ±Ç°Ê±¼ä
+		Date curDate = new Date(System.currentTimeMillis());// è·å–å½“å‰æ—¶é—´
 		datetimestr = formatter.format(curDate);
 
 	}
 
 	private void GetIpAndMAC() {
-		hostip = GetNetIp(); // »ñÈ¡ÍâÍøIP
-		// hostip = getLocalIpAddress(); // »ñÈ¡ÄÚÍøIP
-		hostmac = getLocalMacAddress();// »ñÈ¡±¾»úMAC
+		hostip = GetNetIp(); // è·å–å¤–ç½‘IP
+		// hostip = getLocalIpAddress(); // è·å–å†…ç½‘IP
+		hostmac = getLocalMacAddress();// è·å–æœ¬æœºMAC
 
 	}
 
-	// ÉèÖÃÄÚÈİ
+	// è®¾ç½®å†…å®¹
 	private void SetBBSContent() {
 
 		BCSCredentials credentials = new BCSCredentials(accessKey, secretKey);
@@ -356,7 +357,7 @@ public class E_BBSActivity extends Activity {
 
 		try {
 
-			putObjectByFile(baiduBCS);// Ïò¶ÔÏóÖĞ·ÅÈëÄÚÈİ
+			putObjectByFile(baiduBCS);// å‘å¯¹è±¡ä¸­æ”¾å…¥å†…å®¹
 
 		} catch (BCSServiceException e) {
 			// log.warn("Bcs return:" + e.getBcsErrorCode() + ", " +
@@ -368,26 +369,26 @@ public class E_BBSActivity extends Activity {
 	}
 
 	public static void putObjectByFile(BaiduBCS baiduBCS) {
-		// Î»ÖÃ£ºĞ¡Í°¡¢¶ÔÏó¡¢ÄÚÈİ
+		// ä½ç½®ï¼šå°æ¡¶ã€å¯¹è±¡ã€å†…å®¹
 		PutObjectRequest request = new PutObjectRequest(bucket, object,
 				createSampleFile());
 		ObjectMetadata metadata = new ObjectMetadata();
 		// metadata.setContentType("text/html");
 		request.setMetadata(metadata);
 
-		// ÈôÕâÀïÉèÖÃÎªÊ¹ÓÃ£¬Ôò»á±¨´í£¡
+		// è‹¥è¿™é‡Œè®¾ç½®ä¸ºä½¿ç”¨ï¼Œåˆ™ä¼šæŠ¥é”™ï¼
 		try {
 
-			BaiduBCSResponse<ObjectMetadata> response = baiduBCS// ÕâÀï°ÑÄÚÈİ·Å½øÏà¹Ø¶ÔÏóÖĞ£¬·µ»ØÖµÃ»ÓĞÊ¹ÓÃ
+			BaiduBCSResponse<ObjectMetadata> response = baiduBCS// è¿™é‡ŒæŠŠå†…å®¹æ”¾è¿›ç›¸å…³å¯¹è±¡ä¸­ï¼Œè¿”å›å€¼æ²¡æœ‰ä½¿ç”¨
 					.putObject(request);
-			// ObjectMetadata objectMetadata = response.getResult();// Ã»ÓÃ°É£¿
+			// ObjectMetadata objectMetadata = response.getResult();// æ²¡ç”¨å§ï¼Ÿ
 
 		} catch (Error e) {
 
 		} catch (Exception e) {
 
 		}
-		// Ìá½»ÄÚÈİºó£¬ÓÉÓÚÒªÖØĞÂÏÔÊ¾£¬ĞèÒªÔÙ´Ó·şÎñÆ÷¶Ë»ñÈ¡Êı¾İ
+		// æäº¤å†…å®¹åï¼Œç”±äºè¦é‡æ–°æ˜¾ç¤ºï¼Œéœ€è¦å†ä»æœåŠ¡å™¨ç«¯è·å–æ•°æ®
 		try {
 
 			getObjectMetadata(baiduBCS);
@@ -419,7 +420,7 @@ public class E_BBSActivity extends Activity {
 				while ((line = reader.readLine()) != null)
 					strber.append(line + "\n");
 				inStream.close();
-				// ´Ó·´À¡µÄ½á¹ûÖĞÌáÈ¡³öIPµØÖ·
+				// ä»åé¦ˆçš„ç»“æœä¸­æå–å‡ºIPåœ°å€
 				int start = strber.indexOf("[");
 				int end = strber.indexOf("]", start + 1);
 				line = strber.substring(start + 1, end);
@@ -473,11 +474,11 @@ public class E_BBSActivity extends Activity {
 		objectMetadataString = baos.toString();
 	}
 
-	// hostip = getLocalIpAddress(); //»ñÈ¡±¾»úIP
-	// hostmac = getLocalMacAddress();//»ñÈ¡±¾»úMAC
-	// /* ÏÔÊ¾±¾»úIPºÍMAC */
+	// hostip = getLocalIpAddress(); //è·å–æœ¬æœºIP
+	// hostmac = getLocalMacAddress();//è·å–æœ¬æœºMAC
+	// /* æ˜¾ç¤ºæœ¬æœºIPå’ŒMAC */
 	// tv.setText("HostIP:" + hostip + "/nHostMAC:" + hostmac);
-	// /* ÔÚµ÷ÊÔĞÅÏ¢ÖĞÊä³ö±¾»úIPºÍMAC */
+	// /* åœ¨è°ƒè¯•ä¿¡æ¯ä¸­è¾“å‡ºæœ¬æœºIPå’ŒMAC */
 	// if (hostip != null) Log.d("GetIPMAC", hostip);
 	// else Log.d("GetIPMAC", "null");
 
@@ -520,25 +521,25 @@ public class E_BBSActivity extends Activity {
 	// R.anim.slide_out_left);
 	// }
 
-	// Ô²ĞÎ¹ö¶¯½ø¶ÈÌõ
-	// ×Ô¶¨ÒåÒì²½ÈÎÎñµÄÀà
+	// åœ†å½¢æ»šåŠ¨è¿›åº¦æ¡
+	// è‡ªå®šä¹‰å¼‚æ­¥ä»»åŠ¡çš„ç±»
 	class PageTask extends
 			AsyncTask<String, Integer, List<Map<String, Object>>> {
-		// ¿É±ä³¤µÄÊäÈë²ÎÊı£¬ÓëAsyncTask.exucute()¶ÔÓ¦
+		// å¯å˜é•¿çš„è¾“å…¥å‚æ•°ï¼Œä¸AsyncTask.exucute()å¯¹åº”
 
-		// ×Ô¶¨ÒåµÄ·½·¨
-		// Ö÷ÒªÍê³É½ø¶ÈÌõµÄÈÎÎñ
-		// ±¾Àà¹¹Ôìº¯Êı
+		// è‡ªå®šä¹‰çš„æ–¹æ³•
+		// ä¸»è¦å®Œæˆè¿›åº¦æ¡çš„ä»»åŠ¡
+		// æœ¬ç±»æ„é€ å‡½æ•°
 		public PageTask(Context context) {
 
-			// ±íÃ÷µ÷ÓÃµÄÊÇ²»ÊÇÏµÍ³µÄ£¬¶øÊÇ×Ô¶¨ÒåµÄ
-			// ÉèÖÃ×Ô¶¨ÒåµÄ·ç¸ñ
+			// è¡¨æ˜è°ƒç”¨çš„æ˜¯ä¸æ˜¯ç³»ç»Ÿçš„ï¼Œè€Œæ˜¯è‡ªå®šä¹‰çš„
+			// è®¾ç½®è‡ªå®šä¹‰çš„é£æ ¼
 			mProgressDialogcircle = new Dialog(ThisContext,
 					R.style.theme_dialog_alert);
-			// ÉèÖÃ×Ô¶¨Òå½ø¶ÈÌõµÄÄÚÈİ
+			// è®¾ç½®è‡ªå®šä¹‰è¿›åº¦æ¡çš„å†…å®¹
 			mProgressDialogcircle.setContentView(R.layout.window_layout);
 			mProgressDialogcircle.setCancelable(true);
-			// ÉèÖÃ½ø¶ÈÌõÍê³ÉÊ±µÄÇéĞÎ
+			// è®¾ç½®è¿›åº¦æ¡å®Œæˆæ—¶çš„æƒ…å½¢
 			mProgressDialogcircle
 					.setOnCancelListener(new android.content.DialogInterface.OnCancelListener() {
 						public void onCancel(DialogInterface dialog) {
@@ -547,22 +548,22 @@ public class E_BBSActivity extends Activity {
 
 						}
 					});
-			// °Ñ½ø¶ÈÌõÏÔÊ¾³öÀ´
+			// æŠŠè¿›åº¦æ¡æ˜¾ç¤ºå‡ºæ¥
 			mProgressDialogcircle.show();
 
 		}
 
-		// ºóÌ¨£¬ÁíÍâÒ»¸öÏß³ÌÖĞÖ´ĞĞ£¬²»ºÄÊ±
+		// åå°ï¼Œå¦å¤–ä¸€ä¸ªçº¿ç¨‹ä¸­æ‰§è¡Œï¼Œä¸è€—æ—¶
 		@Override
 		protected List<Map<String, Object>> doInBackground(String... params) {
 
 			if (FirstString.equals("first")) {
 				findView();
 				SetListener();
-				GetIpAndMAC();// »ñÈ¡ip
+				GetIpAndMAC();// è·å–ip
 				JudgeIpBlackList();
 				GetPhoneInfo();
-				GetBBSContent();// ´Ó·şÎñÆ÷¶Ë»ñÈ¡Êı¾İ
+				GetBBSContent();// ä»æœåŠ¡å™¨ç«¯è·å–æ•°æ®
 
 			} else {
 
@@ -570,16 +571,16 @@ public class E_BBSActivity extends Activity {
 				JudgeIpBlackList();
 	
 				SetBBSContent();
-				GetBBSContent();// ´Ó·şÎñÆ÷¶Ë»ñÈ¡Êı¾İ
+				GetBBSContent();// ä»æœåŠ¡å™¨ç«¯è·å–æ•°æ®
 			}
 
 			return null;
 		}
 
-		// ÔÚÖ÷Ïß³ÌÖĞ£¬¿ÉÒÔÖ´ĞĞUIÏà¹Ø²Ù×÷
+		// åœ¨ä¸»çº¿ç¨‹ä¸­ï¼Œå¯ä»¥æ‰§è¡ŒUIç›¸å…³æ“ä½œ
 		@Override
 		protected void onPostExecute(List<Map<String, Object>> result) {
-			editname.setText("");// °ÑEditTextÇå¿Õ
+			editname.setText("");// æŠŠEditTextæ¸…ç©º
 			textname.setText(objectMetadataString);
 		
 			if (mProgressDialogcircle != null) {
@@ -588,7 +589,7 @@ public class E_BBSActivity extends Activity {
 
 		}
 
-		// Ê×ÏÈÖ´ĞĞ
+		// é¦–å…ˆæ‰§è¡Œ
 		@Override
 		protected void onPreExecute() {
 
@@ -596,7 +597,7 @@ public class E_BBSActivity extends Activity {
 
 		@Override
 		protected void onProgressUpdate(Integer... values) {
-			// ¸üĞÂ½ø¶È
+			// æ›´æ–°è¿›åº¦
 
 		}
 	}
@@ -605,7 +606,7 @@ public class E_BBSActivity extends Activity {
 	protected void onDestroy() {
 
 		super.onDestroy();
-		// ÒÔÏÂ·½·¨½«ÓÃÓÚÊÍ·ÅSDKÕ¼ÓÃµÄÏµÍ³×ÊÔ´
+		// ä»¥ä¸‹æ–¹æ³•å°†ç”¨äºé‡Šæ”¾SDKå ç”¨çš„ç³»ç»Ÿèµ„æº
 		AppConnect.getInstance(this).finalize();
 	}
 

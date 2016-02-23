@@ -1,4 +1,4 @@
-/**×ÀÃæĞ¡¿Ø¼ş**/
+ï»¿/**æ¡Œé¢å°æ§ä»¶**/
 package peng.bo.ploto2003ub.lifetime.savetime.desktop;
 
 import java.text.ParseException;
@@ -46,7 +46,7 @@ public class DigitClock extends AppWidgetProvider
 	private AppWidgetManager appWidgetManager;
 	private Context context;
 
-	// ½«ÏÔÊ¾Ğ¡Ê±¡¢·ÖÖÓ¡¢ÃëÖÓµÄImageView¶¨Òå³ÉÊı×é
+	// å°†æ˜¾ç¤ºå°æ—¶ã€åˆ†é’Ÿã€ç§’é’Ÿçš„ImageViewå®šä¹‰æˆæ•°ç»„
 	private int[] digitViews = new int[] { R.id.desktopt1, R.id.desktopt2,
 			R.id.desktopt3, R.id.desktopt4, R.id.desktopt5, R.id.desktopt6,
 			R.id.desktopt7, R.id.desktopt8, R.id.desktopt9, R.id.desktopt10,
@@ -57,12 +57,12 @@ public class DigitClock extends AppWidgetProvider
 			int[] appWidgetIds) {
 		this.appWidgetManager = appWidgetManager;
 		this.context = context;
-//		// ¶¨Òå¼ÆÊ±Æ÷
+//		// å®šä¹‰è®¡æ—¶å™¨
 		timer = new Timer();
-		// Æô¶¯ÖÜÆÚĞÔµ÷¶È
+		// å¯åŠ¨å‘¨æœŸæ€§è°ƒåº¦
 		timer.schedule(new TimerTask() {
 			public void run() {
-				// ·¢ËÍ¿ÕÏûÏ¢£¬Í¨Öª½çÃæ¸üĞÂ
+				// å‘é€ç©ºæ¶ˆæ¯ï¼Œé€šçŸ¥ç•Œé¢æ›´æ–°
 				handler.sendEmptyMessage(0x123);
 			}
 		}, 0, 1000);
@@ -71,62 +71,62 @@ public class DigitClock extends AppWidgetProvider
 
 	}
 
-	// ÏÔÊ¾Ê±¼äµÄ·½·¨
+	// æ˜¾ç¤ºæ—¶é—´çš„æ–¹æ³•
 	void showtime80(long time2, long time) {
 
-		views.setTextViewText(digitViews[0], time - 2680000 + "Ãë");
+		views.setTextViewText(digitViews[0], time - 2680000 + "ç§’");
 
-		// showviewp.setText("Ãë");
+		// showviewp.setText("ç§’");
 
-		views.setTextViewText(digitViews[1], (time2) + "Ãë");
+		views.setTextViewText(digitViews[1], (time2) + "ç§’");
 
-		// showviewp.setText("Ãë");
+		// showviewp.setText("ç§’");
 
-		views.setTextViewText(digitViews[2], (time / 3600L) - 744 + "Ğ¡Ê±");
+		views.setTextViewText(digitViews[2], (time / 3600L) - 744 + "å°æ—¶");
 		
 
 		
-		views.setTextViewText(digitViews[3], (time2 / 3600L) + "Ğ¡Ê±");
+		views.setTextViewText(digitViews[3], (time2 / 3600L) + "å°æ—¶");
 
-		// showviewp.setText("Ğ¡Ê±");
+		// showviewp.setText("å°æ—¶");
 
-		views.setTextViewText(digitViews[4], (time / 0x15180L) - 31 + "Ìì");
+		views.setTextViewText(digitViews[4], (time / 0x15180L) - 31 + "å¤©");
 
-		// showviewp.setText("Ìì");
+		// showviewp.setText("å¤©");
 
-		views.setTextViewText(digitViews[5], (time2 / 0x15180L) + "Ìì");
+		views.setTextViewText(digitViews[5], (time2 / 0x15180L) + "å¤©");
 
-		// showviewp.setText("Ìì");
+		// showviewp.setText("å¤©");
 
-		views.setTextViewText(digitViews[6], (time / 0x93a80L) - 4 + "ÖÜ");
+		views.setTextViewText(digitViews[6], (time / 0x93a80L) - 4 + "å‘¨");
 
-		// showviewp.setText("ĞÇÆÚ");
+		// showviewp.setText("æ˜ŸæœŸ");
 
-		views.setTextViewText(digitViews[7], (time2 / 0x93a80L) + "ÖÜ");
+		views.setTextViewText(digitViews[7], (time2 / 0x93a80L) + "å‘¨");
 
-		// showviewp.setText("ĞÇÆÚ");
+		// showviewp.setText("æ˜ŸæœŸ");
 		
-		views.setTextViewText(digitViews[8], (time / 2635200L) - 1 + "ÔÂ");
+		views.setTextViewText(digitViews[8], (time / 2635200L) - 1 + "æœˆ");
 
-		// showviewp.setText("ÔÂ");
+		// showviewp.setText("æœˆ");
 
-		views.setTextViewText(digitViews[9],(time2 / 2635200L) + "ÔÂ");
+		views.setTextViewText(digitViews[9],(time2 / 2635200L) + "æœˆ");
 
-		// showviewp.setText("ÔÂ");
+		// showviewp.setText("æœˆ");
 
-		views.setTextViewText(digitViews[10], (time / 31536000L) + "Äê");
+		views.setTextViewText(digitViews[10], (time / 31536000L) + "å¹´");
 
-		// showviewp.setText("Äê");
-		// textview011.setText(String.valueOf(time / 31536000L) + "Äê");
+		// showviewp.setText("å¹´");
+		// textview011.setText(String.valueOf(time / 31536000L) + "å¹´");
 		// 365.24
-		// 365Ìì5Ğ¡Ê±48·Ö46Ãë
+		// 365å¤©5å°æ—¶48åˆ†46ç§’
 		// 18000+2880+46
 		
-		views.setTextViewText(digitViews[11],((time2 / 31536000L) + 1) + "Äê");
+		views.setTextViewText(digitViews[11],((time2 / 31536000L) + 1) + "å¹´");
 
-		// showviewp.setText("Äê");
+		// showviewp.setText("å¹´");
 
-		// 365Ìì5Ğ¡Ê±48·Ö46Ãë = 31556926
+		// 365å¤©5å°æ—¶48åˆ†46ç§’ = 31556926
 		// 365T 31536000L
 		// 18000+2880+46 = 20926
 	}
@@ -144,26 +144,26 @@ public class DigitClock extends AppWidgetProvider
 				name = g.getfile("pengbopluto2003ubsavetime", "default");
 				getnameinfo();
 				
-				lifetime -= 1L;// Ã¿Ãë¼õ1
-				lifetime02 += 1L;// Ã¿Ãë¼õ1
+				lifetime -= 1L;// æ¯ç§’å‡1
+				lifetime02 += 1L;// æ¯ç§’å‡1
 	
 				showtime80(
 						lifetime, lifetime02);
-//				// ¶¨ÒåSimpleDateFormat¶ÔÏó
+//				// å®šä¹‰SimpleDateFormatå¯¹è±¡
 //				SimpleDateFormat df = new SimpleDateFormat("HHmmss");// 170533
-//				// ½«µ±Ç°Ê±¼ä¸ñÊ½»¯³ÉHHmmssµÄĞÎÊ½
+//				// å°†å½“å‰æ—¶é—´æ ¼å¼åŒ–æˆHHmmssçš„å½¢å¼
 //				String timeStr = df.format(new Date());
 //				for (int i = 0; i < timeStr.length(); i++) {
-//					// ½«µÚi¸öÊı×Ö×Ö·û×ª»»Îª¶ÔÓ¦µÄÊı×Ö
-//					int num = timeStr.charAt(i) - 48;// ÎªÊ²Ã´Òª¼õÈ¥48
-//					// ½«µÚi¸öÍ¼Æ¬µÄÉèÎª¶ÔÓ¦µÄÒº¾§Êı×ÖÍ¼Æ¬
+//					// å°†ç¬¬iä¸ªæ•°å­—å­—ç¬¦è½¬æ¢ä¸ºå¯¹åº”çš„æ•°å­—
+//					int num = timeStr.charAt(i) - 48;// ä¸ºä»€ä¹ˆè¦å‡å»48
+//					// å°†ç¬¬iä¸ªå›¾ç‰‡çš„è®¾ä¸ºå¯¹åº”çš„æ¶²æ™¶æ•°å­—å›¾ç‰‡
 //
 //					views.setTextViewText(digitViews[i], timeStr.charAt(i) + "");
 //				}
-				// ½«AppWidgetProvider×ÓÀàÊµÀı°ü×°³ÉComponentName¶ÔÏó
+				// å°†AppWidgetProviderå­ç±»å®ä¾‹åŒ…è£…æˆComponentNameå¯¹è±¡
 				ComponentName componentName = new ComponentName(context,
 						DigitClock.class);
-				// µ÷ÓÃAppWidgetManager½«remoteViewsÌí¼Óµ½ComponentNameÖĞ
+				// è°ƒç”¨AppWidgetManagerå°†remoteViewsæ·»åŠ åˆ°ComponentNameä¸­
 				appWidgetManager.updateAppWidget(componentName, views);
 			}
 			super.handleMessage(msg);
@@ -173,7 +173,7 @@ public class DigitClock extends AppWidgetProvider
 	};
 	
 	private void getnameinfo() {
-		// ´Ó×Ô¼º¶¨ÒåµÄglobalÀàÖĞ»ñÈ¡ÎÄ¼ş£¬Â·¾¶Îªsavetime£¬ÎÄ¼şÃûÎªdefault
+		// ä»è‡ªå·±å®šä¹‰çš„globalç±»ä¸­è·å–æ–‡ä»¶ï¼Œè·¯å¾„ä¸ºsavetimeï¼Œæ–‡ä»¶åä¸ºdefault
 		name = g.getfile("pengbopluto2003ubsavetime", "default");
 		String as[] = name.split("\t");
 		name = as[0];
@@ -185,7 +185,7 @@ public class DigitClock extends AppWidgetProvider
 		if (birthday.equals("")) {
 			birthday = "1989-06-10 00:00:00";
 		} else {
-			// Ôö¼ÓĞ¡Ê±£¬·ÖÖÓ£¬Ãë
+			// å¢åŠ å°æ—¶ï¼Œåˆ†é’Ÿï¼Œç§’
 			birthday = (new StringBuilder(String.valueOf(birthday)))
 					.append(" 00:00:00").toString();
 		}
@@ -193,7 +193,7 @@ public class DigitClock extends AppWidgetProvider
 			name = "80";
 		}
 
-		// »ñÈ¡Ê£ÓàÊ±¼ä
+		// è·å–å‰©ä½™æ—¶é—´
 		lifetime = getbasetime(birthday);
 		lifetime02 = getCostTime(birthday);
 		showtime80(lifetime, lifetime02);
@@ -214,23 +214,23 @@ public class DigitClock extends AppWidgetProvider
 		
 	}
 	
-	// »ñµÃÏûºÄÊ±¼ä
+	// è·å¾—æ¶ˆè€—æ—¶é—´
 	long getCostTime(String paramString) {
 		long temp1 = 0L;
 		long temp02 = 0L;
 		try {
-			// °Ñ×Ö·û´®½âÎö³ÉÌØ¶¨µÄÈÕÆÚ¸ñÊ½£¨×ª»»³öÉúÈÕÆÚ£©
+			// æŠŠå­—ç¬¦ä¸²è§£ææˆç‰¹å®šçš„æ—¥æœŸæ ¼å¼ï¼ˆè½¬æ¢å‡ºç”Ÿæ—¥æœŸï¼‰
 			temp1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(
 					paramString).getTime();
-			// 2522880000Ãë=80Ëê Ò»¸öÈË£¬Ò»ÉúÖ»ÄÜ»î25ÒÚÃë
+			// 2522880000ç§’=80å² ä¸€ä¸ªäººï¼Œä¸€ç”Ÿåªèƒ½æ´»25äº¿ç§’
 			// long temp2 = 2522880000L + temp1 / 1000L;
-			// getTime·µ»ØµÄÊÇºÁÃë£¬³ıÒÔ1000±ä³ÉÃë
+			// getTimeè¿”å›çš„æ˜¯æ¯«ç§’ï¼Œé™¤ä»¥1000å˜æˆç§’
 
-			// µ±Ç°Ê±¼ä
+			// å½“å‰æ—¶é—´
 			long temp3 = new Date().getTime() / 1000L;
-			// Ê£ÓàÊ±¼ä = ×ÜÊ±¼ä - ÏûºÄµÄÊ±¼ä
-			// ×ÜÊ±¼ä = 80Ëê×ÜÃëÊı + ³öÉú»ù×¼Æ«ÒÆÁ¿£¨´Ó0000Äê00ÔÂ00ÈÕ¿ªÊ¼µ½³öÉúµÄÃë£©
-			// ÏûºÄÊ±¼ä = ÏÖÔÚÊ±¼ä£¨´Ó0000Äê00ÔÂ00ÈÕ¿ªÊ¼µ½ÏÖÔÚ£©
+			// å‰©ä½™æ—¶é—´ = æ€»æ—¶é—´ - æ¶ˆè€—çš„æ—¶é—´
+			// æ€»æ—¶é—´ = 80å²æ€»ç§’æ•° + å‡ºç”ŸåŸºå‡†åç§»é‡ï¼ˆä»0000å¹´00æœˆ00æ—¥å¼€å§‹åˆ°å‡ºç”Ÿçš„ç§’ï¼‰
+			// æ¶ˆè€—æ—¶é—´ = ç°åœ¨æ—¶é—´ï¼ˆä»0000å¹´00æœˆ00æ—¥å¼€å§‹åˆ°ç°åœ¨ï¼‰
 			temp02 = temp3 - temp1 / 1000L;
 			costtemp002 = temp02;
 			return temp02;
@@ -240,14 +240,14 @@ public class DigitClock extends AppWidgetProvider
 		return temp02;
 	}
 	
-	// »ñÈ¡Ê£ÓàÊ±¼ä
+	// è·å–å‰©ä½™æ—¶é—´
 	long getbasetime(String paramString) {
 		long temp1 = 0L;
 		try {
-			// °Ñ×Ö·û´®½âÎö³ÉÌØ¶¨µÄÈÕÆÚ¸ñÊ½£¨×ª»»³öÉúÈÕÆÚ£©
+			// æŠŠå­—ç¬¦ä¸²è§£ææˆç‰¹å®šçš„æ—¥æœŸæ ¼å¼ï¼ˆè½¬æ¢å‡ºç”Ÿæ—¥æœŸï¼‰
 			temp1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(
 					paramString).getTime();
-			// 2522880000Ãë=80Ëê Ò»¸öÈË£¬Ò»ÉúÖ»ÄÜ»î25ÒÚÃë
+			// 2522880000ç§’=80å² ä¸€ä¸ªäººï¼Œä¸€ç”Ÿåªèƒ½æ´»25äº¿ç§’
 			// long temp2 = 2522880000L + temp1 / 1000L;
 			if (name.equals("120")) {
 				HowLong = 120;
@@ -277,7 +277,7 @@ public class DigitClock extends AppWidgetProvider
 				try {
 					HowLong = Integer.parseInt(name);
 				} catch (Exception e) {
-					//Toast.makeText(getApplicationContext(), "Ğ¡ÅèÓÑ£¬²»ÒªÂÒÊäÈë£¡£¡", 1)
+					//Toast.makeText(getApplicationContext(), "å°ç›†å‹ï¼Œä¸è¦ä¹±è¾“å…¥ï¼ï¼", 1)
 						//	.show();
 					name = "70";
 				}
@@ -294,11 +294,11 @@ public class DigitClock extends AppWidgetProvider
 			// 60
 			// 50
 
-			// getTime·µ»ØµÄÊÇºÁÃë£¬³ıÒÔ1000±ä³ÉÃë
+			// getTimeè¿”å›çš„æ˜¯æ¯«ç§’ï¼Œé™¤ä»¥1000å˜æˆç§’
 			long temp3 = new Date().getTime() / 1000L;
-			// Ê£ÓàÊ±¼ä = ×ÜÊ±¼ä - ÏûºÄµÄÊ±¼ä
-			// ×ÜÊ±¼ä = 80Ëê×ÜÃëÊı + ³öÉú»ù×¼Æ«ÒÆÁ¿£¨´Ó0000Äê00ÔÂ00ÈÕ¿ªÊ¼µ½³öÉúµÄÃë£©
-			// ÏûºÄÊ±¼ä = ÏÖÔÚÊ±¼ä£¨´Ó0000Äê00ÔÂ00ÈÕ¿ªÊ¼µ½ÏÖÔÚ£©
+			// å‰©ä½™æ—¶é—´ = æ€»æ—¶é—´ - æ¶ˆè€—çš„æ—¶é—´
+			// æ€»æ—¶é—´ = 80å²æ€»ç§’æ•° + å‡ºç”ŸåŸºå‡†åç§»é‡ï¼ˆä»0000å¹´00æœˆ00æ—¥å¼€å§‹åˆ°å‡ºç”Ÿçš„ç§’ï¼‰
+			// æ¶ˆè€—æ—¶é—´ = ç°åœ¨æ—¶é—´ï¼ˆä»0000å¹´00æœˆ00æ—¥å¼€å§‹åˆ°ç°åœ¨ï¼‰
 			temp1 = temp2 - temp3;
 
 			return temp1;

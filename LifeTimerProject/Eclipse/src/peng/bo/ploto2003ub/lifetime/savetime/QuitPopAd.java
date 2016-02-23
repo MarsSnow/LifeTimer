@@ -1,4 +1,4 @@
-/**ÍË³ö½çÃæ**/
+ï»¿/**é€€å‡ºç•Œé¢**/
 package peng.bo.ploto2003ub.lifetime.savetime;
 
 import android.app.Activity;
@@ -38,13 +38,13 @@ public class QuitPopAd {
 	}
 	
 	/**
-	 * Õ¹Ê¾ÍËÆÁ¹ã¸æ
+	 * å±•ç¤ºé€€å±å¹¿å‘Š
 	 * @param context
 	 */
 	public void show(final Context context){
 		View view = null;
-		//dialog = new Dialog(context, android.R.style.Theme_Translucent_NoTitleBar);//µÚ¶ş¸öÑùÊ½²ÎÊı,¿É¸ù¾İ×Ô¼ºÓ¦ÓÃ»òÓÎÏ·ÖĞµÄ²¼¾Ö½øĞĞÉèÖÃ
-		dialog = new Dialog(context, android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);//µÚ¶ş¸öÑùÊ½²ÎÊı,¿É¸ù¾İ×Ô¼ºÓ¦ÓÃ»òÓÎÏ·ÖĞµÄ²¼¾Ö½øĞĞÉèÖÃ
+		//dialog = new Dialog(context, android.R.style.Theme_Translucent_NoTitleBar);//ç¬¬äºŒä¸ªæ ·å¼å‚æ•°,å¯æ ¹æ®è‡ªå·±åº”ç”¨æˆ–æ¸¸æˆä¸­çš„å¸ƒå±€è¿›è¡Œè®¾ç½®
+		dialog = new Dialog(context, android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);//ç¬¬äºŒä¸ªæ ·å¼å‚æ•°,å¯æ ¹æ®è‡ªå·±åº”ç”¨æˆ–æ¸¸æˆä¸­çš„å¸ƒå±€è¿›è¡Œè®¾ç½®
 	
 		if(((Activity)context).getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
 			view = getQuitView_Portrait(context, dialog);
@@ -57,9 +57,9 @@ public class QuitPopAd {
 			dialog.show();
 		}else{
 			new AlertDialog.Builder(context)
-			.setTitle("ÍË³öÌáÊ¾")
-			.setMessage("È·¶¨ÒªÍË³öµ±Ç°Ó¦ÓÃÂğ£¿")
-			.setPositiveButton("È·¶¨", new AlertDialog.OnClickListener(){
+			.setTitle("é€€å‡ºæç¤º")
+			.setMessage("ç¡®å®šè¦é€€å‡ºå½“å‰åº”ç”¨å—ï¼Ÿ")
+			.setPositiveButton("ç¡®å®š", new AlertDialog.OnClickListener(){
 		
 				public void onClick(DialogInterface dialog, int which) {
 					if(dialog != null){
@@ -68,7 +68,7 @@ public class QuitPopAd {
 					((Activity)context).finish();
 				}
 			})
-			.setNegativeButton("È¡Ïû", new AlertDialog.OnClickListener(){
+			.setNegativeButton("å–æ¶ˆ", new AlertDialog.OnClickListener(){
 		
 				public void onClick(DialogInterface dialog, int which) {
 					dialog.cancel();
@@ -80,7 +80,7 @@ public class QuitPopAd {
 	}
 	
 	/**
-	 * ¹Ø±ÕÍËÆÁ¹ã¸æ¶Ô»°¿ò
+	 * å…³é—­é€€å±å¹¿å‘Šå¯¹è¯æ¡†
 	 */
 	public void close(){
 		if(dialog != null && dialog.isShowing()){
@@ -89,28 +89,28 @@ public class QuitPopAd {
 	}
 	
 	/**
-	 * »ñÈ¡ÊúÆÁÑùÊ½µÄÍË³ö²¼¾Ö
+	 * è·å–ç«–å±æ ·å¼çš„é€€å‡ºå¸ƒå±€
 	 * @param context
-	 * @param dialog ¼ÓÔØÍË³ö²¼¾ÖµÄdialog
+	 * @param dialog åŠ è½½é€€å‡ºå¸ƒå±€çš„dialog
 	 * @return
 	 */
 	private LinearLayout getQuitView_Portrait(final Context context, final Dialog dialog){
 
-		// ¶ÔĞ¡ÆÁÊÖ»ú½øĞĞÆÁÄ»ÅĞ¶Ï
+		// å¯¹å°å±æ‰‹æœºè¿›è¡Œå±å¹•åˆ¤æ–­
 		int displaySize = SDKUtils.getDisplaySize(context);
 		
-		//ÉèÖÃ±êÌâ²¼¾ÖµÄÁ½¸ö¶¥½ÇÎªÔ²½Ç
+		//è®¾ç½®æ ‡é¢˜å¸ƒå±€çš„ä¸¤ä¸ªé¡¶è§’ä¸ºåœ†è§’
 		float num = 10f;
 		float[] outerR = new float[] { num, num, num, num, 0, 0, 0, 0};
 		ShapeDrawable title_layout_shape = new ShapeDrawable(new RoundRectShape(outerR, null, null));
 		title_layout_shape.getPaint().setColor(Color.argb(255, 10, 10, 10));
 		
-		//ÉèÖÃ°´Å¥²¼¾ÖµÄÁ½¸öµ×½ÇÎªÔ²½Ç
+		//è®¾ç½®æŒ‰é’®å¸ƒå±€çš„ä¸¤ä¸ªåº•è§’ä¸ºåœ†è§’
 		float[] outerR2 = new float[] { 0, 0, 0, 0, num, num, num, num};
 		ShapeDrawable btn_layout_shape = new ShapeDrawable(new RoundRectShape(outerR2, null, null));
 		btn_layout_shape.getPaint().setColor(Color.argb(80, 20, 20, 20));
 		
-		//×îÍâ²ã²¼¾Ö
+		//æœ€å¤–å±‚å¸ƒå±€
 		LinearLayout layout = new LinearLayout(context);
 		layout.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
 		layout.setBackgroundColor(Color.argb(80, 0, 0, 0));
@@ -118,15 +118,15 @@ public class QuitPopAd {
 		layout.setGravity(Gravity.CENTER);
 		layout.setOrientation(LinearLayout.VERTICAL);
 		
-		//ÓÃÓÚÅÅ·Å±êÌâ£¬popAd£¬°´Å¥×éµÄÕûÌå²¼¾Ö
+		//ç”¨äºæ’æ”¾æ ‡é¢˜ï¼ŒpopAdï¼ŒæŒ‰é’®ç»„çš„æ•´ä½“å¸ƒå±€
 		RelativeLayout r_layout = new RelativeLayout(context);
 		r_layout.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 		r_layout.setGravity(Gravity.CENTER);
 		
-		//±êÌâ²¼¾Ö
+		//æ ‡é¢˜å¸ƒå±€
 		LinearLayout title_layout = new LinearLayout(context);
 		TextView textView = new TextView(context);
-		textView.setText("È·¶¨ÒªÍË³öÂğ£¿");
+		textView.setText("ç¡®å®šè¦é€€å‡ºå—ï¼Ÿ");
 		textView.setTextSize(20);
 		textView.setTextColor(Color.WHITE);
 		title_layout.setId((int)(System.currentTimeMillis()));
@@ -141,7 +141,7 @@ public class QuitPopAd {
 		
 		title_layout.addView(textView);
 		
-		//»ñÈ¡²åÆÁ²¼¾Ö
+		//è·å–æ’å±å¸ƒå±€
 		LinearLayout pop_layout = AppConnect.getInstance(context).getPopAdView(context);
 		if(pop_layout == null){
 			return null;
@@ -150,7 +150,7 @@ public class QuitPopAd {
 		pop_layout.setId((int)(System.currentTimeMillis()+1));
 		pop_layout.setPadding(5, 0, 5, 0);
 		
-		//°´Å¥×é²¼¾Ö
+		//æŒ‰é’®ç»„å¸ƒå±€
 		LinearLayout btn_layout = new LinearLayout(context);
 		btn_layout.setGravity(Gravity.CENTER);
 		btn_layout.setOrientation(LinearLayout.HORIZONTAL);
@@ -159,7 +159,7 @@ public class QuitPopAd {
 		
 		Button okButton = new Button(context);
 		okButton.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 1F));
-		okButton.setText(" ÍË ³ö ");
+		okButton.setText(" é€€ å‡º ");
 		okButton.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View v) {
@@ -172,7 +172,7 @@ public class QuitPopAd {
 		
 		Button cancelButton = new Button(context);
 		cancelButton.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 1F));
-		cancelButton.setText(" È¡ Ïû ");
+		cancelButton.setText(" å– æ¶ˆ ");
 		cancelButton.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View v) {
@@ -182,7 +182,7 @@ public class QuitPopAd {
 		
 		Button moreButton = new Button(context);
 		moreButton.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 1F));
-		moreButton.setText(" ·´À¡ ");
+		moreButton.setText(" åé¦ˆ ");
 		moreButton.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View v) {
@@ -220,40 +220,40 @@ public class QuitPopAd {
 	}
 	
 	/**
-	 * »ñÈ¡ºáÆÁÑùÊ½µÄÍË³ö²¼¾Ö
+	 * è·å–æ¨ªå±æ ·å¼çš„é€€å‡ºå¸ƒå±€
 	 * @param context
-	 * @param dialog ¼ÓÔØÍË³ö²¼¾ÖµÄdialog
+	 * @param dialog åŠ è½½é€€å‡ºå¸ƒå±€çš„dialog
 	 * @return
 	 */
 	private LinearLayout getQuitView_Landscape(final Context context, final Dialog dialog){
 		
-		//ÉèÖÃ±êÌâ²¼¾ÖµÄÁ½¸ö¶¥½ÇÎªÔ²½Ç
+		//è®¾ç½®æ ‡é¢˜å¸ƒå±€çš„ä¸¤ä¸ªé¡¶è§’ä¸ºåœ†è§’
 		float num = 10f;
 		float[] outerR = new float[] { num, num, 0, 0, 0, 0, num, num};
 		ShapeDrawable title_layout_shape = new ShapeDrawable(new RoundRectShape(outerR, null, null));
 		title_layout_shape.getPaint().setColor(Color.argb(200, 10, 10, 10));
 		
-		//ÉèÖÃ°´Å¥²¼¾ÖµÄÁ½¸öµ×½ÇÎªÔ²½Ç
+		//è®¾ç½®æŒ‰é’®å¸ƒå±€çš„ä¸¤ä¸ªåº•è§’ä¸ºåœ†è§’
 		float[] outerR2 = new float[] { 0, 0, num, num, num, num, 0, 0};
 		ShapeDrawable btn_layout_shape = new ShapeDrawable(new RoundRectShape(outerR2, null, null));
 		btn_layout_shape.getPaint().setColor(Color.argb(200, 20, 20, 20));
 		
-		//×îÍâ²ã²¼¾Ö
+		//æœ€å¤–å±‚å¸ƒå±€
 		LinearLayout layout = new LinearLayout(context);
 		layout.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
 		layout.setBackgroundColor(Color.argb(80, 0, 0, 0));
 		layout.setGravity(Gravity.CENTER);
 		layout.setOrientation(LinearLayout.HORIZONTAL);
 		
-		//ÓÃÓÚÅÅ·Å±êÌâ£¬popAd£¬°´Å¥×éµÄÕûÌå²¼¾Ö
+		//ç”¨äºæ’æ”¾æ ‡é¢˜ï¼ŒpopAdï¼ŒæŒ‰é’®ç»„çš„æ•´ä½“å¸ƒå±€
 		RelativeLayout r_layout = new RelativeLayout(context);
 		r_layout.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 		r_layout.setGravity(Gravity.CENTER);
 		
-		//±êÌâ²¼¾Ö
+		//æ ‡é¢˜å¸ƒå±€
 		LinearLayout title_layout = new LinearLayout(context);
 		TextView textView = new TextView(context);
-		textView.setText("È·¶¨ÒªÍË³öÂğ£¿");
+		textView.setText("ç¡®å®šè¦é€€å‡ºå—ï¼Ÿ");
 		textView.setTextSize(18);
 		textView.setEms(1);
 		textView.setTextColor(Color.WHITE);
@@ -264,15 +264,15 @@ public class QuitPopAd {
 		title_layout.addView(textView);
 		
 		
-		//»ñÈ¡²åÆÁ²¼¾Ö
+		//è·å–æ’å±å¸ƒå±€
 		LinearLayout pop_layout = null;
 		
 		int height_full = ((Activity)context).getWindowManager().getDefaultDisplay().getHeight();
 		
 		
-		int height_tmp = height_full - 75;//75ÎªÉè±¸×´Ì¬À¸¼Ó±êÌâÀ¸µÄ¸ß¶È
+		int height_tmp = height_full - 75;//75ä¸ºè®¾å¤‡çŠ¶æ€æ åŠ æ ‡é¢˜æ çš„é«˜åº¦
 		
-		int height = height_tmp - 55;//55Îª×Ô¶¨Òå
+		int height = height_tmp - 55;//55ä¸ºè‡ªå®šä¹‰
 		if(height_full <= 480){
 			pop_layout = AppConnect.getInstance(context).getPopAdView(context, height, height);
 		}else{
@@ -285,18 +285,18 @@ public class QuitPopAd {
 		pop_layout.setId((int)(System.currentTimeMillis()+1));
 		pop_layout.setPadding(2, 0, 2, 0);
 		
-		//°´Å¥×é²¼¾Ö
+		//æŒ‰é’®ç»„å¸ƒå±€
 		LinearLayout btn_layout = new LinearLayout(context);
 		btn_layout.setOrientation(LinearLayout.VERTICAL);
 		btn_layout.setBackgroundDrawable(btn_layout_shape);
 		btn_layout.setPadding(3, 8, 3, 3);
 		
-		//°´Å¥²¼¾ÖÖĞ¶¥²¿µÄ×Ó²¼¾Ö
+		//æŒ‰é’®å¸ƒå±€ä¸­é¡¶éƒ¨çš„å­å¸ƒå±€
 		LinearLayout top_layout = new LinearLayout(context);
 		top_layout.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 		top_layout.setOrientation(LinearLayout.VERTICAL);
 		top_layout.setGravity(Gravity.TOP);
-		//°´Å¥²¼¾ÖÖĞµ×²¿µÄ×Ó²¼¾Ö
+		//æŒ‰é’®å¸ƒå±€ä¸­åº•éƒ¨çš„å­å¸ƒå±€
 		LinearLayout bottom_layout = new LinearLayout(context);
 		bottom_layout.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.FILL_PARENT));
 		bottom_layout.setGravity(Gravity.BOTTOM);
@@ -304,7 +304,7 @@ public class QuitPopAd {
 		
 		Button okButton = new Button(context);
 		okButton.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
-		okButton.setText(" ÍË ³ö ");
+		okButton.setText(" é€€ å‡º ");
 		okButton.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View v) {
@@ -317,7 +317,7 @@ public class QuitPopAd {
 		
 		Button cancelButton = new Button(context);
 		cancelButton.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
-		cancelButton.setText(" È¡ Ïû ");
+		cancelButton.setText(" å– æ¶ˆ ");
 		cancelButton.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View v) {
@@ -327,7 +327,7 @@ public class QuitPopAd {
 		
 		Button moreButton = new Button(context);
 		moreButton.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
-		moreButton.setText(" ¸ü ¶à ");
+		moreButton.setText(" æ›´ å¤š ");
 		moreButton.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View v) {

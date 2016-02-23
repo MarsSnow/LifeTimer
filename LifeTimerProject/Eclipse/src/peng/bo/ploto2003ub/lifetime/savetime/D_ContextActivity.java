@@ -1,4 +1,4 @@
-/**ÎÄ±¾ÄÚÈİ½çÃæ**/
+ï»¿/**æ–‡æœ¬å†…å®¹ç•Œé¢**/
 
 package peng.bo.ploto2003ub.lifetime.savetime;
 //
@@ -40,7 +40,7 @@ public class D_ContextActivity extends Activity {
 	PowerManager powerManager1;
 	android.os.PowerManager.WakeLock wakeLock1;
 
-	// exitTimeÓÃÓÚ°´·µ»Ø¼üÍË³öÊ±µÄÁ½´Îµã»÷´æÔÚÊ±¼äÅĞ¶Ï
+	// exitTimeç”¨äºæŒ‰è¿”å›é”®é€€å‡ºæ—¶çš„ä¸¤æ¬¡ç‚¹å‡»å­˜åœ¨æ—¶é—´åˆ¤æ–­
 	private long exitTime = 0;
 	
 	public D_ContextActivity() {
@@ -54,22 +54,22 @@ public class D_ContextActivity extends Activity {
 	protected void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
 
-		// Ç¿ÖÆÈ«ÆÁ
+		// å¼ºåˆ¶å…¨å±
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		
 		
-		// ÉèÖÃÊúÆÁÄ£Ê½
+		// è®¾ç½®ç«–å±æ¨¡å¼
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
 		setContentView(R.layout.zz_new_character_introductionlayout01v6_7_6);
 	
-		//ÉèÖÃÃÔÄã¹ã¸æ±³¾°ÑÕÉ« 
+		//è®¾ç½®è¿·ä½ å¹¿å‘ŠèƒŒæ™¯é¢œè‰² 
 		AppConnect.getInstance(this).setAdBackColor(0x000000); 
-		//ÉèÖÃÃÔÄã¹ã¸æ¹ã¸æÓïÑÕÉ« 
+		//è®¾ç½®è¿·ä½ å¹¿å‘Šå¹¿å‘Šè¯­é¢œè‰² 
 		AppConnect.getInstance(this).setAdForeColor(Color.YELLOW); 
-		//ÈôÎ´ÉèÖÃÒÔÉÏÁ½¸öÑÕÉ«£¬ÔòÄ¬ÈÏÎªºÚµ×°××Ö 
+		//è‹¥æœªè®¾ç½®ä»¥ä¸Šä¸¤ä¸ªé¢œè‰²ï¼Œåˆ™é»˜è®¤ä¸ºé»‘åº•ç™½å­— 
 		LinearLayout miniLayout =(LinearLayout)findViewById(R.id.miniAdLinearLayout); 
-		new MiniAdView(this, miniLayout).DisplayAd(60); //Ä¬ÈÏ10ÃëÇĞ»»Ò»´Î¹ã¸æ
+		new MiniAdView(this, miniLayout).DisplayAd(60); //é»˜è®¤10ç§’åˆ‡æ¢ä¸€æ¬¡å¹¿å‘Š
 		
 //		LinearLayout container =(LinearLayout)findViewById(R.id.AdLinearLayout); 
 //		new AdView(this,container).DisplayAd();
@@ -90,7 +90,7 @@ public class D_ContextActivity extends Activity {
 
 	}
 	
-	//ÎÄ¼şµÄIO²Ù×÷
+	//æ–‡ä»¶çš„IOæ“ä½œ
 		private void Mygonlue02() {
 
 			try {
@@ -104,7 +104,7 @@ public class D_ContextActivity extends Activity {
 				//String str = null;//?
 				
 
-				//Ã»¶ÁÍê¾Í»áÒ»Ö±ÍùbbÖĞ´«Êı¾İ
+				//æ²¡è¯»å®Œå°±ä¼šä¸€ç›´å¾€bbä¸­ä¼ æ•°æ®
 				while ((current = in.read()) != -1) {
 					bb.append(current);
 				}
@@ -118,19 +118,19 @@ public class D_ContextActivity extends Activity {
 		}
 		
 	public boolean onCreateOptionsMenu(Menu menu) {
-		menu.add(0, 1, 0, "¸ÄÉÆ½¨Òé").setIcon(android.R.drawable.ic_menu_help);
-		menu.add(0, 2, 0, "»ı·Ö²éÑ¯").setIcon(android.R.drawable.ic_menu_search);
+		menu.add(0, 1, 0, "æ”¹å–„å»ºè®®").setIcon(android.R.drawable.ic_menu_help);
+		menu.add(0, 2, 0, "ç§¯åˆ†æŸ¥è¯¢").setIcon(android.R.drawable.ic_menu_search);
 		return super.onCreateOptionsMenu(menu);
 	}
 
 
 	public boolean onOptionsItemSelected(MenuItem menuitem) {
 		switch (menuitem.getItemId()) {
-		//¸ÄÉÆ½¨Òé
+		//æ”¹å–„å»ºè®®
 		case 1: // 
 			OpenSuggestDialog();
 			break;
-		//»ı·Ö²éÑ¯
+		//ç§¯åˆ†æŸ¥è¯¢
 		case 2: // 
 			getpoint();
 			break;
@@ -141,23 +141,23 @@ public class D_ContextActivity extends Activity {
 	
 
 	
-	// ´ò¿ªÑ¡Ïî²Ëµ¥£¨¸ÄÉÆ½¨Òé£©£¨¾¯±¨¶Ô»°¿ò£©
+	// æ‰“å¼€é€‰é¡¹èœå•ï¼ˆæ”¹å–„å»ºè®®ï¼‰ï¼ˆè­¦æŠ¥å¯¹è¯æ¡†ï¼‰
 	private void OpenSuggestDialog() {
 		(new android.app.AlertDialog.Builder(this))
 
 				.setIcon(android.R.drawable.ic_menu_help)
-				// ÉèÖÃÍ¼±ê
-				.setTitle("¹ØÓÚ")
-				// ÉèÖÃÎÄ±¾
+				// è®¾ç½®å›¾æ ‡
+				.setTitle("å…³äº")
+				// è®¾ç½®æ–‡æœ¬
 				.setMessage(
-						"¿ª·¢Õß£º" + "\n" + "pluto2003ub" + "\n" + "\n" + "ÁªÏµÓÊÏä£º"
+						"å¼€å‘è€…ï¼š" + "\n" + "pluto2003ub" + "\n" + "\n" + "è”ç³»é‚®ç®±ï¼š"
 								+ "\n" + "851104757@qq.com" + "\n"
 								+ "2278048953@qq.com").show();
 
 	}
 	
 	
-	// »ñÈ¡»ı·ÖÒ³Ãæ£¨¹ã¸æÇ½£©
+	// è·å–ç§¯åˆ†é¡µé¢ï¼ˆå¹¿å‘Šå¢™ï¼‰
 	private void getpoint() {
 		
 		AppConnect.getInstance(this).showOffers(this);

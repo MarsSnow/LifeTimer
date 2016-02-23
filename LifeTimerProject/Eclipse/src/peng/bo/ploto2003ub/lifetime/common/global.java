@@ -1,4 +1,4 @@
-/**È«¾ÖÊ¹ÓÃ£ºÎÄ¼ş´æ´¢**/
+ï»¿/**å…¨å±€ä½¿ç”¨ï¼šæ–‡ä»¶å­˜å‚¨**/
 package peng.bo.ploto2003ub.lifetime.common;
 
 import android.content.Context;
@@ -15,7 +15,7 @@ import java.util.Date;
 import java.util.Properties;
 
 import peng.bo.ploto2003ub.lifetime.savetime.B_SetActivity;
-//È«¾ÖÀà
+//å…¨å±€ç±»
 public class global {
 
 	String str1;
@@ -27,7 +27,7 @@ public class global {
 		this.c = paramContext;
 	}
 
-	// Í¨¹ıÍ³Ò»×ÊÔ´±êÊ¶·û»ñÈ¡×Ö·û´®
+	// é€šè¿‡ç»Ÿä¸€èµ„æºæ ‡è¯†ç¬¦è·å–å­—ç¬¦ä¸²
 	public String getStringByUrl(URL paramURL) throws Exception {
 		HttpURLConnection localHttpURLConnection = (HttpURLConnection) paramURL
 				.openConnection();
@@ -43,9 +43,9 @@ public class global {
 		}
 	}
 
-	// »ñÈ¡ÎÄ¼ş
-	// µÚÒ»¸ö²ÎÊıÎªÂ·¾¶Ãû
-	// µÚ¶ş¸ö²ÎÊıÎªÎÄ¼şÃû
+	// è·å–æ–‡ä»¶
+	// ç¬¬ä¸€ä¸ªå‚æ•°ä¸ºè·¯å¾„å
+	// ç¬¬äºŒä¸ªå‚æ•°ä¸ºæ–‡ä»¶å
 	public String getfile(String paramString1, String paramString2) {
 		if (paramString2.equals(""))
 			paramString2 = "default";
@@ -68,10 +68,10 @@ public class global {
 		return str1;
 	}
 
-	// ·ÅÈëÎÄ¼ş
-	// µÚÒ»¸ö²ÎÊıÎªÎÄ¼şÃû
-	// µÚ¶ş¸ö²ÎÊıÎªÎÄ¼şÄÚÈİ
-	// µÚÈı¸ö²ÎÊıÎªÎÄ¼şÂ·¾¶Ãû
+	// æ”¾å…¥æ–‡ä»¶
+	// ç¬¬ä¸€ä¸ªå‚æ•°ä¸ºæ–‡ä»¶å
+	// ç¬¬äºŒä¸ªå‚æ•°ä¸ºæ–‡ä»¶å†…å®¹
+	// ç¬¬ä¸‰ä¸ªå‚æ•°ä¸ºæ–‡ä»¶è·¯å¾„å
 	public boolean putfile(String paramString1, String paramString2,
 			String paramString3) {
 		if (paramString1.equals(""))
@@ -94,7 +94,7 @@ public class global {
 		return false;
 	}
 
-	//ÌáÊ¾¿ò
+	//æç¤ºæ¡†
 	public void toast(String paramString) {
 		Toast.makeText(this.c, paramString, Toast.LENGTH_SHORT).show();
 	}

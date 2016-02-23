@@ -1,6 +1,4 @@
-/**ÉèÖÃ½çÃæ**/
-
-package peng.bo.ploto2003ub.lifetime.savetime;
+ï»¿package peng.bo.ploto2003ub.lifetime.savetime;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -71,7 +69,7 @@ public class B_SetActivity extends Activity {
 	public B_SetActivity() {
 	}
 
-	// »ñÈ¡×Ö·û´®
+	// è·å–å­—ç¬¦ä¸²
 	int[] getdatebystr(String s) {
 		int ai[] = new int[3];
 		String as[] = s.split("-");
@@ -85,10 +83,10 @@ public class B_SetActivity extends Activity {
 
 		super.onCreate(bundle);
 
-		// Ç¿ÖÆÈ«ÆÁ
+		// å¼ºåˆ¶å…¨å±
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		// ÉèÖÃÊúÆÁÄ£Ê½
+		// è®¾ç½®ç«–å±æ¨¡å¼
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
 
 		setContentView(R.layout.set02);
@@ -98,27 +96,27 @@ public class B_SetActivity extends Activity {
 
 		dt = (DatePicker) findViewById(R.id.datebirthday);
 		dt.init(1989, 05, 10, null);
-		// ĞÂ½¨Ò»¸öglobal¶ÔÏó
+		// æ–°å»ºä¸€ä¸ªglobalå¯¹è±¡
 		g = new global(this);
-		// ±£´æÄ¿Â¼Ãû
+		// ä¿å­˜ç›®å½•å
 		savefile = "pengbopluto2003ubsavetime";
 		// name = g.getfile(savefile, "");
 		info = g.getfile(savefile, "");
 
 		if (this.info.equals("")) {
-			this.sex = "ÄĞ";
-			this.name = "ÓÃ»§";
+			this.sex = "ç”·";
+			this.name = "ç”¨æˆ·";
 
 		}
 
 		Button localButton1 = (Button) findViewById(R.id.buttonsave);
 		Button localButton2 = (Button) findViewById(R.id.buttonback);
-		// È·¶¨°´Å¥
+		// ç¡®å®šæŒ‰é’®
 		localButton1.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View paramView) {
 
 				shoumingtemp = editname.getText().toString();
-				// Èç¹ûÔÚ±à¼­ÎÄ±¾ÖĞÓĞ×Ö·û
+				// å¦‚æœåœ¨ç¼–è¾‘æ–‡æœ¬ä¸­æœ‰å­—ç¬¦
 				if (!(shoumingtemp.equals(""))) {
 
 					try {
@@ -128,125 +126,125 @@ public class B_SetActivity extends Activity {
 						// int n=(int)name;
 
 						if (intRet < 20) {
-							B_SetActivity.this.g.toast("Ç×£¬Â·»¹³¤£¬Ã»ÕâÃ´²»×ÔĞÅ°É£¡£¡");
+							B_SetActivity.this.g.toast("äº²ï¼Œè·¯è¿˜é•¿ï¼Œæ²¡è¿™ä¹ˆä¸è‡ªä¿¡å§ï¼ï¼");
 
 						}
 						if (intRet >= 20 & intRet < 30) {
-							B_SetActivity.this.g.toast("¶şÊ®Èõ¹Ú£¡");
+							B_SetActivity.this.g.toast("äºŒåå¼±å† ï¼");
 
 						}
 						if (intRet >= 30 & intRet < 40) {
-							B_SetActivity.this.g.toast("ÈıÊ®¶øÁ¢£¡");
+							B_SetActivity.this.g.toast("ä¸‰åè€Œç«‹ï¼");
 
 						}
 						if (intRet >= 40 & intRet < 50) {
-							B_SetActivity.this.g.toast("ËÄÊ®²»»ó£¡");
+							B_SetActivity.this.g.toast("å››åä¸æƒ‘ï¼");
 
 						}
 						if (intRet >= 50 & intRet < 60) {
-							B_SetActivity.this.g.toast("ÎåÊ®¶øÖªÌìÃü£¡");
+							B_SetActivity.this.g.toast("äº”åè€ŒçŸ¥å¤©å‘½ï¼");
 
 						}
 						if (intRet >= 60 & intRet < 70) {
-							B_SetActivity.this.g.toast("»¨¼×Ö®Äê£¡");
+							B_SetActivity.this.g.toast("èŠ±ç”²ä¹‹å¹´ï¼");
 
 						}
 						if (intRet >= 70 & intRet < 80) {
-							B_SetActivity.this.g.toast("¹ÅÏ¡Ö®Äê£¡");
+							B_SetActivity.this.g.toast("å¤ç¨€ä¹‹å¹´ï¼");
 
 						}
 						if (intRet >= 80 & intRet < 90) {
-							B_SetActivity.this.g.toast("ë£ñóÖ®Äê£¡");
+							B_SetActivity.this.g.toast("è€„è€‹ä¹‹å¹´ï¼");
 
 						}
 						if (intRet > 90 & intRet < 100) {
-							B_SetActivity.this.g.toast("ë£ñóÖ®Äê£¡");
+							B_SetActivity.this.g.toast("è€„è€‹ä¹‹å¹´ï¼");
 
 						}
 						if (intRet > 100 & intRet < 110) {
-							B_SetActivity.this.g.toast("ÈËÈğ£¡");
+							B_SetActivity.this.g.toast("äººç‘ï¼");
 
 						}
 						if (intRet >= 110 & intRet < 150) {
 
-							B_SetActivity.this.g.toast("´óÊÙĞÇ£¡");
+							B_SetActivity.this.g.toast("å¤§å¯¿æ˜Ÿï¼");
 
 						}
 						if (intRet >= 150 & intRet <= 200) {
 
-							B_SetActivity.this.g.toast("¹ş¹ş£¡ÍæĞ¦°É£¡");
+							B_SetActivity.this.g.toast("å“ˆå“ˆï¼ç©ç¬‘å§ï¼");
 
 						}
 						if (intRet >= 200 & intRet < 500) {
 
-							B_SetActivity.this.g.toast("Õâ¿äÕÅÁËµã°É£¡");
+							B_SetActivity.this.g.toast("è¿™å¤¸å¼ äº†ç‚¹å§ï¼");
 
 						}
 						if (intRet == 500) {
 
 							B_SetActivity.this.g
-									.toast("Îå°ÙÄêºó£¬ÊÇ·ñ»¹»á¼ÇµÃÄãµÄ×ÏÏ¼ÏÉ×Ó»òÕßÖÁ×ğ±¦£¿");
+									.toast("äº”ç™¾å¹´åï¼Œæ˜¯å¦è¿˜ä¼šè®°å¾—ä½ çš„ç´«éœä»™å­æˆ–è€…è‡³å°Šå®ï¼Ÿ");
 
 						}
 						if (intRet > 500 & intRet < 520) {
 
-							B_SetActivity.this.g.toast("Õâ¿äÕÅÁËµã°É£¡");
+							B_SetActivity.this.g.toast("è¿™å¤¸å¼ äº†ç‚¹å§ï¼");
 
 						}
 
 						if (intRet == 520) {
 
-							B_SetActivity.this.g.toast("¹ş¹ş£¬Åöµ½²Êµ°ÁË£¬¸æËßÄã×÷ÕßÃû×Ö£º²©~");
+							B_SetActivity.this.g.toast("å“ˆå“ˆï¼Œç¢°åˆ°å½©è›‹äº†ï¼Œå‘Šè¯‰ä½ ä½œè€…åå­—ï¼šåš~");
 
 						}
 						if (intRet > 520 & intRet < 800) {
 
-							B_SetActivity.this.g.toast("Õâ¿äÕÅÁËµã°É£¡");
+							B_SetActivity.this.g.toast("è¿™å¤¸å¼ äº†ç‚¹å§ï¼");
 
 						}
 						if (intRet >= 800 & intRet < 900) {
 
-							B_SetActivity.this.g.toast("ÈçÅí×æ¸ßÊÙ°ã£¡");
+							B_SetActivity.this.g.toast("å¦‚å½­ç¥–é«˜å¯¿èˆ¬ï¼");
 
 						}
 						if (intRet >= 900 & intRet < 1000) {
 
-							B_SetActivity.this.g.toast("¹ÖÎï°É£¡");
+							B_SetActivity.this.g.toast("æ€ªç‰©å§ï¼");
 
 						}
 						if (intRet >= 1000 & intRet < 5201) {
 
-							B_SetActivity.this.g.toast("³ÉÇ§ÄêÑı¾«ÁË£¡£¡");
+							B_SetActivity.this.g.toast("æˆåƒå¹´å¦–ç²¾äº†ï¼ï¼");
 
 						}
 						if (intRet == 5201) {
 
-							B_SetActivity.this.g.toast("ÓĞĞ©Áô¸ø°®Áµ£¡");
+							B_SetActivity.this.g.toast("æœ‰äº›ç•™ç»™çˆ±æ‹ï¼");
 
 						}
 						if (intRet > 5201 & intRet < 10000) {
 
-							B_SetActivity.this.g.toast("ÉñÏÉ£¿Ñı¹Ö£¿Ğ»Ğ»£¡");
+							B_SetActivity.this.g.toast("ç¥ä»™ï¼Ÿå¦–æ€ªï¼Ÿè°¢è°¢ï¼");
 
 						}
 						if (intRet >= 10000 & intRet < 201314) {
 
-							B_SetActivity.this.g.toast("ÍòÄêÌ«¾Ã£¬Ö»Õù³¯Ï¦¡£");
+							B_SetActivity.this.g.toast("ä¸‡å¹´å¤ªä¹…ï¼Œåªäº‰æœå¤•ã€‚");
 
 						}
 						if (intRet == 201314) {
 
-							B_SetActivity.this.g.toast("Ö´×ÓÖ®ÊÖ£¬Óë×ÓÙÉÀÏ£¡");
+							B_SetActivity.this.g.toast("æ‰§å­ä¹‹æ‰‹ï¼Œä¸å­å•è€ï¼");
 
 						}
 						if (intRet > 201314) {
 
-							B_SetActivity.this.g.toast("²»ÒªÂÒÊÔ£¡£¡");
+							B_SetActivity.this.g.toast("ä¸è¦ä¹±è¯•ï¼ï¼");
 
 						}
 
 					} catch (Exception e) {
-						B_SetActivity.this.g.toast("Ğ¡ÅèÓÑ£¬²»ÒªÂÒÊäÈë£¡£¡");
+						B_SetActivity.this.g.toast("å°ç›†å‹ï¼Œä¸è¦ä¹±è¾“å…¥ï¼ï¼");
 					}
 				}
 
@@ -261,7 +259,7 @@ public class B_SetActivity extends Activity {
 						+ "\t" + B_SetActivity.this.sex + "\t"
 						+ B_SetActivity.this.birthday,
 						B_SetActivity.this.savefile)) {
-					// SetActivity.this.g.toast("±£´æ³É¹¦!");
+					// SetActivity.this.g.toast("ä¿å­˜æˆåŠŸ!");
 
 					if (!birthday.equals("")) {
 
@@ -274,35 +272,35 @@ public class B_SetActivity extends Activity {
 
 					B_SetActivity.this.finish();
 				} else {
-					B_SetActivity.this.g.toast("±£´æÊ§°Ü");
+					B_SetActivity.this.g.toast("ä¿å­˜å¤±è´¥");
 
 				}
 
 			}
 		});
-		// ·µ»Ø°´Å¥
+		// è¿”å›æŒ‰é’®
 		localButton2.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View paramView) {
 				B_SetActivity.this.finish();
 			}
 		});
 		//
-		// ×ªÒå×Ö·û
-		// \\ ·´Ğ±¸Ü
-		// \t ¼ä¸ô ('\u0009')
-		// \n »»ĞĞ
-		// \r »Ø³µ
-		// \d Êı×Ö µÈ¼ÛÓÚ [0-9]
-		// \D ·ÇÊı×Ö µÈ¼ÛÓÚ [^0-9]
-		// \s ¿Õ°×·ûºÅ [\t\n\x0B\f\r]
-		// \S ·Ç¿Õ°×·ûºÅ [^\t\n\x0B\f\r]
-		// \w µ¥¶À×Ö·û [a-zA-Z_0-9]
-		// \W ·Çµ¥¶À×Ö·û [^a-zA-Z_0-9]
-		// \f »»Ò³·û
+		// è½¬ä¹‰å­—ç¬¦
+		// \\ åæ–œæ 
+		// \t é—´éš” ('\u0009')
+		// \n æ¢è¡Œ
+		// \r å›è½¦
+		// \d æ•°å­— ç­‰ä»·äº [0-9]
+		// \D éæ•°å­— ç­‰ä»·äº [^0-9]
+		// \s ç©ºç™½ç¬¦å· [\t\n\x0B\f\r]
+		// \S éç©ºç™½ç¬¦å· [^\t\n\x0B\f\r]
+		// \w å•ç‹¬å­—ç¬¦ [a-zA-Z_0-9]
+		// \W éå•ç‹¬å­—ç¬¦ [^a-zA-Z_0-9]
+		// \f æ¢é¡µç¬¦
 		// \e Escape
-		// \b Ò»¸öµ¥´ÊµÄ±ß½ç
-		// \B Ò»¸ö·Çµ¥´ÊµÄ±ß½ç
-		// \G Ç°Ò»¸öÆ¥ÅäµÄ½áÊø
+		// \b ä¸€ä¸ªå•è¯çš„è¾¹ç•Œ
+		// \B ä¸€ä¸ªéå•è¯çš„è¾¹ç•Œ
+		// \G å‰ä¸€ä¸ªåŒ¹é…çš„ç»“æŸ
 
 	}
 
@@ -342,20 +340,20 @@ public class B_SetActivity extends Activity {
 			String temp = null;
 			if (B_SetActivity.this.howlong100.getId() == checkedId) {
 				name = "100";
-				Toast.makeText(getApplicationContext(), "ÈËÈğ£¡",
+				Toast.makeText(getApplicationContext(), "äººç‘ï¼",
 						Toast.LENGTH_SHORT).show();
 
 			} else if (B_SetActivity.this.howlong90.getId() == checkedId) {
 				name = "90";
-				Toast.makeText(getApplicationContext(), "ë£ñóÖ®Äê£¡",
+				Toast.makeText(getApplicationContext(), "è€„è€‹ä¹‹å¹´ï¼",
 						Toast.LENGTH_SHORT).show();
 			} else if (B_SetActivity.this.howlong80.getId() == checkedId) {
 				name = "80";
-				Toast.makeText(getApplicationContext(), "ë£ñóÖ®Äê£¡",
+				Toast.makeText(getApplicationContext(), "è€„è€‹ä¹‹å¹´ï¼",
 						Toast.LENGTH_SHORT).show();
 			} else if (B_SetActivity.this.howlong70.getId() == checkedId) {
 				name = "70";
-				Toast.makeText(getApplicationContext(), "¹ÅÏ¡Ö®Äê£¡",
+				Toast.makeText(getApplicationContext(), "å¤ç¨€ä¹‹å¹´ï¼",
 						Toast.LENGTH_SHORT).show();
 
 			}
