@@ -7,44 +7,69 @@
 	<LinearLayout android:orientation="vertical"
 		android:layout_width="fill_parent" android:layout_height="fill_parent">
 
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
 
-		<RelativeLayout android:layout_width="fill_parent"
-			android:layout_height="wrap_content">
-			<LinearLayout android:orientation="vertical"
-				android:layout_width="wrap_content" android:layout_height="wrap_content">
-				<LinearLayout android:orientation="horizontal"
-					android:layout_width="wrap_content" android:layout_height="wrap_content">
-					<TextView android:layout_width="wrap_content"
-						android:textSize="20dip" android:textColor="#0000EE"
-						android:layout_height="wrap_content" android:text="人生起点：" />
-					<Button 
-						android:layout_width="wrap_content" android:id="@+id/qidian"
-						android:textColor="#0000EE" android:layout_height="wrap_content"
-						android:textSize="10dip"
-						android:text="1989-06-10 "
-	
-						/> 
-			
+		    <LinearLayout
+		        android:id="@+id/linearLayout1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >
 
-				</LinearLayout>
-				<LinearLayout android:orientation="horizontal"
-					android:layout_width="wrap_content" android:layout_height="wrap_content">
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal" >
 
-					<TextView android:layout_width="wrap_content"
-						android:textSize="20dip" android:textColor="#E066FF"
-						android:layout_height="wrap_content" android:text="寿命长度：" />
-					<TextView android:layout_width="wrap_content" android:id="@+id/shouming"
-						android:textColor="#FF0000" android:layout_height="wrap_content"
-						android:textSize="20dip" android:text="70" />
-				</LinearLayout>
-			</LinearLayout>
-			<ImageButton android:layout_width="wrap_content"
-				android:layout_alignParentRight="true" android:id="@+id/button001"
-				android:layout_height="wrap_content" android:text="人生起始终点设置"
-				android:background="@drawable/option_button" />
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="人生起点："
+		                android:textColor="#0000EE"
+		                android:textSize="20dip" />
+
+		            <Button
+		                android:id="@+id/qidian"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="1989-06-10 "
+		                android:textColor="#0000EE"
+		                android:textSize="10dip" />
+		        </LinearLayout>
+
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal" >
+
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="寿命长度："
+		                android:textColor="#E066FF"
+		                android:textSize="20dip" />
+
+		            <TextView
+		                android:id="@+id/shouming"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="70"
+		                android:textColor="#FF0000"
+		                android:textSize="20dip" />
+		        </LinearLayout>
+		    </LinearLayout>
+
+		    <ImageButton
+		        android:id="@+id/button001"
+		        android:layout_width="50.0dip"
+		        android:layout_height="25.0dip"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:background="@drawable/option_button"
+		        android:text="人生起始终点设置" />
 
 		</RelativeLayout>
-
 
 		<RelativeLayout android:layout_width="fill_parent"
 			android:layout_height="50.0dip">
@@ -177,7 +202,9 @@
 			android:layout_gravity="center" android:layout_height="wrap_content"
 			android:text="从现在开始，我坚信，环境不可以决定我的命运，我拥有改变一切的力量！" />
 
-		<LinearLayout android:id="@+id/miniAdLinearLayout"
+		<LinearLayout 
+		    android:id="@+id/miniAdLinearLayout"
+		    android:orientation="horizontal"
 			android:layout_width="wrap_content" android:layout_height="wrap_content"
 			android:gravity="center_horizontal" />
 
