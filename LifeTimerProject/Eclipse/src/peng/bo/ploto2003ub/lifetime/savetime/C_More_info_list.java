@@ -239,7 +239,6 @@ public class C_More_info_list extends Activity {
 				}
 				}
 			}
-
 		});
 
 	}

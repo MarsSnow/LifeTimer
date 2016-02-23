@@ -355,9 +355,7 @@ public class B_SetActivity extends Activity {
 				name = "70";
 				Toast.makeText(getApplicationContext(), "古稀之年！",
 						Toast.LENGTH_SHORT).show();
-
 			}
-
 		}
 
 	}

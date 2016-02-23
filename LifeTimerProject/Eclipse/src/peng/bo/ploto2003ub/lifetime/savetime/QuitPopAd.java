@@ -112,7 +112,7 @@ public class QuitPopAd {
 		
 		//最外层布局
 		LinearLayout layout = new LinearLayout(context);
-		layout.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
+		layout.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
 		layout.setBackgroundColor(Color.argb(80, 0, 0, 0));
 		//layout.setGravity(Gravity.CENTER);
 		layout.setGravity(Gravity.CENTER);
@@ -120,7 +120,7 @@ public class QuitPopAd {
 		
 		//用于排放标题，popAd，按钮组的整体布局
 		RelativeLayout r_layout = new RelativeLayout(context);
-		r_layout.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
+		r_layout.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
 		r_layout.setGravity(Gravity.CENTER);
 		
 		//标题布局
@@ -135,7 +135,7 @@ public class QuitPopAd {
 		}else if(displaySize == 240){
 			title_layout.setPadding(10, 5, 0, 5);
 		}else{
-			title_layout.setPadding(15, 15, 0, 15);
+			title_layout.setPadding(30, 30, 0, 30);
 		}
 		title_layout.setBackgroundDrawable(title_layout_shape);
 		

@@ -85,25 +85,18 @@ public class D_ContextActivity extends Activity {
 		in = getResources().openRawResource(mygonglue03text);
 		Mygonlue02();
 		NewCharacterIntroduction01.setText(str);
-		
-
-
 	}
 	
 	//文件的IO操作
 		private void Mygonlue02() {
 
 			try {
-				
-
 				ByteArrayBuffer bb = new ByteArrayBuffer(500);
 				
 				int current = 0;
-
 			
 				//String str = null;//?
 				
-
 				//没读完就会一直往bb中传数据
 				while ((current = in.read()) != -1) {
 					bb.append(current);
@@ -139,8 +132,6 @@ public class D_ContextActivity extends Activity {
 			return super.onOptionsItemSelected(menuitem);
 	}
 	
-
-	
 	// 打开选项菜单（改善建议）（警报对话框）
 	private void OpenSuggestDialog() {
 		(new android.app.AlertDialog.Builder(this))
@@ -151,11 +142,8 @@ public class D_ContextActivity extends Activity {
 				// 设置文本
 				.setMessage(
 						"开发者：" + "\n" + "pluto2003ub" + "\n" + "\n" + "联系邮箱："
-								+ "\n" + "851104757@qq.com" + "\n"
-								+ "2278048953@qq.com").show();
-
+								+ "\n" + "851104757@qq.com").show();
 	}
-	
 	
 	// 获取积分页面（广告墙）
 	private void getpoint() {
@@ -167,18 +155,11 @@ public class D_ContextActivity extends Activity {
 
 			wakeLock1.release();
 		super.onPause();
-
 	}
 
 	protected void onResume() {
 
 			wakeLock1.acquire();
 		super.onResume();
-
 	}
-	
-	
-	
-
-	
 }

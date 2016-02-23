@@ -24,9 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class DigitClock extends AppWidgetProvider
-
 {
-	
 	long tempjudge001;
 	long tempjudge002;
 	long costtemp002;
