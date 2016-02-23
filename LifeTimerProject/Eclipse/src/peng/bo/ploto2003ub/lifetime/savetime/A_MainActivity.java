@@ -74,7 +74,7 @@ public class A_MainActivity extends Activity {
 	Context context;//句柄
 	
 	// 快捷方式判断存储
-	SharedPreferences sp;//存储类
+	SharedPreferences sp;
 
 	boolean isFirst;//是否是第一次启动
 
@@ -260,7 +260,7 @@ public class A_MainActivity extends Activity {
 		new AdThread().StartMyAd();
 		Toast.makeText(this, "您可在手机设置里面往桌面添加倒计时小控件！", Toast.LENGTH_SHORT)
 				.show();
-	
+
 		// 保持屏幕始终常亮的情况
 		acquireWakeLock();
 		global localglobal = new global(this);
@@ -395,7 +395,6 @@ public class A_MainActivity extends Activity {
 		textview010 = (TextView) findViewById(R.id.t10);
 		textview011 = (TextView) findViewById(R.id.t11);
 		textview012 = (TextView) findViewById(R.id.t12);
-
 	}
 
 	//添加监听器
