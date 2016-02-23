@@ -1,0 +1,1580 @@
+cn.waps.AdInfo
+cn.waps.AdInfo: java.lang.String a
+cn.waps.AdInfo: java.lang.String b
+cn.waps.AdInfo: java.lang.String c
+cn.waps.AdInfo: int d
+cn.waps.AdInfo: java.lang.String e
+cn.waps.AdInfo: java.lang.String f
+cn.waps.AdInfo: java.lang.String g
+cn.waps.AdInfo: java.lang.String h
+cn.waps.AdInfo: java.lang.String[] i
+cn.waps.AdInfo: java.lang.String j
+cn.waps.AdInfo: java.lang.String k
+cn.waps.AdInfo: android.graphics.Bitmap l
+cn.waps.AdInfo: java.lang.String m
+cn.waps.AdInfo: java.lang.String n
+cn.waps.AdInfo: java.lang.String o
+cn.waps.AdInfo: java.lang.String p
+cn.waps.AdInfo: java.lang.String q
+cn.waps.AdInfo: java.lang.String r
+cn.waps.AdInfo: java.lang.String s
+cn.waps.AdInfo: java.lang.String t
+cn.waps.AdInfo: java.lang.String u
+cn.waps.AdInfo: java.lang.String v
+cn.waps.AdInfo: int w
+cn.waps.AdInfo: int x
+cn.waps.AdInfo: android.graphics.Bitmap y
+cn.waps.AdInfo: java.lang.String z
+cn.waps.AdInfo: AdInfo()
+cn.waps.AdInfo: android.graphics.Bitmap getAdIcon()
+cn.waps.AdInfo: void a(android.graphics.Bitmap)
+cn.waps.AdInfo: java.lang.String getAdId()
+cn.waps.AdInfo: void a(java.lang.String)
+cn.waps.AdInfo: java.lang.String a()
+cn.waps.AdInfo: void b(java.lang.String)
+cn.waps.AdInfo: java.lang.String getAdText()
+cn.waps.AdInfo: void c(java.lang.String)
+cn.waps.AdInfo: java.lang.String b()
+cn.waps.AdInfo: void d(java.lang.String)
+cn.waps.AdInfo: java.lang.String c()
+cn.waps.AdInfo: void e(java.lang.String)
+cn.waps.AdInfo: java.lang.String getAdPackage()
+cn.waps.AdInfo: void f(java.lang.String)
+cn.waps.AdInfo: java.lang.String d()
+cn.waps.AdInfo: void g(java.lang.String)
+cn.waps.AdInfo: java.lang.String getAdName()
+cn.waps.AdInfo: void h(java.lang.String)
+cn.waps.AdInfo: int getAdPoints()
+cn.waps.AdInfo: void a(int)
+cn.waps.AdInfo: java.lang.String getDescription()
+cn.waps.AdInfo: void i(java.lang.String)
+cn.waps.AdInfo: java.lang.String getVersion()
+cn.waps.AdInfo: void j(java.lang.String)
+cn.waps.AdInfo: java.lang.String getFilesize()
+cn.waps.AdInfo: void k(java.lang.String)
+cn.waps.AdInfo: java.lang.String getProvider()
+cn.waps.AdInfo: void l(java.lang.String)
+cn.waps.AdInfo: java.lang.String[] getImageUrls()
+cn.waps.AdInfo: void a(java.lang.String[])
+cn.waps.AdInfo: java.lang.String e()
+cn.waps.AdInfo: void m(java.lang.String)
+cn.waps.AdInfo: java.lang.String getAction()
+cn.waps.AdInfo: void n(java.lang.String)
+cn.waps.AdInfo: void o(java.lang.String)
+cn.waps.AdInfo: java.lang.String f()
+cn.waps.AdInfo: void p(java.lang.String)
+cn.waps.AdInfo: int g()
+cn.waps.AdInfo: void b(int)
+cn.waps.AdInfo: int h()
+cn.waps.AdInfo: void c(int)
+cn.waps.AdInfo: android.graphics.Bitmap i()
+cn.waps.AdInfo: void b(android.graphics.Bitmap)
+cn.waps.AdInfo: java.lang.String j()
+cn.waps.AdInfo: void q(java.lang.String)
+cn.waps.AdView
+cn.waps.AdView: android.content.Context c
+cn.waps.AdView: android.widget.LinearLayout d
+cn.waps.AdView: cn.waps.am e
+cn.waps.AdView: long f
+cn.waps.AdView: android.widget.RelativeLayout g
+cn.waps.AdView: int h
+cn.waps.AdView: boolean i
+cn.waps.AdView: android.os.Handler mHandler
+cn.waps.AdView: android.webkit.WebView j
+cn.waps.AdView: boolean a
+cn.waps.AdView: boolean k
+cn.waps.AdView: int l
+cn.waps.AdView: float m
+cn.waps.AdView: java.lang.String n
+cn.waps.AdView: java.lang.String o
+cn.waps.AdView: java.lang.String p
+cn.waps.AdView: java.util.Map q
+cn.waps.AdView: java.lang.Thread b
+cn.waps.AdView: AdView(android.content.Context,android.widget.LinearLayout)
+cn.waps.AdView: AdView()
+cn.waps.AdView: void DisplayAd()
+cn.waps.AdView: void DisplayAd(int)
+cn.waps.AdView: android.webkit.WebView a()
+cn.waps.AdView: void a(java.lang.String)
+cn.waps.AdView: android.content.Context a(cn.waps.AdView)
+cn.waps.AdView: boolean b(cn.waps.AdView)
+cn.waps.AdView: java.lang.String c(cn.waps.AdView)
+cn.waps.AdView: boolean a(cn.waps.AdView,boolean)
+cn.waps.AdView: long d(cn.waps.AdView)
+cn.waps.AdView: int e(cn.waps.AdView)
+cn.waps.AdView: boolean f(cn.waps.AdView)
+cn.waps.AdView: boolean b(cn.waps.AdView,boolean)
+cn.waps.AdView: long a(cn.waps.AdView,long)
+cn.waps.AdView: android.widget.RelativeLayout g(cn.waps.AdView)
+cn.waps.AdView: android.os.Handler h(cn.waps.AdView)
+cn.waps.AdView: int a(cn.waps.AdView,int)
+cn.waps.AdView: int i(cn.waps.AdView)
+cn.waps.AdView: void a(cn.waps.AdView,java.lang.String)
+cn.waps.AdView: void <clinit>()
+cn.waps.AnimationType
+cn.waps.AnimationType: int NONE
+cn.waps.AnimationType: int RANDOM
+cn.waps.AnimationType: int SCALE_CENTER
+cn.waps.AnimationType: int ROTATE
+cn.waps.AnimationType: int ALPHA
+cn.waps.AnimationType: int TRANSLATE_FROM_RIGHT
+cn.waps.AnimationType: int TRANSLATE_FROM_LEFT
+cn.waps.AnimationType: int MINI_RANDOM
+cn.waps.AnimationType: int[] a
+cn.waps.AnimationType: int b
+cn.waps.AnimationType: AnimationType()
+cn.waps.AnimationType: AnimationType(int)
+cn.waps.AnimationType: AnimationType(int[])
+cn.waps.AnimationType: void startRotation(float,float,android.view.View)
+cn.waps.AnimationType: void startMiniAdAnimation(int,android.view.View)
+cn.waps.AnimationType: void startAnimation(android.view.View)
+cn.waps.AnimationType: java.util.List getAnimationList2(android.view.View)
+cn.waps.AnimationType: java.util.List getAnimationList(android.view.View)
+cn.waps.AnimationType: java.util.Map getAnimation(android.view.View)
+cn.waps.AppConnect
+cn.waps.AppConnect: java.lang.String LIBRARY_VERSION_NUMBER
+cn.waps.AppConnect: java.util.concurrent.ScheduledExecutorService p
+cn.waps.AppConnect: cn.waps.ad q
+cn.waps.AppConnect: android.content.Context a
+cn.waps.AppConnect: cn.waps.AppConnect r
+cn.waps.AppConnect: cn.waps.am s
+cn.waps.AppConnect: java.lang.String b
+cn.waps.AppConnect: java.lang.String t
+cn.waps.AppConnect: java.lang.String u
+cn.waps.AppConnect: java.lang.String v
+cn.waps.AppConnect: java.lang.String w
+cn.waps.AppConnect: java.lang.String x
+cn.waps.AppConnect: java.lang.String y
+cn.waps.AppConnect: java.lang.String z
+cn.waps.AppConnect: java.lang.String A
+cn.waps.AppConnect: java.lang.String B
+cn.waps.AppConnect: java.lang.String C
+cn.waps.AppConnect: java.lang.String D
+cn.waps.AppConnect: java.lang.String E
+cn.waps.AppConnect: java.lang.String F
+cn.waps.AppConnect: java.lang.String G
+cn.waps.AppConnect: java.lang.String H
+cn.waps.AppConnect: java.lang.String I
+cn.waps.AppConnect: java.lang.String J
+cn.waps.AppConnect: java.lang.String c
+cn.waps.AppConnect: java.lang.String K
+cn.waps.AppConnect: java.lang.String L
+cn.waps.AppConnect: int M
+cn.waps.AppConnect: int N
+cn.waps.AppConnect: java.lang.String O
+cn.waps.AppConnect: boolean P
+cn.waps.AppConnect: boolean Q
+cn.waps.AppConnect: java.lang.String R
+cn.waps.AppConnect: java.lang.String S
+cn.waps.AppConnect: java.lang.String T
+cn.waps.AppConnect: java.lang.String U
+cn.waps.AppConnect: java.lang.String V
+cn.waps.AppConnect: java.lang.String W
+cn.waps.AppConnect: java.lang.String X
+cn.waps.AppConnect: java.lang.String Y
+cn.waps.AppConnect: java.lang.String Z
+cn.waps.AppConnect: java.lang.String aa
+cn.waps.AppConnect: java.lang.String ab
+cn.waps.AppConnect: java.lang.String ac
+cn.waps.AppConnect: java.lang.String ad
+cn.waps.AppConnect: java.lang.String ae
+cn.waps.AppConnect: java.lang.String af
+cn.waps.AppConnect: java.lang.String ag
+cn.waps.AppConnect: java.lang.String ah
+cn.waps.AppConnect: java.lang.String ai
+cn.waps.AppConnect: java.lang.String aj
+cn.waps.AppConnect: java.lang.String ak
+cn.waps.AppConnect: java.lang.String al
+cn.waps.AppConnect: java.lang.String am
+cn.waps.AppConnect: java.lang.String an
+cn.waps.AppConnect: java.lang.String ao
+cn.waps.AppConnect: java.lang.String ap
+cn.waps.AppConnect: java.lang.String aq
+cn.waps.AppConnect: java.lang.String ar
+cn.waps.AppConnect: java.lang.String as
+cn.waps.AppConnect: java.lang.String at
+cn.waps.AppConnect: java.lang.String au
+cn.waps.AppConnect: cn.waps.UpdatePointsNotifier av
+cn.waps.AppConnect: cn.waps.x aw
+cn.waps.AppConnect: cn.waps.ac ax
+cn.waps.AppConnect: cn.waps.w ay
+cn.waps.AppConnect: cn.waps.aa az
+cn.waps.AppConnect: cn.waps.z aA
+cn.waps.AppConnect: java.lang.String aB
+cn.waps.AppConnect: java.lang.String aC
+cn.waps.AppConnect: java.lang.String aD
+cn.waps.AppConnect: int aE
+cn.waps.AppConnect: boolean aF
+cn.waps.AppConnect: android.content.ComponentName d
+cn.waps.AppConnect: android.app.ActivityManager$RunningTaskInfo e
+cn.waps.AppConnect: java.lang.String aG
+cn.waps.AppConnect: java.lang.String aH
+cn.waps.AppConnect: java.lang.String aI
+cn.waps.AppConnect: boolean aJ
+cn.waps.AppConnect: boolean aK
+cn.waps.AppConnect: java.lang.String aL
+cn.waps.AppConnect: java.lang.String aM
+cn.waps.AppConnect: boolean aN
+cn.waps.AppConnect: java.util.Map aO
+cn.waps.AppConnect: java.util.Map f
+cn.waps.AppConnect: boolean aP
+cn.waps.AppConnect: boolean aQ
+cn.waps.AppConnect: boolean aR
+cn.waps.AppConnect: int g
+cn.waps.AppConnect: int h
+cn.waps.AppConnect: java.util.List i
+cn.waps.AppConnect: java.lang.String j
+cn.waps.AppConnect: cn.waps.s aS
+cn.waps.AppConnect: java.lang.String aT
+cn.waps.AppConnect: java.lang.String aU
+cn.waps.AppConnect: java.lang.String aV
+cn.waps.AppConnect: cn.waps.v aW
+cn.waps.AppConnect: boolean k
+cn.waps.AppConnect: cn.waps.ai l
+cn.waps.AppConnect: java.lang.String aX
+cn.waps.AppConnect: java.lang.String aY
+cn.waps.AppConnect: boolean m
+cn.waps.AppConnect: boolean aZ
+cn.waps.AppConnect: boolean ba
+cn.waps.AppConnect: boolean finalize_tag
+cn.waps.AppConnect: byte[] bb
+cn.waps.AppConnect: boolean n
+cn.waps.AppConnect: int bc
+cn.waps.AppConnect: java.lang.String bd
+cn.waps.AppConnect: boolean be
+cn.waps.AppConnect: android.app.Dialog bf
+cn.waps.AppConnect: cn.waps.ab bg
+cn.waps.AppConnect: java.util.List bh
+cn.waps.AppConnect: java.util.List o
+cn.waps.AppConnect: android.os.Handler bi
+cn.waps.AppConnect: void a(android.content.Context,cn.waps.am)
+cn.waps.AppConnect: void a(android.content.Context)
+cn.waps.AppConnect: void b(android.content.Context)
+cn.waps.AppConnect: cn.waps.AppConnect getInstance(java.lang.String,java.lang.String,android.content.Context)
+cn.waps.AppConnect: cn.waps.AppConnect getInstance(java.lang.String,android.content.Context)
+cn.waps.AppConnect: cn.waps.AppConnect getInstance(android.content.Context)
+cn.waps.AppConnect: java.lang.String c(android.content.Context)
+cn.waps.AppConnect: AppConnect()
+cn.waps.AppConnect: AppConnect(android.content.Context)
+cn.waps.AppConnect: void a(cn.waps.ai)
+cn.waps.AppConnect: java.lang.String d(android.content.Context)
+cn.waps.AppConnect: void a()
+cn.waps.AppConnect: void p()
+cn.waps.AppConnect: boolean c(java.lang.String)
+cn.waps.AppConnect: void setPointsCache(boolean)
+cn.waps.AppConnect: boolean b()
+cn.waps.AppConnect: java.lang.String a(int,android.content.SharedPreferences)
+cn.waps.AppConnect: void setUpdatePointsFlag(boolean)
+cn.waps.AppConnect: boolean c()
+cn.waps.AppConnect: void b(java.lang.String,int)
+cn.waps.AppConnect: boolean d(java.lang.String)
+cn.waps.AppConnect: int getHistoryPoints(android.content.Context)
+cn.waps.AppConnect: java.lang.String getHistoryPointsName(android.content.Context)
+cn.waps.AppConnect: void getPoints(cn.waps.UpdatePointsNotifier)
+cn.waps.AppConnect: void awardPoints(int,cn.waps.UpdatePointsNotifier)
+cn.waps.AppConnect: void spendPoints(int,cn.waps.UpdatePointsNotifier)
+cn.waps.AppConnect: void q()
+cn.waps.AppConnect: void r()
+cn.waps.AppConnect: void s()
+cn.waps.AppConnect: java.lang.String getConfig(java.lang.String,java.lang.String)
+cn.waps.AppConnect: java.lang.String getConfig(java.lang.String)
+cn.waps.AppConnect: java.lang.String getConfig_Sync(java.lang.String)
+cn.waps.AppConnect: java.util.Map getConfigMap()
+cn.waps.AppConnect: java.util.Map e(java.lang.String)
+cn.waps.AppConnect: boolean f(java.lang.String)
+cn.waps.AppConnect: void checkUpdate(android.content.Context)
+cn.waps.AppConnect: boolean g(java.lang.String)
+cn.waps.AppConnect: void h(java.lang.String)
+cn.waps.AppConnect: org.w3c.dom.Document i(java.lang.String)
+cn.waps.AppConnect: java.lang.String a(org.w3c.dom.NodeList)
+cn.waps.AppConnect: void finalize()
+cn.waps.AppConnect: void showMore(android.content.Context)
+cn.waps.AppConnect: void showMore(android.content.Context,java.lang.String)
+cn.waps.AppConnect: android.content.Intent showMore_forTab(android.content.Context)
+cn.waps.AppConnect: android.content.Intent showMore_forTab(android.content.Context,java.lang.String)
+cn.waps.AppConnect: void showOffers(android.content.Context)
+cn.waps.AppConnect: void showOffers(android.content.Context,java.lang.String)
+cn.waps.AppConnect: void showGameOffers(android.content.Context)
+cn.waps.AppConnect: void showGameOffers(android.content.Context,java.lang.String)
+cn.waps.AppConnect: void showAppOffers(android.content.Context)
+cn.waps.AppConnect: void showAppOffers(android.content.Context,java.lang.String)
+cn.waps.AppConnect: void a(android.content.Context,java.lang.String,java.lang.String)
+cn.waps.AppConnect: android.content.Intent showOffers_forTab(android.content.Context)
+cn.waps.AppConnect: android.content.Intent showOffers_forTab(android.content.Context,java.lang.String)
+cn.waps.AppConnect: void a(java.lang.String,int)
+cn.waps.AppConnect: void t()
+cn.waps.AppConnect: void showFeedback()
+cn.waps.AppConnect: android.content.Intent showFeedback_forTab()
+cn.waps.AppConnect: java.lang.String a(byte[])
+cn.waps.AppConnect: java.lang.String a(byte[],java.lang.String)
+cn.waps.AppConnect: void setCrashReport(boolean)
+cn.waps.AppConnect: void u()
+cn.waps.AppConnect: java.lang.String d()
+cn.waps.AppConnect: void setAdBackColor(int)
+cn.waps.AppConnect: void setAdForeColor(int)
+cn.waps.AppConnect: java.util.Map e(android.content.Context)
+cn.waps.AppConnect: void initAdInfo()
+cn.waps.AppConnect: java.util.List getAdInfoList()
+cn.waps.AppConnect: cn.waps.AdInfo getAdInfo()
+cn.waps.AppConnect: cn.waps.AdInfo a(java.util.List)
+cn.waps.AppConnect: cn.waps.AdInfo a(java.util.List,java.lang.String)
+cn.waps.AppConnect: void downloadAd(java.lang.String)
+cn.waps.AppConnect: void clickAd(java.lang.String)
+cn.waps.AppConnect: void a(java.lang.String,java.lang.String)
+cn.waps.AppConnect: java.util.List a(java.io.InputStream)
+cn.waps.AppConnect: android.graphics.Bitmap a(android.content.Context,java.lang.String,java.lang.String,java.lang.String)
+cn.waps.AppConnect: void setAdViewClassName(java.lang.String)
+cn.waps.AppConnect: java.lang.String f(android.content.Context)
+cn.waps.AppConnect: java.lang.String g(android.content.Context)
+cn.waps.AppConnect: java.lang.Class h(android.content.Context)
+cn.waps.AppConnect: void setWebViewTransparent(boolean)
+cn.waps.AppConnect: void i(android.content.Context)
+cn.waps.AppConnect: void initPopAd(android.content.Context)
+cn.waps.AppConnect: void showPopAd(android.content.Context)
+cn.waps.AppConnect: void showPopAd(android.content.Context,int)
+cn.waps.AppConnect: void a(android.content.Context,java.util.List,boolean,int)
+cn.waps.AppConnect: android.app.Dialog getPopAdDialog()
+cn.waps.AppConnect: java.util.List b(java.io.InputStream)
+cn.waps.AppConnect: android.graphics.Bitmap b(android.content.Context,java.lang.String,java.lang.String,java.lang.String)
+cn.waps.AppConnect: void b(java.util.List)
+cn.waps.AppConnect: android.widget.LinearLayout a(cn.waps.AdInfo,android.content.Context,android.app.Dialog)
+cn.waps.AppConnect: void j(java.lang.String)
+cn.waps.AppConnect: void a(java.lang.String,android.app.Dialog)
+cn.waps.AppConnect: android.widget.LinearLayout getPopAdView(android.content.Context)
+cn.waps.AppConnect: android.widget.LinearLayout getPopAdView(android.content.Context,int,int)
+cn.waps.AppConnect: java.lang.String a(cn.waps.AppConnect)
+cn.waps.AppConnect: cn.waps.am e()
+cn.waps.AppConnect: boolean a(cn.waps.AppConnect,java.lang.String)
+cn.waps.AppConnect: java.util.Map b(cn.waps.AppConnect,java.lang.String)
+cn.waps.AppConnect: java.lang.String b(cn.waps.AppConnect)
+cn.waps.AppConnect: boolean f()
+cn.waps.AppConnect: java.lang.String c(cn.waps.AppConnect)
+cn.waps.AppConnect: java.lang.String g()
+cn.waps.AppConnect: void c(cn.waps.AppConnect,java.lang.String)
+cn.waps.AppConnect: boolean a(boolean)
+cn.waps.AppConnect: boolean h()
+cn.waps.AppConnect: java.lang.String i()
+cn.waps.AppConnect: cn.waps.z a(cn.waps.AppConnect,cn.waps.z)
+cn.waps.AppConnect: cn.waps.z d(cn.waps.AppConnect)
+cn.waps.AppConnect: boolean j()
+cn.waps.AppConnect: boolean k()
+cn.waps.AppConnect: boolean b(boolean)
+cn.waps.AppConnect: boolean c(boolean)
+cn.waps.AppConnect: void e(cn.waps.AppConnect)
+cn.waps.AppConnect: java.lang.String a(java.lang.String)
+cn.waps.AppConnect: java.lang.String l()
+cn.waps.AppConnect: java.lang.String m()
+cn.waps.AppConnect: java.lang.String f(cn.waps.AppConnect)
+cn.waps.AppConnect: boolean d(cn.waps.AppConnect,java.lang.String)
+cn.waps.AppConnect: java.lang.String g(cn.waps.AppConnect)
+cn.waps.AppConnect: java.lang.String h(cn.waps.AppConnect)
+cn.waps.AppConnect: cn.waps.UpdatePointsNotifier n()
+cn.waps.AppConnect: java.lang.String a(cn.waps.AppConnect,int,android.content.SharedPreferences)
+cn.waps.AppConnect: boolean e(cn.waps.AppConnect,java.lang.String)
+cn.waps.AppConnect: java.lang.String i(cn.waps.AppConnect)
+cn.waps.AppConnect: void a(cn.waps.AppConnect,java.lang.String,int)
+cn.waps.AppConnect: java.lang.String j(cn.waps.AppConnect)
+cn.waps.AppConnect: java.lang.String o()
+cn.waps.AppConnect: java.lang.String b(java.lang.String)
+cn.waps.AppConnect: boolean f(cn.waps.AppConnect,java.lang.String)
+cn.waps.AppConnect: java.lang.String k(cn.waps.AppConnect)
+cn.waps.AppConnect: java.util.List l(cn.waps.AppConnect)
+cn.waps.AppConnect: boolean a(cn.waps.AppConnect,boolean)
+cn.waps.AppConnect: java.util.List a(cn.waps.AppConnect,java.util.List)
+cn.waps.AppConnect: java.util.List a(cn.waps.AppConnect,java.io.InputStream)
+cn.waps.AppConnect: void a(cn.waps.AppConnect,android.content.Context,java.util.List,boolean,int)
+cn.waps.AppConnect: void b(cn.waps.AppConnect,java.util.List)
+cn.waps.AppConnect: void a(cn.waps.AppConnect,java.lang.String,android.app.Dialog)
+cn.waps.AppConnect: java.lang.String m(cn.waps.AppConnect)
+cn.waps.AppConnect: void g(cn.waps.AppConnect,java.lang.String)
+cn.waps.AppConnect: void <clinit>()
+cn.waps.AppLog
+cn.waps.AppLog: boolean showLog
+cn.waps.AppLog: AppLog()
+cn.waps.AppLog: void enableLogging(boolean)
+cn.waps.AppLog: void i(java.lang.String,java.lang.String)
+cn.waps.AppLog: void e(java.lang.String,java.lang.String)
+cn.waps.AppLog: void e(java.lang.String,java.lang.String,java.lang.Throwable)
+cn.waps.AppLog: void w(java.lang.String,java.lang.String)
+cn.waps.AppLog: void w(java.lang.String,java.lang.String,java.lang.Throwable)
+cn.waps.AppLog: void d(java.lang.String,java.lang.String)
+cn.waps.AppLog: void v(java.lang.String,java.lang.String)
+cn.waps.AppLog: void <clinit>()
+cn.waps.MiniAdView
+cn.waps.MiniAdView: android.os.Handler mHandler
+cn.waps.MiniAdView: android.widget.LinearLayout a
+cn.waps.MiniAdView: boolean b
+cn.waps.MiniAdView: android.view.View c
+cn.waps.MiniAdView: android.content.Context d
+cn.waps.MiniAdView: long e
+cn.waps.MiniAdView: int f
+cn.waps.MiniAdView: int[] h
+cn.waps.MiniAdView: int i
+cn.waps.MiniAdView: cn.waps.AnimationType j
+cn.waps.MiniAdView: int k
+cn.waps.MiniAdView: java.lang.String l
+cn.waps.MiniAdView: int m
+cn.waps.MiniAdView: boolean n
+cn.waps.MiniAdView: int o
+cn.waps.MiniAdView: java.lang.String p
+cn.waps.MiniAdView: int q
+cn.waps.MiniAdView: int r
+cn.waps.MiniAdView: java.lang.String s
+cn.waps.MiniAdView: java.lang.String t
+cn.waps.MiniAdView: long DELETE_ICON_LIMIT_TIME
+cn.waps.MiniAdView: android.content.SharedPreferences u
+cn.waps.MiniAdView: android.content.SharedPreferences$Editor v
+cn.waps.MiniAdView: cn.waps.AdInfo w
+cn.waps.MiniAdView: java.lang.Runnable mUpdateResults
+cn.waps.MiniAdView: android.widget.TextView g
+cn.waps.MiniAdView: MiniAdView(android.content.Context,android.widget.LinearLayout)
+cn.waps.MiniAdView: MiniAdView()
+cn.waps.MiniAdView: MiniAdView(android.content.Context)
+cn.waps.MiniAdView: cn.waps.MiniAdView setAnimationType(int)
+cn.waps.MiniAdView: cn.waps.MiniAdView setAnimationType(int[])
+cn.waps.MiniAdView: void DisplayAd()
+cn.waps.MiniAdView: void DisplayAd(int)
+cn.waps.MiniAdView: void b()
+cn.waps.MiniAdView: void c()
+cn.waps.MiniAdView: void b(int)
+cn.waps.MiniAdView: android.view.View$OnClickListener getMiniAdClickListener(android.content.Context,int)
+cn.waps.MiniAdView: android.widget.LinearLayout a(android.content.Context,android.graphics.Bitmap,java.lang.String,int)
+cn.waps.MiniAdView: void a(java.lang.String)
+cn.waps.MiniAdView: void a(cn.waps.MiniAdView)
+cn.waps.MiniAdView: boolean b(cn.waps.MiniAdView)
+cn.waps.MiniAdView: int c(cn.waps.MiniAdView)
+cn.waps.MiniAdView: int d(cn.waps.MiniAdView)
+cn.waps.MiniAdView: int a()
+cn.waps.MiniAdView: int a(cn.waps.MiniAdView,int)
+cn.waps.MiniAdView: int a(int)
+cn.waps.MiniAdView: void b(cn.waps.MiniAdView,int)
+cn.waps.MiniAdView: boolean a(cn.waps.MiniAdView,boolean)
+cn.waps.MiniAdView: int e(cn.waps.MiniAdView)
+cn.waps.MiniAdView: void <clinit>()
+cn.waps.OffersWebView
+cn.waps.OffersWebView: android.webkit.WebView k
+cn.waps.OffersWebView: java.lang.String l
+cn.waps.OffersWebView: android.widget.ProgressBar m
+cn.waps.OffersWebView: java.lang.String n
+cn.waps.OffersWebView: java.lang.String o
+cn.waps.OffersWebView: java.lang.String p
+cn.waps.OffersWebView: java.lang.String q
+cn.waps.OffersWebView: java.lang.String r
+cn.waps.OffersWebView: java.lang.String s
+cn.waps.OffersWebView: java.lang.String t
+cn.waps.OffersWebView: java.lang.String u
+cn.waps.OffersWebView: java.lang.String v
+cn.waps.OffersWebView: cn.waps.ag a
+cn.waps.OffersWebView: boolean w
+cn.waps.OffersWebView: java.lang.String x
+cn.waps.OffersWebView: java.lang.String y
+cn.waps.OffersWebView: java.lang.String z
+cn.waps.OffersWebView: java.lang.String A
+cn.waps.OffersWebView: java.lang.String B
+cn.waps.OffersWebView: java.util.Map C
+cn.waps.OffersWebView: java.lang.String b
+cn.waps.OffersWebView: java.lang.String c
+cn.waps.OffersWebView: cn.waps.al d
+cn.waps.OffersWebView: java.lang.String e
+cn.waps.OffersWebView: java.lang.String f
+cn.waps.OffersWebView: cn.waps.aj g
+cn.waps.OffersWebView: java.lang.String h
+cn.waps.OffersWebView: java.io.File i
+cn.waps.OffersWebView: android.app.AlertDialog j
+cn.waps.OffersWebView: boolean D
+cn.waps.OffersWebView: boolean outsideFlag
+cn.waps.OffersWebView: java.lang.String E
+cn.waps.OffersWebView: java.lang.String F
+cn.waps.OffersWebView: java.lang.String G
+cn.waps.OffersWebView: java.lang.String H
+cn.waps.OffersWebView: java.lang.String I
+cn.waps.OffersWebView: java.lang.String J
+cn.waps.OffersWebView: OffersWebView()
+cn.waps.OffersWebView: void onCreate(android.os.Bundle)
+cn.waps.OffersWebView: void a(android.content.Context)
+cn.waps.OffersWebView: void b()
+cn.waps.OffersWebView: void onResume()
+cn.waps.OffersWebView: void onPause()
+cn.waps.OffersWebView: void onDestroy()
+cn.waps.OffersWebView: boolean onKeyDown(int,android.view.KeyEvent)
+cn.waps.OffersWebView: void a(android.os.Bundle)
+cn.waps.OffersWebView: void a(android.content.SharedPreferences)
+cn.waps.OffersWebView: java.lang.String a(cn.waps.OffersWebView)
+cn.waps.OffersWebView: java.util.Map a()
+cn.waps.OffersWebView: android.webkit.WebView b(cn.waps.OffersWebView)
+cn.waps.OffersWebView: java.lang.String c(cn.waps.OffersWebView)
+cn.waps.OffersWebView: void d(cn.waps.OffersWebView)
+cn.waps.OffersWebView: java.lang.String e(cn.waps.OffersWebView)
+cn.waps.OffersWebView: boolean a(cn.waps.OffersWebView,boolean)
+cn.waps.OffersWebView: android.widget.ProgressBar f(cn.waps.OffersWebView)
+cn.waps.OffersWebView: java.lang.String a(cn.waps.OffersWebView,java.lang.String)
+cn.waps.OffersWebView: java.lang.String b(cn.waps.OffersWebView,java.lang.String)
+cn.waps.OffersWebView: void <clinit>()
+cn.waps.SDKUtils
+cn.waps.SDKUtils: android.content.Context a
+cn.waps.SDKUtils: android.content.pm.PackageManager b
+cn.waps.SDKUtils: android.content.pm.ApplicationInfo c
+cn.waps.SDKUtils: java.lang.String d
+cn.waps.SDKUtils: android.content.pm.PackageInfo e
+cn.waps.SDKUtils: android.os.Handler f
+cn.waps.SDKUtils: android.widget.RelativeLayout g
+cn.waps.SDKUtils: android.widget.LinearLayout h
+cn.waps.SDKUtils: SDKUtils(android.content.Context)
+cn.waps.SDKUtils: SDKUtils(android.content.Context,android.os.Handler,android.widget.RelativeLayout,android.widget.LinearLayout)
+cn.waps.SDKUtils: void close()
+cn.waps.SDKUtils: void closeSubmit(java.lang.String)
+cn.waps.SDKUtils: void closeOfDialog(java.lang.String)
+cn.waps.SDKUtils: void submit(java.lang.String,java.lang.String)
+cn.waps.SDKUtils: java.lang.String getWAPS_PID()
+cn.waps.SDKUtils: java.lang.String getWAPS_ID()
+cn.waps.SDKUtils: java.lang.String getUdid()
+cn.waps.SDKUtils: java.lang.String getImsi()
+cn.waps.SDKUtils: java.lang.String getMac_Address()
+cn.waps.SDKUtils: java.lang.String getSDKVersion()
+cn.waps.SDKUtils: java.lang.String getAppVersion(java.lang.String)
+cn.waps.SDKUtils: java.lang.String getDeviceName()
+cn.waps.SDKUtils: int getDeviceOSVersion()
+cn.waps.SDKUtils: java.lang.String getCountryCode()
+cn.waps.SDKUtils: java.lang.String getLanguageCode()
+cn.waps.SDKUtils: java.lang.String getParams()
+cn.waps.SDKUtils: void load(java.lang.String)
+cn.waps.SDKUtils: java.lang.String getInstalled()
+cn.waps.SDKUtils: java.lang.String isInstalled(java.lang.String)
+cn.waps.SDKUtils: java.lang.String getBrowserPackageName(java.lang.String)
+cn.waps.SDKUtils: void goToTargetBrowser(java.lang.String,java.lang.String,android.content.pm.PackageManager)
+cn.waps.SDKUtils: android.content.Intent goToTargetBrowser_Intent(java.lang.String,java.lang.String,android.content.pm.PackageManager)
+cn.waps.SDKUtils: android.content.Intent goToTargetBrowser_Intent(java.lang.String,java.lang.String,java.lang.String,android.content.pm.PackageManager)
+cn.waps.SDKUtils: void openUrlByBrowser(java.lang.String,java.lang.String)
+cn.waps.SDKUtils: android.content.Intent openUrlByBrowser_Intent(java.lang.String,java.lang.String)
+cn.waps.SDKUtils: java.util.Map getAppInfoMap(java.lang.String)
+cn.waps.SDKUtils: java.lang.String getRunningAppPackageNames()
+cn.waps.SDKUtils: boolean isCmwap()
+cn.waps.SDKUtils: boolean isConnect()
+cn.waps.SDKUtils: java.lang.String getResponseResult(org.apache.http.HttpResponse)
+cn.waps.SDKUtils: void closeAd()
+cn.waps.SDKUtils: void hideAd()
+cn.waps.SDKUtils: void openAd()
+cn.waps.SDKUtils: void openAd(java.lang.String)
+cn.waps.SDKUtils: void full_screen()
+cn.waps.SDKUtils: int initAdWidth()
+cn.waps.SDKUtils: java.lang.String getScreenStatus()
+cn.waps.SDKUtils: void saveDataToLocal(java.lang.String,java.lang.String,java.lang.String,boolean)
+cn.waps.SDKUtils: java.lang.String loadStringFromLocal(java.lang.String,java.lang.String)
+cn.waps.SDKUtils: void saveDataToLocal(java.io.InputStream,java.lang.String,java.lang.String,boolean)
+cn.waps.SDKUtils: java.io.InputStream loadStreamFromLocal(java.lang.String,java.lang.String)
+cn.waps.SDKUtils: void deleteLocalFiles(java.io.File)
+cn.waps.SDKUtils: java.io.InputStream getNetDataToStream(java.lang.String)
+cn.waps.SDKUtils: boolean isTimeLimited(java.lang.String,java.lang.String)
+cn.waps.SDKUtils: java.lang.String[] splitString(java.lang.String,java.lang.String,java.lang.String)
+cn.waps.SDKUtils: java.lang.String getNodeTrimValues(org.w3c.dom.NodeList)
+cn.waps.SDKUtils: java.util.List getList(java.lang.String)
+cn.waps.SDKUtils: java.lang.String replaceData(java.lang.String)
+cn.waps.SDKUtils: java.lang.String[] getAllPermissions()
+cn.waps.SDKUtils: boolean hasThePermission(java.lang.String)
+cn.waps.SDKUtils: void callTel(java.lang.String)
+cn.waps.SDKUtils: void sendSMS(java.lang.String,java.lang.String)
+cn.waps.SDKUtils: void showToast(java.lang.String)
+cn.waps.SDKUtils: java.lang.String getAppName()
+cn.waps.SDKUtils: java.lang.String isVisible()
+cn.waps.SDKUtils: boolean isWifi()
+cn.waps.SDKUtils: int getDisplaySize(android.content.Context)
+cn.waps.SDKUtils: android.content.Context access$000(cn.waps.SDKUtils)
+cn.waps.SDKUtils: android.widget.RelativeLayout access$100(cn.waps.SDKUtils)
+cn.waps.SDKUtils: android.widget.LinearLayout access$200(cn.waps.SDKUtils)
+cn.waps.UpdatePointsNotifier
+cn.waps.UpdatePointsNotifier: void getUpdatePoints(java.lang.String,int)
+cn.waps.UpdatePointsNotifier: void getUpdatePointsFailed(java.lang.String)
+cn.waps.ag
+cn.waps.ag: java.lang.String r
+cn.waps.ag: android.view.View s
+cn.waps.ag: cn.waps.aj t
+cn.waps.ag: cn.waps.al u
+cn.waps.ag: android.content.Context v
+cn.waps.ag: java.lang.String w
+cn.waps.ag: int a
+cn.waps.ag: cn.waps.am b
+cn.waps.ag: java.lang.String c
+cn.waps.ag: java.lang.String x
+cn.waps.ag: boolean d
+cn.waps.ag: boolean e
+cn.waps.ag: java.util.HashMap f
+cn.waps.ag: java.util.HashMap g
+cn.waps.ag: boolean y
+cn.waps.ag: float h
+cn.waps.ag: float i
+cn.waps.ag: java.text.NumberFormat j
+cn.waps.ag: float k
+cn.waps.ag: java.io.InputStream l
+cn.waps.ag: java.io.FileOutputStream m
+cn.waps.ag: java.lang.String n
+cn.waps.ag: java.lang.String o
+cn.waps.ag: boolean p
+cn.waps.ag: java.io.File q
+cn.waps.ag: ag(android.content.Context)
+cn.waps.ag: ag(android.content.Context,java.lang.String,java.lang.String)
+cn.waps.ag: ag(android.content.Context,android.view.View,java.lang.String,java.lang.String)
+cn.waps.ag: ag(android.content.Context,android.view.View,java.lang.String,java.lang.String,java.lang.String)
+cn.waps.ag: ag(android.content.Context,android.view.View,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+cn.waps.ag: void a(android.content.Context,android.view.View,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+cn.waps.ag: java.lang.String a(java.lang.String[])
+cn.waps.ag: void b(java.lang.String[])
+cn.waps.ag: void c(java.lang.String)
+cn.waps.ag: void a(org.apache.http.HttpResponse,java.lang.String,float,float,java.lang.String,int,java.io.InputStream,cn.waps.aj,boolean)
+cn.waps.ag: java.lang.String a(java.lang.String)
+cn.waps.ag: long b(java.lang.String)
+cn.waps.ag: void a(cn.waps.al)
+cn.waps.ag: java.lang.Object doInBackground(java.lang.Object[])
+cn.waps.ag: android.content.Context a(cn.waps.ag)
+cn.waps.ag: void <clinit>()
+cn.waps.ai
+cn.waps.ai: java.lang.String a
+cn.waps.ai: float b
+cn.waps.ai: float c
+cn.waps.ai: java.lang.String d
+cn.waps.ai: int e
+cn.waps.ai: java.lang.String f
+cn.waps.ai: java.text.NumberFormat g
+cn.waps.ai: java.lang.String h
+cn.waps.ai: ai()
+cn.waps.ai: void onReceive(android.content.Context,android.content.Intent)
+cn.waps.ai: void a(java.lang.String,float,float,java.lang.String,int,java.lang.String)
+cn.waps.aj
+cn.waps.aj: android.app.Notification a
+cn.waps.aj: android.app.NotificationManager f
+cn.waps.aj: android.content.Context g
+cn.waps.aj: java.lang.String h
+cn.waps.aj: java.lang.String i
+cn.waps.aj: boolean b
+cn.waps.aj: boolean c
+cn.waps.aj: java.lang.String d
+cn.waps.aj: long e
+cn.waps.aj: java.util.Map j
+cn.waps.aj: java.util.concurrent.ScheduledExecutorService k
+cn.waps.aj: aj(android.content.Context)
+cn.waps.aj: void a(android.view.View,java.lang.String,int,java.lang.String)
+cn.waps.aj: void a(android.view.View,java.lang.String,int,java.lang.String,java.lang.String)
+cn.waps.aj: void a(java.lang.String,int,java.lang.String)
+cn.waps.aj: void a(int,java.lang.String)
+cn.waps.aj: void a(int)
+cn.waps.aj: void <clinit>()
+cn.waps.al
+cn.waps.al: java.lang.String e
+cn.waps.al: int a
+cn.waps.al: cn.waps.aj b
+cn.waps.al: java.lang.String f
+cn.waps.al: android.content.SharedPreferences g
+cn.waps.al: android.content.SharedPreferences$Editor h
+cn.waps.al: boolean c
+cn.waps.al: boolean d
+cn.waps.al: al(cn.waps.aj,int,java.lang.String)
+cn.waps.al: al(java.lang.String)
+cn.waps.al: void onReceive(android.content.Context,android.content.Intent)
+cn.waps.al: void <clinit>()
+cn.waps.am
+cn.waps.am: boolean b
+cn.waps.am: cn.waps.SDKUtils c
+cn.waps.am: android.content.Context d
+cn.waps.am: java.lang.String a
+cn.waps.am: am(android.content.Context)
+cn.waps.am: am()
+cn.waps.am: boolean a()
+cn.waps.am: void a(boolean)
+cn.waps.am: java.lang.String a(java.lang.String,java.lang.String)
+cn.waps.am: java.lang.String b(java.lang.String,java.lang.String)
+cn.waps.am: byte[] a(java.lang.String)
+cn.waps.am: java.lang.String a(byte[],java.lang.String)
+cn.waps.am: java.lang.String b()
+cn.waps.am: void <clinit>()
+cn.waps.an
+cn.waps.an: boolean a
+cn.waps.an: byte[] a(java.lang.String,int)
+cn.waps.an: byte[] a(byte[],int)
+cn.waps.an: byte[] a(byte[],int,int,int)
+cn.waps.an: java.lang.String b(byte[],int)
+cn.waps.an: byte[] c(byte[],int)
+cn.waps.an: byte[] b(byte[],int,int,int)
+cn.waps.an: an()
+cn.waps.an: void <clinit>()
+cn.waps.ar
+cn.waps.ar: java.lang.String a
+cn.waps.ar: java.lang.String b
+cn.waps.ar: java.lang.String c
+cn.waps.ar: java.lang.String d
+cn.waps.ar: java.lang.String e
+cn.waps.ar: java.lang.String f
+cn.waps.ar: java.lang.String g
+cn.waps.ar: java.lang.String h
+cn.waps.ar: java.lang.String i
+cn.waps.ar: java.lang.String j
+cn.waps.ar: ar()
+cn.waps.ar: void a()
+cn.waps.ar: java.lang.String b()
+cn.waps.ar: java.lang.String c()
+cn.waps.ar: java.lang.String d()
+cn.waps.ar: java.lang.String e()
+cn.waps.ar: java.lang.String f()
+cn.waps.ar: java.lang.String g()
+cn.waps.ar: void <clinit>()
+cn.waps.as
+cn.waps.as: java.lang.Thread$UncaughtExceptionHandler a
+cn.waps.as: cn.waps.as b
+cn.waps.as: android.content.Context c
+cn.waps.as: cn.waps.au d
+cn.waps.as: cn.waps.am e
+cn.waps.as: java.lang.String f
+cn.waps.as: java.lang.String g
+cn.waps.as: java.lang.String h
+cn.waps.as: as(android.content.Context,cn.waps.am,java.lang.String)
+cn.waps.as: cn.waps.as a(android.content.Context,cn.waps.am,java.lang.String)
+cn.waps.as: void a()
+cn.waps.as: void uncaughtException(java.lang.Thread,java.lang.Throwable)
+cn.waps.as: boolean a(java.lang.Throwable)
+cn.waps.as: void a(android.content.Context)
+cn.waps.as: java.lang.String d()
+cn.waps.as: void b(java.lang.Throwable)
+cn.waps.as: android.content.Context b()
+cn.waps.as: java.lang.String a(cn.waps.as)
+cn.waps.as: java.lang.String b(cn.waps.as)
+cn.waps.as: cn.waps.am c()
+cn.waps.as: java.lang.String c(cn.waps.as)
+cn.waps.as: void <clinit>()
+cn.waps.av
+cn.waps.av: av()
+cn.waps.av: java.util.Map a()
+cn.waps.av: java.util.Map b()
+cn.waps.ba
+cn.waps.ba: int a
+cn.waps.ba: android.content.Context b
+cn.waps.ba: cn.waps.MiniAdView c
+cn.waps.ba: ba(cn.waps.MiniAdView,android.content.Context,int)
+cn.waps.ba: void onClick(android.view.View)
+cn.waps.bg
+cn.waps.bg: android.content.Context g
+cn.waps.bg: cn.waps.SDKUtils h
+cn.waps.bg: java.lang.String i
+cn.waps.bg: java.io.File a
+cn.waps.bg: android.app.AlertDialog b
+cn.waps.bg: java.util.Map j
+cn.waps.bg: java.lang.String c
+cn.waps.bg: java.lang.String d
+cn.waps.bg: cn.waps.al e
+cn.waps.bg: boolean f
+cn.waps.bg: bg(android.content.Context)
+cn.waps.bg: java.lang.Object[] a(java.lang.String,java.util.List,org.apache.http.entity.ByteArrayEntity)
+cn.waps.bg: java.lang.Object[] b(java.lang.String,java.util.List,org.apache.http.entity.ByteArrayEntity)
+cn.waps.bg: java.lang.Object[] c(java.lang.String,java.util.List,org.apache.http.entity.ByteArrayEntity)
+cn.waps.bg: java.lang.Object[] a(java.lang.String,org.apache.http.HttpHost,org.apache.http.HttpHost,org.apache.http.entity.ByteArrayEntity,java.util.List)
+cn.waps.bg: boolean a(android.webkit.WebView,java.lang.String)
+cn.waps.bg: android.content.Intent a(android.content.Context,java.lang.String)
+cn.waps.bg: java.lang.String a(java.lang.String,java.lang.String)
+cn.waps.bg: java.lang.String a(java.lang.String,int)
+cn.waps.bg: void a(java.lang.String,java.lang.String,java.lang.String)
+cn.waps.bg: boolean a(java.lang.String)
+cn.waps.bg: java.lang.String b(android.content.Context,java.lang.String)
+cn.waps.bg: java.lang.String c(android.content.Context,java.lang.String)
+cn.waps.bg: void a(android.content.Context,java.lang.String,java.lang.String)
+cn.waps.bg: java.lang.String a(android.content.Context)
+cn.waps.bg: java.lang.String b(java.lang.String)
+cn.waps.bg: java.lang.String c(java.lang.String)
+cn.waps.bg: java.lang.String a(cn.waps.bg,java.lang.String)
+cn.waps.bg: java.util.Map a()
+cn.waps.bg: java.util.Map a(java.util.Map)
+cn.waps.f
+cn.waps.f: float a
+cn.waps.f: float b
+cn.waps.f: float c
+cn.waps.f: float d
+cn.waps.f: float e
+cn.waps.f: boolean f
+cn.waps.f: android.graphics.Camera g
+cn.waps.f: f(float,float,float,float,float,boolean)
+cn.waps.f: void initialize(int,int,int,int)
+cn.waps.f: void applyTransformation(float,android.view.animation.Transformation)
+com.baidu.inf.iis.bcs.BaiduBCS
+com.baidu.inf.iis.bcs.BaiduBCS: org.apache.commons.logging.Log log
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.http.BCSHttpClient bcsHttpClient
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.auth.BCSCredentials credentials
+com.baidu.inf.iis.bcs.BaiduBCS: java.lang.String endpoint
+com.baidu.inf.iis.bcs.BaiduBCS: BaiduBCS(com.baidu.inf.iis.bcs.auth.BCSCredentials,java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: BaiduBCS(com.baidu.inf.iis.bcs.auth.BCSCredentials,java.lang.String,com.baidu.inf.iis.bcs.http.ClientConfiguration)
+com.baidu.inf.iis.bcs.BaiduBCS: void setCredentials(com.baidu.inf.iis.bcs.auth.BCSCredentials)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.auth.BCSCredentials getCredentials()
+com.baidu.inf.iis.bcs.BaiduBCS: void setDefaultEncoding(java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: java.lang.String getDefaultEncoding()
+com.baidu.inf.iis.bcs.BaiduBCS: void setEndpoint(java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: java.lang.String getEndpoint()
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse copyObject(com.baidu.inf.iis.bcs.request.CopyObjectRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse copyObject(com.baidu.inf.iis.bcs.model.Resource,com.baidu.inf.iis.bcs.model.Resource)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse copyObject(com.baidu.inf.iis.bcs.model.Resource,com.baidu.inf.iis.bcs.model.Resource,com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse createBucket(com.baidu.inf.iis.bcs.request.CreateBucketRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse createBucket(java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse deleteBucket(com.baidu.inf.iis.bcs.request.DeleteBucketRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse deleteBucket(java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse deleteObject(com.baidu.inf.iis.bcs.request.DeleteObjectRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse deleteObject(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse getBucketPolicy(com.baidu.inf.iis.bcs.request.GetBucketPolicyRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse getBucketPolicy(java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse getObject(com.baidu.inf.iis.bcs.request.GetObjectRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse getObject(com.baidu.inf.iis.bcs.request.GetObjectRequest,java.io.File)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse getObject(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse getObjectMetadata(com.baidu.inf.iis.bcs.request.GetObjectMetadataRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse getObjectMetadata(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: boolean doesObjectExist(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse getObjectPolicy(com.baidu.inf.iis.bcs.request.GetObjectPolicyRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse getObjectPolicy(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse listBucket(com.baidu.inf.iis.bcs.request.ListBucketRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse listObject(com.baidu.inf.iis.bcs.request.ListObjectRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse putBucketPolicy(com.baidu.inf.iis.bcs.request.PutBucketPolicyRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse putBucketPolicy(java.lang.String,com.baidu.inf.iis.bcs.policy.Policy)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse putBucketPolicy(java.lang.String,com.baidu.inf.iis.bcs.model.X_BS_ACL)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse putObject(com.baidu.inf.iis.bcs.request.PutObjectRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse putObject(java.lang.String,java.lang.String,java.io.File)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse putObject(java.lang.String,java.lang.String,java.io.InputStream,com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse putObjectPolicy(com.baidu.inf.iis.bcs.request.PutObjectPolicyRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse putObjectPolicy(java.lang.String,java.lang.String,com.baidu.inf.iis.bcs.policy.Policy)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse putObjectPolicy(java.lang.String,java.lang.String,com.baidu.inf.iis.bcs.model.X_BS_ACL)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse putSuperfile(com.baidu.inf.iis.bcs.request.PutSuperfileRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse putSuperfile(java.lang.String,java.lang.String,java.util.List)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse putSuperfile(java.lang.String,java.lang.String,com.baidu.inf.iis.bcs.model.ObjectMetadata,java.util.List)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse setObjectMetadata(com.baidu.inf.iis.bcs.request.SetObjectMetadataRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.response.BaiduBCSResponse setObjectMetadata(java.lang.String,java.lang.String,com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.BaiduBCS: java.lang.String generateUrl(com.baidu.inf.iis.bcs.request.GenerateUrlRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: com.baidu.inf.iis.bcs.http.BCSHttpRequest createHttpRequest(com.baidu.inf.iis.bcs.request.BaiduBCSRequest)
+com.baidu.inf.iis.bcs.BaiduBCS: void populateRequestMetadata(com.baidu.inf.iis.bcs.http.BCSHttpRequest,com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.BaiduBCS: void assertParameterNotNull(java.lang.Object,java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: java.lang.String buildResourcePath(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.BaiduBCS: void <clinit>()
+com.baidu.inf.iis.bcs.auth.BCSCredentials
+com.baidu.inf.iis.bcs.auth.BCSCredentials: java.lang.String accessKey
+com.baidu.inf.iis.bcs.auth.BCSCredentials: java.lang.String secretKey
+com.baidu.inf.iis.bcs.auth.BCSCredentials: BCSCredentials(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.auth.BCSCredentials: java.lang.String getAccessKey()
+com.baidu.inf.iis.bcs.auth.BCSCredentials: java.lang.String getSecretKey()
+com.baidu.inf.iis.bcs.auth.BCSSignCondition
+com.baidu.inf.iis.bcs.auth.BCSSignCondition: java.lang.Long time
+com.baidu.inf.iis.bcs.auth.BCSSignCondition: java.lang.String ip
+com.baidu.inf.iis.bcs.auth.BCSSignCondition: java.lang.Long size
+com.baidu.inf.iis.bcs.auth.BCSSignCondition: BCSSignCondition()
+com.baidu.inf.iis.bcs.auth.BCSSignCondition: java.lang.String getIp()
+com.baidu.inf.iis.bcs.auth.BCSSignCondition: java.lang.Long getSize()
+com.baidu.inf.iis.bcs.auth.BCSSignCondition: java.lang.Long getTime()
+com.baidu.inf.iis.bcs.auth.BCSSignCondition: void setIp(java.lang.String)
+com.baidu.inf.iis.bcs.auth.BCSSignCondition: void setSize(java.lang.Long)
+com.baidu.inf.iis.bcs.auth.BCSSignCondition: void setTime(java.lang.Long)
+com.baidu.inf.iis.bcs.auth.BCSSigner
+com.baidu.inf.iis.bcs.auth.BCSSigner: BCSSigner()
+com.baidu.inf.iis.bcs.auth.BCSSigner: void main(java.lang.String[])
+com.baidu.inf.iis.bcs.auth.BCSSigner: void sign(com.baidu.inf.iis.bcs.request.BaiduBCSRequest,com.baidu.inf.iis.bcs.http.BCSHttpRequest,com.baidu.inf.iis.bcs.auth.BCSCredentials)
+com.baidu.inf.iis.bcs.auth.BCSSigner: void sign(com.baidu.inf.iis.bcs.request.BaiduBCSRequest,com.baidu.inf.iis.bcs.http.BCSHttpRequest,com.baidu.inf.iis.bcs.auth.BCSCredentials,com.baidu.inf.iis.bcs.auth.BCSSignCondition)
+com.baidu.inf.iis.bcs.auth.SigningAlgorithm
+com.baidu.inf.iis.bcs.auth.SigningAlgorithm: com.baidu.inf.iis.bcs.auth.SigningAlgorithm HmacSHA1
+com.baidu.inf.iis.bcs.auth.SigningAlgorithm: com.baidu.inf.iis.bcs.auth.SigningAlgorithm HmacSHA256
+com.baidu.inf.iis.bcs.auth.SigningAlgorithm: java.lang.String name
+com.baidu.inf.iis.bcs.auth.SigningAlgorithm: com.baidu.inf.iis.bcs.auth.SigningAlgorithm[] $VALUES
+com.baidu.inf.iis.bcs.auth.SigningAlgorithm: com.baidu.inf.iis.bcs.auth.SigningAlgorithm[] values()
+com.baidu.inf.iis.bcs.auth.SigningAlgorithm: com.baidu.inf.iis.bcs.auth.SigningAlgorithm valueOf(java.lang.String)
+com.baidu.inf.iis.bcs.auth.SigningAlgorithm: SigningAlgorithm(java.lang.String,int,java.lang.String)
+com.baidu.inf.iis.bcs.auth.SigningAlgorithm: java.lang.String toString()
+com.baidu.inf.iis.bcs.auth.SigningAlgorithm: void <clinit>()
+com.baidu.inf.iis.bcs.handler.BucketListResponseHandler
+com.baidu.inf.iis.bcs.handler.BucketListResponseHandler: BucketListResponseHandler()
+com.baidu.inf.iis.bcs.handler.BucketListResponseHandler: com.baidu.inf.iis.bcs.response.BaiduBCSResponse handle(com.baidu.inf.iis.bcs.http.BCSHttpResponse)
+com.baidu.inf.iis.bcs.handler.ErrorResponseHandler
+com.baidu.inf.iis.bcs.handler.ErrorResponseHandler: org.apache.commons.logging.Log log
+com.baidu.inf.iis.bcs.handler.ErrorResponseHandler: ErrorResponseHandler()
+com.baidu.inf.iis.bcs.handler.ErrorResponseHandler: com.baidu.inf.iis.bcs.response.BaiduBCSResponse handle(com.baidu.inf.iis.bcs.http.BCSHttpResponse)
+com.baidu.inf.iis.bcs.handler.ErrorResponseHandler: void <clinit>()
+com.baidu.inf.iis.bcs.handler.HttpResponseHandler
+com.baidu.inf.iis.bcs.handler.HttpResponseHandler: org.apache.commons.logging.Log log
+com.baidu.inf.iis.bcs.handler.HttpResponseHandler: java.util.Set ignoredHeaders
+com.baidu.inf.iis.bcs.handler.HttpResponseHandler: HttpResponseHandler()
+com.baidu.inf.iis.bcs.handler.HttpResponseHandler: java.lang.String getResponseContentByStr(com.baidu.inf.iis.bcs.http.BCSHttpResponse)
+com.baidu.inf.iis.bcs.handler.HttpResponseHandler: com.baidu.inf.iis.bcs.response.BaiduBCSResponse handle(com.baidu.inf.iis.bcs.http.BCSHttpResponse)
+com.baidu.inf.iis.bcs.handler.HttpResponseHandler: com.baidu.inf.iis.bcs.response.BaiduBCSResponse parseResponseMetadata(com.baidu.inf.iis.bcs.http.BCSHttpResponse)
+com.baidu.inf.iis.bcs.handler.HttpResponseHandler: void populateObjectMetadata(com.baidu.inf.iis.bcs.http.BCSHttpResponse,com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.handler.HttpResponseHandler: boolean isNeedsConnectionLeftOpen()
+com.baidu.inf.iis.bcs.handler.HttpResponseHandler: void <clinit>()
+com.baidu.inf.iis.bcs.handler.ObjectListResponseHandler
+com.baidu.inf.iis.bcs.handler.ObjectListResponseHandler: ObjectListResponseHandler()
+com.baidu.inf.iis.bcs.handler.ObjectListResponseHandler: com.baidu.inf.iis.bcs.response.BaiduBCSResponse handle(com.baidu.inf.iis.bcs.http.BCSHttpResponse)
+com.baidu.inf.iis.bcs.handler.ObjectMetadataResponseHandler
+com.baidu.inf.iis.bcs.handler.ObjectMetadataResponseHandler: ObjectMetadataResponseHandler()
+com.baidu.inf.iis.bcs.handler.ObjectMetadataResponseHandler: com.baidu.inf.iis.bcs.response.BaiduBCSResponse handle(com.baidu.inf.iis.bcs.http.BCSHttpResponse)
+com.baidu.inf.iis.bcs.handler.ObjectResponseHandler
+com.baidu.inf.iis.bcs.handler.ObjectResponseHandler: ObjectResponseHandler()
+com.baidu.inf.iis.bcs.handler.ObjectResponseHandler: com.baidu.inf.iis.bcs.response.BaiduBCSResponse handle(com.baidu.inf.iis.bcs.http.BCSHttpResponse)
+com.baidu.inf.iis.bcs.handler.ObjectResponseHandler: boolean isNeedsConnectionLeftOpen()
+com.baidu.inf.iis.bcs.handler.PolicyResponseHandler
+com.baidu.inf.iis.bcs.handler.PolicyResponseHandler: PolicyResponseHandler()
+com.baidu.inf.iis.bcs.handler.PolicyResponseHandler: com.baidu.inf.iis.bcs.response.BaiduBCSResponse handle(com.baidu.inf.iis.bcs.http.BCSHttpResponse)
+com.baidu.inf.iis.bcs.handler.StringResponseHandler
+com.baidu.inf.iis.bcs.handler.StringResponseHandler: StringResponseHandler()
+com.baidu.inf.iis.bcs.handler.StringResponseHandler: com.baidu.inf.iis.bcs.response.BaiduBCSResponse handle(com.baidu.inf.iis.bcs.http.BCSHttpResponse)
+com.baidu.inf.iis.bcs.handler.VoidResponseHandler
+com.baidu.inf.iis.bcs.handler.VoidResponseHandler: VoidResponseHandler()
+com.baidu.inf.iis.bcs.handler.VoidResponseHandler: com.baidu.inf.iis.bcs.response.BaiduBCSResponse handle(com.baidu.inf.iis.bcs.http.BCSHttpResponse)
+com.baidu.inf.iis.bcs.http.BCSHttpClient
+com.baidu.inf.iis.bcs.http.BCSHttpClient: int MAX_BACKOFF_IN_MILLISECONDS
+com.baidu.inf.iis.bcs.http.BCSHttpClient: org.apache.commons.logging.Log log
+com.baidu.inf.iis.bcs.http.BCSHttpClient: com.baidu.inf.iis.bcs.http.HttpRequestFactory httpRequestFactory
+com.baidu.inf.iis.bcs.http.BCSHttpClient: com.baidu.inf.iis.bcs.http.HttpClientFactory httpClientFactory
+com.baidu.inf.iis.bcs.http.BCSHttpClient: com.baidu.inf.iis.bcs.http.ClientConfiguration config
+com.baidu.inf.iis.bcs.http.BCSHttpClient: org.apache.http.client.HttpClient httpClient
+com.baidu.inf.iis.bcs.http.BCSHttpClient: com.baidu.inf.iis.bcs.handler.ErrorResponseHandler errorResponseHandler
+com.baidu.inf.iis.bcs.http.BCSHttpClient: BCSHttpClient(com.baidu.inf.iis.bcs.http.ClientConfiguration)
+com.baidu.inf.iis.bcs.http.BCSHttpClient: com.baidu.inf.iis.bcs.http.BCSHttpResponse createBCSHttpResponse(org.apache.http.HttpResponse)
+com.baidu.inf.iis.bcs.http.BCSHttpClient: com.baidu.inf.iis.bcs.response.BaiduBCSResponse execute(com.baidu.inf.iis.bcs.http.BCSHttpRequest,com.baidu.inf.iis.bcs.handler.HttpResponseHandler)
+com.baidu.inf.iis.bcs.http.BCSHttpClient: com.baidu.inf.iis.bcs.response.BaiduBCSResponse handleErrorHttpResponse(com.baidu.inf.iis.bcs.http.BCSHttpRequest,org.apache.http.HttpResponse,com.baidu.inf.iis.bcs.handler.HttpResponseHandler)
+com.baidu.inf.iis.bcs.http.BCSHttpClient: com.baidu.inf.iis.bcs.response.BaiduBCSResponse handleHttpResponse(com.baidu.inf.iis.bcs.http.BCSHttpRequest,org.apache.http.HttpResponse,com.baidu.inf.iis.bcs.handler.HttpResponseHandler)
+com.baidu.inf.iis.bcs.http.BCSHttpClient: boolean isRequestSuccessful(org.apache.http.HttpResponse)
+com.baidu.inf.iis.bcs.http.BCSHttpClient: com.baidu.inf.iis.bcs.http.HttpRequestFactory getHttpRequestFactory()
+com.baidu.inf.iis.bcs.http.BCSHttpClient: void setHttpRequestFactory(com.baidu.inf.iis.bcs.http.HttpRequestFactory)
+com.baidu.inf.iis.bcs.http.BCSHttpClient: com.baidu.inf.iis.bcs.http.ClientConfiguration getConfig()
+com.baidu.inf.iis.bcs.http.BCSHttpClient: boolean shouldRetry(java.lang.Exception,int)
+com.baidu.inf.iis.bcs.http.BCSHttpClient: void pauseExponentially(int)
+com.baidu.inf.iis.bcs.http.BCSHttpClient: void shutdown()
+com.baidu.inf.iis.bcs.http.BCSHttpClient: void finalize()
+com.baidu.inf.iis.bcs.http.BCSHttpClient: void <clinit>()
+com.baidu.inf.iis.bcs.http.BCSHttpRequest
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: void addHeader(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: void addParameter(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: java.io.InputStream getContent()
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: java.lang.String getEndpoint()
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: java.util.Map getHeaders()
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: com.baidu.inf.iis.bcs.http.HttpMethodName getHttpMethod()
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: com.baidu.inf.iis.bcs.request.BaiduBCSRequest getOriginalRequest()
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: java.util.Map getParameters()
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: java.lang.String getResourcePath()
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: java.lang.String getServiceName()
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: void setContent(java.io.InputStream)
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: void setEndpoint(java.lang.String)
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: void setHttpMethod(com.baidu.inf.iis.bcs.http.HttpMethodName)
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: void setResourcePath(java.lang.String)
+com.baidu.inf.iis.bcs.http.BCSHttpRequest: com.baidu.inf.iis.bcs.http.BCSHttpRequest withParameter(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.http.BCSHttpResponse
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: com.baidu.inf.iis.bcs.http.BCSHttpRequest request
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: java.lang.String statusText
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: int statusCode
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: java.io.InputStream content
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: java.util.Map headers
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: BCSHttpResponse()
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: void addHeader(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: java.io.InputStream getContent()
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: java.util.Map getHeaders()
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: com.baidu.inf.iis.bcs.http.BCSHttpRequest getRequest()
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: int getStatusCode()
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: java.lang.String getStatusText()
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: void setContent(java.io.InputStream)
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: void setRequest(com.baidu.inf.iis.bcs.http.BCSHttpRequest)
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: void setStatusCode(int)
+com.baidu.inf.iis.bcs.http.BCSHttpResponse: void setStatusText(java.lang.String)
+com.baidu.inf.iis.bcs.http.ClientConfiguration
+com.baidu.inf.iis.bcs.http.ClientConfiguration: java.lang.String userAgent
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int maxErrorRetry
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.Protocol protocol
+com.baidu.inf.iis.bcs.http.ClientConfiguration: java.lang.String proxyHost
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int proxyPort
+com.baidu.inf.iis.bcs.http.ClientConfiguration: java.lang.String proxyUsername
+com.baidu.inf.iis.bcs.http.ClientConfiguration: java.lang.String proxyPassword
+com.baidu.inf.iis.bcs.http.ClientConfiguration: java.lang.String proxyDomain
+com.baidu.inf.iis.bcs.http.ClientConfiguration: java.lang.String proxyWorkstation
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int maxConnections
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int maxConnectionsPerRoute
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int socketTimeout
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int connectionTimeout
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int socketSendBufferSizeHint
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int socketReceiveBufferSizeHint
+com.baidu.inf.iis.bcs.http.ClientConfiguration: ClientConfiguration()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int getConnectionTimeout()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int getMaxConnections()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int getMaxConnectionsPerRoute()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int getMaxErrorRetry()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.Protocol getProtocol()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: java.lang.String getProxyDomain()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: java.lang.String getProxyHost()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: java.lang.String getProxyPassword()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int getProxyPort()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: java.lang.String getProxyUsername()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: java.lang.String getProxyWorkstation()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int[] getSocketBufferSizeHints()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: int getSocketTimeout()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: java.lang.String getUserAgent()
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setUserAgent(java.lang.String)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setConnectionTimeout(int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setMaxConnections(int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setMaxConnectionsPerRoute(int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setMaxErrorRetry(int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setProtocol(com.baidu.inf.iis.bcs.http.Protocol)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setProxyDomain(java.lang.String)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setProxyHost(java.lang.String)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setProxyPassword(java.lang.String)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setProxyPort(int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setProxyUsername(java.lang.String)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setProxyWorkstation(java.lang.String)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setSocketBufferSizeHints(int,int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: void setSocketTimeout(int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withConnectionTimeout(int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withMaxConnections(int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withMaxConnectionsPerRoute(int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withMaxErrorRetry(int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withProtocol(com.baidu.inf.iis.bcs.http.Protocol)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withProxyDomain(java.lang.String)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withProxyHost(java.lang.String)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withProxyPassword(java.lang.String)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withProxyPort(int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withProxyUsername(java.lang.String)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withProxyWorkstation(java.lang.String)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withSocketBufferSizeHints(int,int)
+com.baidu.inf.iis.bcs.http.ClientConfiguration: com.baidu.inf.iis.bcs.http.ClientConfiguration withSocketTimeout(int)
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.lang.String resourcePath
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.util.Map parameters
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.util.Map headers
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.lang.String endpoint
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.lang.String serviceName
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: com.baidu.inf.iis.bcs.request.BaiduBCSRequest originalRequest
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: com.baidu.inf.iis.bcs.http.HttpMethodName httpMethod
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.io.InputStream content
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: DefaultBCSHttpRequest()
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: DefaultBCSHttpRequest(com.baidu.inf.iis.bcs.request.BaiduBCSRequest)
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: void addHeader(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: void addParameter(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.io.InputStream getContent()
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.lang.String getEndpoint()
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.util.Map getHeaders()
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: com.baidu.inf.iis.bcs.http.HttpMethodName getHttpMethod()
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: com.baidu.inf.iis.bcs.request.BaiduBCSRequest getOriginalRequest()
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.util.Map getParameters()
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.lang.String getResourcePath()
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.lang.String getServiceName()
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: void setContent(java.io.InputStream)
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: void setEndpoint(java.lang.String)
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: void setHttpMethod(com.baidu.inf.iis.bcs.http.HttpMethodName)
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: void setResourcePath(java.lang.String)
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: java.lang.String toString()
+com.baidu.inf.iis.bcs.http.DefaultBCSHttpRequest: com.baidu.inf.iis.bcs.http.BCSHttpRequest withParameter(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.http.HttpClientFactory
+com.baidu.inf.iis.bcs.http.HttpClientFactory: HttpClientFactory()
+com.baidu.inf.iis.bcs.http.HttpClientFactory: org.apache.http.client.HttpClient createHttpClient(com.baidu.inf.iis.bcs.http.ClientConfiguration)
+com.baidu.inf.iis.bcs.http.HttpMethodName
+com.baidu.inf.iis.bcs.http.HttpMethodName: com.baidu.inf.iis.bcs.http.HttpMethodName GET
+com.baidu.inf.iis.bcs.http.HttpMethodName: com.baidu.inf.iis.bcs.http.HttpMethodName POST
+com.baidu.inf.iis.bcs.http.HttpMethodName: com.baidu.inf.iis.bcs.http.HttpMethodName PUT
+com.baidu.inf.iis.bcs.http.HttpMethodName: com.baidu.inf.iis.bcs.http.HttpMethodName DELETE
+com.baidu.inf.iis.bcs.http.HttpMethodName: com.baidu.inf.iis.bcs.http.HttpMethodName HEAD
+com.baidu.inf.iis.bcs.http.HttpMethodName: com.baidu.inf.iis.bcs.http.HttpMethodName[] $VALUES
+com.baidu.inf.iis.bcs.http.HttpMethodName: com.baidu.inf.iis.bcs.http.HttpMethodName[] values()
+com.baidu.inf.iis.bcs.http.HttpMethodName: com.baidu.inf.iis.bcs.http.HttpMethodName valueOf(java.lang.String)
+com.baidu.inf.iis.bcs.http.HttpMethodName: HttpMethodName(java.lang.String,int)
+com.baidu.inf.iis.bcs.http.HttpMethodName: void <clinit>()
+com.baidu.inf.iis.bcs.http.HttpRequestFactory
+com.baidu.inf.iis.bcs.http.HttpRequestFactory: org.apache.commons.logging.Log log
+com.baidu.inf.iis.bcs.http.HttpRequestFactory: HttpRequestFactory()
+com.baidu.inf.iis.bcs.http.HttpRequestFactory: org.apache.http.client.methods.HttpRequestBase createHttpRequestBase(com.baidu.inf.iis.bcs.http.ClientConfiguration,com.baidu.inf.iis.bcs.http.BCSHttpRequest)
+com.baidu.inf.iis.bcs.http.HttpRequestFactory: java.lang.String buildUri(com.baidu.inf.iis.bcs.http.ClientConfiguration,com.baidu.inf.iis.bcs.http.BCSHttpRequest)
+com.baidu.inf.iis.bcs.http.HttpRequestFactory: java.lang.String encodeParameters(com.baidu.inf.iis.bcs.http.BCSHttpRequest)
+com.baidu.inf.iis.bcs.http.HttpRequestFactory: void <clinit>()
+com.baidu.inf.iis.bcs.http.MD5DigestCalculatingInputStream
+com.baidu.inf.iis.bcs.http.MD5DigestCalculatingInputStream: java.security.MessageDigest digest
+com.baidu.inf.iis.bcs.http.MD5DigestCalculatingInputStream: MD5DigestCalculatingInputStream(java.io.InputStream)
+com.baidu.inf.iis.bcs.http.MD5DigestCalculatingInputStream: byte[] getMd5Digest()
+com.baidu.inf.iis.bcs.http.MD5DigestCalculatingInputStream: int read()
+com.baidu.inf.iis.bcs.http.MD5DigestCalculatingInputStream: int read(byte[],int,int)
+com.baidu.inf.iis.bcs.http.MD5DigestCalculatingInputStream: void reset()
+com.baidu.inf.iis.bcs.http.Protocol
+com.baidu.inf.iis.bcs.http.Protocol: com.baidu.inf.iis.bcs.http.Protocol HTTP
+com.baidu.inf.iis.bcs.http.Protocol: com.baidu.inf.iis.bcs.http.Protocol HTTPS
+com.baidu.inf.iis.bcs.http.Protocol: java.lang.String protocol
+com.baidu.inf.iis.bcs.http.Protocol: com.baidu.inf.iis.bcs.http.Protocol[] $VALUES
+com.baidu.inf.iis.bcs.http.Protocol: com.baidu.inf.iis.bcs.http.Protocol[] values()
+com.baidu.inf.iis.bcs.http.Protocol: com.baidu.inf.iis.bcs.http.Protocol valueOf(java.lang.String)
+com.baidu.inf.iis.bcs.http.Protocol: Protocol(java.lang.String,int,java.lang.String)
+com.baidu.inf.iis.bcs.http.Protocol: java.lang.String toString()
+com.baidu.inf.iis.bcs.http.Protocol: void <clinit>()
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: org.apache.commons.logging.Log log
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: java.io.File file
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: java.io.FileInputStream fis
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: long bytesReadPastMarkPoint
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: long markPoint
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: RepeatableFileInputStream(java.io.File)
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: int available()
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: void close()
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: java.io.InputStream getWrappedInputStream()
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: void mark(int)
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: boolean markSupported()
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: int read()
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: int read(byte[],int,int)
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: void reset()
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: long skip(long)
+com.baidu.inf.iis.bcs.http.RepeatableFileInputStream: void <clinit>()
+com.baidu.inf.iis.bcs.http.RepeatableInputStream
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: org.apache.commons.logging.Log log
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: java.io.InputStream is
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: int bufferSize
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: int bufferOffset
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: long bytesReadPastMark
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: byte[] buffer
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: RepeatableInputStream(java.io.InputStream,int)
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: int available()
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: void close()
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: java.io.InputStream getWrappedInputStream()
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: void mark(int)
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: boolean markSupported()
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: int read()
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: int read(byte[],int,int)
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: void reset()
+com.baidu.inf.iis.bcs.http.RepeatableInputStream: void <clinit>()
+com.baidu.inf.iis.bcs.model.BCSClientException
+com.baidu.inf.iis.bcs.model.BCSClientException: long serialVersionUID
+com.baidu.inf.iis.bcs.model.BCSClientException: BCSClientException(java.lang.String)
+com.baidu.inf.iis.bcs.model.BCSClientException: BCSClientException(java.lang.String,java.lang.Throwable)
+com.baidu.inf.iis.bcs.model.BCSServiceException
+com.baidu.inf.iis.bcs.model.BCSServiceException: long serialVersionUID
+com.baidu.inf.iis.bcs.model.BCSServiceException: java.lang.String requestId
+com.baidu.inf.iis.bcs.model.BCSServiceException: int httpErrorCode
+com.baidu.inf.iis.bcs.model.BCSServiceException: int bcsErrorCode
+com.baidu.inf.iis.bcs.model.BCSServiceException: java.lang.String bcsErrorMessage
+com.baidu.inf.iis.bcs.model.BCSServiceException: BCSServiceException(java.lang.String)
+com.baidu.inf.iis.bcs.model.BCSServiceException: BCSServiceException(java.lang.String,java.lang.Throwable)
+com.baidu.inf.iis.bcs.model.BCSServiceException: int getBcsErrorCode()
+com.baidu.inf.iis.bcs.model.BCSServiceException: java.lang.String getBcsErrorMessage()
+com.baidu.inf.iis.bcs.model.BCSServiceException: java.lang.String getRequestId()
+com.baidu.inf.iis.bcs.model.BCSServiceException: void setBcsErrorCode(int)
+com.baidu.inf.iis.bcs.model.BCSServiceException: void setBcsErrorMessage(java.lang.String)
+com.baidu.inf.iis.bcs.model.BCSServiceException: void setRequestId(java.lang.String)
+com.baidu.inf.iis.bcs.model.BCSServiceException: int getHttpErrorCode()
+com.baidu.inf.iis.bcs.model.BCSServiceException: void setHttpErrorCode(int)
+com.baidu.inf.iis.bcs.model.BucketSummary
+com.baidu.inf.iis.bcs.model.BucketSummary: java.lang.String bucket
+com.baidu.inf.iis.bcs.model.BucketSummary: java.lang.Long cdatatime
+com.baidu.inf.iis.bcs.model.BucketSummary: java.lang.Long usedCapacity
+com.baidu.inf.iis.bcs.model.BucketSummary: java.lang.Long totalCapacity
+com.baidu.inf.iis.bcs.model.BucketSummary: BucketSummary(java.lang.String)
+com.baidu.inf.iis.bcs.model.BucketSummary: java.lang.String getBucket()
+com.baidu.inf.iis.bcs.model.BucketSummary: java.lang.Long getCdatatime()
+com.baidu.inf.iis.bcs.model.BucketSummary: java.lang.Long getTotalCapacity()
+com.baidu.inf.iis.bcs.model.BucketSummary: java.lang.Long getUsedCapacity()
+com.baidu.inf.iis.bcs.model.BucketSummary: void setBucket(java.lang.String)
+com.baidu.inf.iis.bcs.model.BucketSummary: void setCdatatime(java.lang.Long)
+com.baidu.inf.iis.bcs.model.BucketSummary: void setTotalCapacity(java.lang.Long)
+com.baidu.inf.iis.bcs.model.BucketSummary: void setUsedCapacity(java.lang.Long)
+com.baidu.inf.iis.bcs.model.BucketSummary: java.lang.String toString()
+com.baidu.inf.iis.bcs.model.DownloadObject
+com.baidu.inf.iis.bcs.model.DownloadObject: java.lang.String object
+com.baidu.inf.iis.bcs.model.DownloadObject: java.lang.String bucket
+com.baidu.inf.iis.bcs.model.DownloadObject: com.baidu.inf.iis.bcs.model.ObjectMetadata objectMetadata
+com.baidu.inf.iis.bcs.model.DownloadObject: java.io.InputStream content
+com.baidu.inf.iis.bcs.model.DownloadObject: DownloadObject()
+com.baidu.inf.iis.bcs.model.DownloadObject: java.lang.String getBucket()
+com.baidu.inf.iis.bcs.model.DownloadObject: java.io.InputStream getContent()
+com.baidu.inf.iis.bcs.model.DownloadObject: java.lang.String getObject()
+com.baidu.inf.iis.bcs.model.DownloadObject: com.baidu.inf.iis.bcs.model.ObjectMetadata getObjectMetadata()
+com.baidu.inf.iis.bcs.model.DownloadObject: void setBucket(java.lang.String)
+com.baidu.inf.iis.bcs.model.DownloadObject: void setContent(java.io.InputStream)
+com.baidu.inf.iis.bcs.model.DownloadObject: void setObject(java.lang.String)
+com.baidu.inf.iis.bcs.model.DownloadObject: void setObjectMetadata(com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.model.Empty
+com.baidu.inf.iis.bcs.model.Empty: Empty()
+com.baidu.inf.iis.bcs.model.ObjectListing
+com.baidu.inf.iis.bcs.model.ObjectListing: java.util.List objectSummaries
+com.baidu.inf.iis.bcs.model.ObjectListing: java.lang.String bucket
+com.baidu.inf.iis.bcs.model.ObjectListing: int objectTotal
+com.baidu.inf.iis.bcs.model.ObjectListing: java.lang.String prefix
+com.baidu.inf.iis.bcs.model.ObjectListing: int start
+com.baidu.inf.iis.bcs.model.ObjectListing: int limit
+com.baidu.inf.iis.bcs.model.ObjectListing: ObjectListing()
+com.baidu.inf.iis.bcs.model.ObjectListing: com.baidu.inf.iis.bcs.model.ObjectListing addObjectSummary(com.baidu.inf.iis.bcs.model.ObjectSummary)
+com.baidu.inf.iis.bcs.model.ObjectListing: java.lang.String getBucket()
+com.baidu.inf.iis.bcs.model.ObjectListing: int getLimit()
+com.baidu.inf.iis.bcs.model.ObjectListing: java.util.List getObjectSummaries()
+com.baidu.inf.iis.bcs.model.ObjectListing: int getObjectTotal()
+com.baidu.inf.iis.bcs.model.ObjectListing: java.lang.String getPrefix()
+com.baidu.inf.iis.bcs.model.ObjectListing: int getStart()
+com.baidu.inf.iis.bcs.model.ObjectListing: void setBucket(java.lang.String)
+com.baidu.inf.iis.bcs.model.ObjectListing: void setLimit(int)
+com.baidu.inf.iis.bcs.model.ObjectListing: void setObjectSummaries(java.util.List)
+com.baidu.inf.iis.bcs.model.ObjectListing: void setObjectTotal(int)
+com.baidu.inf.iis.bcs.model.ObjectListing: void setPrefix(java.lang.String)
+com.baidu.inf.iis.bcs.model.ObjectListing: void setStart(int)
+com.baidu.inf.iis.bcs.model.ObjectMetadata
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.util.Map userMetadata
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.util.Map metadata
+com.baidu.inf.iis.bcs.model.ObjectMetadata: ObjectMetadata()
+com.baidu.inf.iis.bcs.model.ObjectMetadata: void addUserMetadata(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.lang.String getCacheControl()
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.lang.String getContentDisposition()
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.lang.String getContentEncoding()
+com.baidu.inf.iis.bcs.model.ObjectMetadata: long getContentLength()
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.util.Date getLastModified()
+com.baidu.inf.iis.bcs.model.ObjectMetadata: void setLastModified(java.util.Date)
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.lang.String getContentMD5()
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.lang.String getContentType()
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.lang.String getETag()
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.util.Map getRawMetadata()
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.util.Map getUserMetadata()
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.lang.String getVersionId()
+com.baidu.inf.iis.bcs.model.ObjectMetadata: void setCacheControl(java.lang.String)
+com.baidu.inf.iis.bcs.model.ObjectMetadata: void setContentDisposition(java.lang.String)
+com.baidu.inf.iis.bcs.model.ObjectMetadata: void setContentEncoding(java.lang.String)
+com.baidu.inf.iis.bcs.model.ObjectMetadata: void setContentLength(long)
+com.baidu.inf.iis.bcs.model.ObjectMetadata: void setContentMD5(java.lang.String)
+com.baidu.inf.iis.bcs.model.ObjectMetadata: void setContentType(java.lang.String)
+com.baidu.inf.iis.bcs.model.ObjectMetadata: void setHeader(java.lang.String,java.lang.Object)
+com.baidu.inf.iis.bcs.model.ObjectMetadata: void setUserMetadata(java.util.Map)
+com.baidu.inf.iis.bcs.model.ObjectMetadata: java.lang.String toString()
+com.baidu.inf.iis.bcs.model.ObjectSummary
+com.baidu.inf.iis.bcs.model.ObjectSummary: java.lang.String name
+com.baidu.inf.iis.bcs.model.ObjectSummary: java.lang.Long size
+com.baidu.inf.iis.bcs.model.ObjectSummary: java.lang.Long lastModifiedTime
+com.baidu.inf.iis.bcs.model.ObjectSummary: java.lang.String versionKey
+com.baidu.inf.iis.bcs.model.ObjectSummary: boolean isSuperfile
+com.baidu.inf.iis.bcs.model.ObjectSummary: java.lang.String parentDir
+com.baidu.inf.iis.bcs.model.ObjectSummary: boolean isDir
+com.baidu.inf.iis.bcs.model.ObjectSummary: ObjectSummary()
+com.baidu.inf.iis.bcs.model.ObjectSummary: java.lang.Long getLastModifiedTime()
+com.baidu.inf.iis.bcs.model.ObjectSummary: java.lang.String getName()
+com.baidu.inf.iis.bcs.model.ObjectSummary: java.lang.String getParentDir()
+com.baidu.inf.iis.bcs.model.ObjectSummary: java.lang.Long getSize()
+com.baidu.inf.iis.bcs.model.ObjectSummary: java.lang.String getVersionKey()
+com.baidu.inf.iis.bcs.model.ObjectSummary: boolean isDir()
+com.baidu.inf.iis.bcs.model.ObjectSummary: boolean isSuperfile()
+com.baidu.inf.iis.bcs.model.ObjectSummary: void setIsDir(boolean)
+com.baidu.inf.iis.bcs.model.ObjectSummary: void setLastModifiedTime(java.lang.Long)
+com.baidu.inf.iis.bcs.model.ObjectSummary: void setName(java.lang.String)
+com.baidu.inf.iis.bcs.model.ObjectSummary: void setParentDir(java.lang.String)
+com.baidu.inf.iis.bcs.model.ObjectSummary: void setSize(java.lang.Long)
+com.baidu.inf.iis.bcs.model.ObjectSummary: void setSuperfile(boolean)
+com.baidu.inf.iis.bcs.model.ObjectSummary: void setVersionKey(java.lang.String)
+com.baidu.inf.iis.bcs.model.ObjectSummary: java.lang.String toString()
+com.baidu.inf.iis.bcs.model.Pair
+com.baidu.inf.iis.bcs.model.Pair: java.lang.Object first
+com.baidu.inf.iis.bcs.model.Pair: java.lang.Object second
+com.baidu.inf.iis.bcs.model.Pair: Pair(java.lang.Object,java.lang.Object)
+com.baidu.inf.iis.bcs.model.Pair: java.lang.Object getFirst()
+com.baidu.inf.iis.bcs.model.Pair: java.lang.Object getSecond()
+com.baidu.inf.iis.bcs.model.Pair: void setFirst(java.lang.Object)
+com.baidu.inf.iis.bcs.model.Pair: void setSecond(java.lang.Object)
+com.baidu.inf.iis.bcs.model.Pair: java.util.List toArrayList()
+com.baidu.inf.iis.bcs.model.Resource
+com.baidu.inf.iis.bcs.model.Resource: java.lang.String bucket
+com.baidu.inf.iis.bcs.model.Resource: java.lang.String object
+com.baidu.inf.iis.bcs.model.Resource: Resource(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.model.Resource: java.lang.String getBucket()
+com.baidu.inf.iis.bcs.model.Resource: java.lang.String getObject()
+com.baidu.inf.iis.bcs.model.Resource: void setBucket(java.lang.String)
+com.baidu.inf.iis.bcs.model.Resource: void setObject(java.lang.String)
+com.baidu.inf.iis.bcs.model.SuperfileSubObject
+com.baidu.inf.iis.bcs.model.SuperfileSubObject: java.lang.String bucket
+com.baidu.inf.iis.bcs.model.SuperfileSubObject: java.lang.String object
+com.baidu.inf.iis.bcs.model.SuperfileSubObject: java.lang.String etag
+com.baidu.inf.iis.bcs.model.SuperfileSubObject: SuperfileSubObject(java.lang.String,java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.model.SuperfileSubObject: java.lang.String getBucket()
+com.baidu.inf.iis.bcs.model.SuperfileSubObject: java.lang.String getEtag()
+com.baidu.inf.iis.bcs.model.SuperfileSubObject: java.lang.String getObject()
+com.baidu.inf.iis.bcs.model.SuperfileSubObject: void setBucket(java.lang.String)
+com.baidu.inf.iis.bcs.model.SuperfileSubObject: void setEtag(java.lang.String)
+com.baidu.inf.iis.bcs.model.SuperfileSubObject: void setObject(java.lang.String)
+com.baidu.inf.iis.bcs.model.X_BS_ACL
+com.baidu.inf.iis.bcs.model.X_BS_ACL: com.baidu.inf.iis.bcs.model.X_BS_ACL Private
+com.baidu.inf.iis.bcs.model.X_BS_ACL: com.baidu.inf.iis.bcs.model.X_BS_ACL PublicRead
+com.baidu.inf.iis.bcs.model.X_BS_ACL: com.baidu.inf.iis.bcs.model.X_BS_ACL PublicWrite
+com.baidu.inf.iis.bcs.model.X_BS_ACL: com.baidu.inf.iis.bcs.model.X_BS_ACL PublicReadWrite
+com.baidu.inf.iis.bcs.model.X_BS_ACL: com.baidu.inf.iis.bcs.model.X_BS_ACL PublicControl
+com.baidu.inf.iis.bcs.model.X_BS_ACL: java.lang.String x_bs_acl
+com.baidu.inf.iis.bcs.model.X_BS_ACL: com.baidu.inf.iis.bcs.model.X_BS_ACL[] $VALUES
+com.baidu.inf.iis.bcs.model.X_BS_ACL: com.baidu.inf.iis.bcs.model.X_BS_ACL[] values()
+com.baidu.inf.iis.bcs.model.X_BS_ACL: com.baidu.inf.iis.bcs.model.X_BS_ACL valueOf(java.lang.String)
+com.baidu.inf.iis.bcs.model.X_BS_ACL: X_BS_ACL(java.lang.String,int,java.lang.String)
+com.baidu.inf.iis.bcs.model.X_BS_ACL: java.lang.String toString()
+com.baidu.inf.iis.bcs.model.X_BS_ACL: void <clinit>()
+com.baidu.inf.iis.bcs.policy.Policy
+com.baidu.inf.iis.bcs.policy.Policy: org.apache.commons.logging.Log log
+com.baidu.inf.iis.bcs.policy.Policy: java.util.List statements
+com.baidu.inf.iis.bcs.policy.Policy: java.lang.String originalJsonStr
+com.baidu.inf.iis.bcs.policy.Policy: Policy()
+com.baidu.inf.iis.bcs.policy.Policy: void main(java.lang.String[])
+com.baidu.inf.iis.bcs.policy.Policy: com.baidu.inf.iis.bcs.policy.Policy addStatements(com.baidu.inf.iis.bcs.policy.Statement)
+com.baidu.inf.iis.bcs.policy.Policy: com.baidu.inf.iis.bcs.policy.Policy buildJsonStr(java.lang.String)
+com.baidu.inf.iis.bcs.policy.Policy: java.lang.String getOriginalJsonStr()
+com.baidu.inf.iis.bcs.policy.Policy: java.util.List getStatements()
+com.baidu.inf.iis.bcs.policy.Policy: void setStatements(java.util.List)
+com.baidu.inf.iis.bcs.policy.Policy: java.lang.String toJson()
+com.baidu.inf.iis.bcs.policy.Policy: void <clinit>()
+com.baidu.inf.iis.bcs.policy.PolicyAction
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction all
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction put_bucket_policy
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction get_bucket_policy
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction list_object
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction delete_bucket
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction get_object
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction put_object
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction delete_object
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction put_object_policy
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction get_object_policy
+com.baidu.inf.iis.bcs.policy.PolicyAction: java.lang.String value
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction[] $VALUES
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction[] values()
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction valueOf(java.lang.String)
+com.baidu.inf.iis.bcs.policy.PolicyAction: com.baidu.inf.iis.bcs.policy.PolicyAction toPolicyAction(java.lang.String)
+com.baidu.inf.iis.bcs.policy.PolicyAction: PolicyAction(java.lang.String,int,java.lang.String)
+com.baidu.inf.iis.bcs.policy.PolicyAction: java.lang.String toString()
+com.baidu.inf.iis.bcs.policy.PolicyAction: void <clinit>()
+com.baidu.inf.iis.bcs.policy.PolicyEffect
+com.baidu.inf.iis.bcs.policy.PolicyEffect: com.baidu.inf.iis.bcs.policy.PolicyEffect allow
+com.baidu.inf.iis.bcs.policy.PolicyEffect: com.baidu.inf.iis.bcs.policy.PolicyEffect deny
+com.baidu.inf.iis.bcs.policy.PolicyEffect: com.baidu.inf.iis.bcs.policy.PolicyEffect[] $VALUES
+com.baidu.inf.iis.bcs.policy.PolicyEffect: com.baidu.inf.iis.bcs.policy.PolicyEffect[] values()
+com.baidu.inf.iis.bcs.policy.PolicyEffect: com.baidu.inf.iis.bcs.policy.PolicyEffect valueOf(java.lang.String)
+com.baidu.inf.iis.bcs.policy.PolicyEffect: PolicyEffect(java.lang.String,int)
+com.baidu.inf.iis.bcs.policy.PolicyEffect: void <clinit>()
+com.baidu.inf.iis.bcs.policy.PolicyIP
+com.baidu.inf.iis.bcs.policy.PolicyIP: java.util.List singleIpList
+com.baidu.inf.iis.bcs.policy.PolicyIP: java.util.List cidrIpList
+com.baidu.inf.iis.bcs.policy.PolicyIP: java.util.List ipRangeList
+com.baidu.inf.iis.bcs.policy.PolicyIP: PolicyIP()
+com.baidu.inf.iis.bcs.policy.PolicyIP: com.baidu.inf.iis.bcs.policy.PolicyIP addCidrIp(java.lang.String)
+com.baidu.inf.iis.bcs.policy.PolicyIP: com.baidu.inf.iis.bcs.policy.PolicyIP addIpRange(com.baidu.inf.iis.bcs.model.Pair)
+com.baidu.inf.iis.bcs.policy.PolicyIP: com.baidu.inf.iis.bcs.policy.PolicyIP addSingleIp(java.lang.String)
+com.baidu.inf.iis.bcs.policy.PolicyIP: java.util.List getCidrIpList()
+com.baidu.inf.iis.bcs.policy.PolicyIP: java.util.List getIpRangeList()
+com.baidu.inf.iis.bcs.policy.PolicyIP: java.util.List getSingleIpList()
+com.baidu.inf.iis.bcs.policy.PolicyIP: boolean isEmpty()
+com.baidu.inf.iis.bcs.policy.PolicyIP: void setCidrIpList(java.util.List)
+com.baidu.inf.iis.bcs.policy.PolicyIP: void setIpRangeList(java.util.List)
+com.baidu.inf.iis.bcs.policy.PolicyIP: void setSingleIpList(java.util.List)
+com.baidu.inf.iis.bcs.policy.PolicyTime
+com.baidu.inf.iis.bcs.policy.PolicyTime: java.util.List singleTimeList
+com.baidu.inf.iis.bcs.policy.PolicyTime: java.util.List timeRangeList
+com.baidu.inf.iis.bcs.policy.PolicyTime: PolicyTime()
+com.baidu.inf.iis.bcs.policy.PolicyTime: com.baidu.inf.iis.bcs.policy.PolicyTime addSingleTime(java.lang.String)
+com.baidu.inf.iis.bcs.policy.PolicyTime: com.baidu.inf.iis.bcs.policy.PolicyTime addTimeRange(com.baidu.inf.iis.bcs.model.Pair)
+com.baidu.inf.iis.bcs.policy.PolicyTime: java.util.List getSingleTimeList()
+com.baidu.inf.iis.bcs.policy.PolicyTime: java.util.List getTimeRangeList()
+com.baidu.inf.iis.bcs.policy.PolicyTime: boolean isEmpty()
+com.baidu.inf.iis.bcs.policy.PolicyTime: void setSingleTimeList(java.util.List)
+com.baidu.inf.iis.bcs.policy.PolicyTime: void setTimeRangeList(java.util.List)
+com.baidu.inf.iis.bcs.policy.Statement
+com.baidu.inf.iis.bcs.policy.Statement: java.util.List user
+com.baidu.inf.iis.bcs.policy.Statement: java.util.List resource
+com.baidu.inf.iis.bcs.policy.Statement: java.util.List action
+com.baidu.inf.iis.bcs.policy.Statement: com.baidu.inf.iis.bcs.policy.PolicyEffect effect
+com.baidu.inf.iis.bcs.policy.Statement: com.baidu.inf.iis.bcs.policy.PolicyTime time
+com.baidu.inf.iis.bcs.policy.Statement: com.baidu.inf.iis.bcs.policy.PolicyIP ip
+com.baidu.inf.iis.bcs.policy.Statement: Statement()
+com.baidu.inf.iis.bcs.policy.Statement: com.baidu.inf.iis.bcs.policy.Statement addAction(com.baidu.inf.iis.bcs.policy.PolicyAction)
+com.baidu.inf.iis.bcs.policy.Statement: com.baidu.inf.iis.bcs.policy.Statement addResource(java.lang.String)
+com.baidu.inf.iis.bcs.policy.Statement: com.baidu.inf.iis.bcs.policy.Statement addUser(java.lang.String)
+com.baidu.inf.iis.bcs.policy.Statement: java.util.List getAction()
+com.baidu.inf.iis.bcs.policy.Statement: com.baidu.inf.iis.bcs.policy.PolicyEffect getEffect()
+com.baidu.inf.iis.bcs.policy.Statement: com.baidu.inf.iis.bcs.policy.PolicyIP getIp()
+com.baidu.inf.iis.bcs.policy.Statement: java.util.List getResource()
+com.baidu.inf.iis.bcs.policy.Statement: com.baidu.inf.iis.bcs.policy.PolicyTime getTime()
+com.baidu.inf.iis.bcs.policy.Statement: java.util.List getUser()
+com.baidu.inf.iis.bcs.policy.Statement: void setAction(java.util.List)
+com.baidu.inf.iis.bcs.policy.Statement: void setEffect(com.baidu.inf.iis.bcs.policy.PolicyEffect)
+com.baidu.inf.iis.bcs.policy.Statement: void setIp(com.baidu.inf.iis.bcs.policy.PolicyIP)
+com.baidu.inf.iis.bcs.policy.Statement: void setResource(java.util.List)
+com.baidu.inf.iis.bcs.policy.Statement: void setTime(com.baidu.inf.iis.bcs.policy.PolicyTime)
+com.baidu.inf.iis.bcs.policy.Statement: void setUser(java.util.List)
+com.baidu.inf.iis.bcs.request.BaiduBCSRequest
+com.baidu.inf.iis.bcs.request.BaiduBCSRequest: java.lang.String bucket
+com.baidu.inf.iis.bcs.request.BaiduBCSRequest: java.lang.String object
+com.baidu.inf.iis.bcs.request.BaiduBCSRequest: com.baidu.inf.iis.bcs.http.HttpMethodName httpMethod
+com.baidu.inf.iis.bcs.request.BaiduBCSRequest: BaiduBCSRequest(java.lang.String,com.baidu.inf.iis.bcs.http.HttpMethodName)
+com.baidu.inf.iis.bcs.request.BaiduBCSRequest: BaiduBCSRequest(java.lang.String,java.lang.String,com.baidu.inf.iis.bcs.http.HttpMethodName)
+com.baidu.inf.iis.bcs.request.BaiduBCSRequest: java.lang.String getBucket()
+com.baidu.inf.iis.bcs.request.BaiduBCSRequest: com.baidu.inf.iis.bcs.http.HttpMethodName getHttpMethod()
+com.baidu.inf.iis.bcs.request.BaiduBCSRequest: java.lang.String getObject()
+com.baidu.inf.iis.bcs.request.BaiduBCSRequest: void setBucket(java.lang.String)
+com.baidu.inf.iis.bcs.request.BaiduBCSRequest: void setHttpMethod(com.baidu.inf.iis.bcs.http.HttpMethodName)
+com.baidu.inf.iis.bcs.request.BaiduBCSRequest: void setObject(java.lang.String)
+com.baidu.inf.iis.bcs.request.CopyObjectRequest
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: com.baidu.inf.iis.bcs.model.ObjectMetadata destMetadata
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: com.baidu.inf.iis.bcs.model.Resource source
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: com.baidu.inf.iis.bcs.model.Resource dest
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: java.lang.String sourceEtag
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: java.lang.String sourceDirective
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: CopyObjectRequest(com.baidu.inf.iis.bcs.model.Resource,com.baidu.inf.iis.bcs.model.Resource)
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: CopyObjectRequest(com.baidu.inf.iis.bcs.model.Resource,com.baidu.inf.iis.bcs.model.Resource,com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: com.baidu.inf.iis.bcs.model.Resource getDest()
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: com.baidu.inf.iis.bcs.model.ObjectMetadata getDestMetadata()
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: com.baidu.inf.iis.bcs.model.Resource getSource()
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: void setDest(com.baidu.inf.iis.bcs.model.Resource)
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: void setDestMetadata(com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: void setSource(com.baidu.inf.iis.bcs.model.Resource)
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: java.lang.String getSourceEtag()
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: void setSourceEtag(java.lang.String)
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: java.lang.String getSourceDirective()
+com.baidu.inf.iis.bcs.request.CopyObjectRequest: void setSourceDirective(java.lang.String)
+com.baidu.inf.iis.bcs.request.CreateBucketRequest
+com.baidu.inf.iis.bcs.request.CreateBucketRequest: com.baidu.inf.iis.bcs.model.X_BS_ACL acl
+com.baidu.inf.iis.bcs.request.CreateBucketRequest: CreateBucketRequest(java.lang.String)
+com.baidu.inf.iis.bcs.request.CreateBucketRequest: CreateBucketRequest(java.lang.String,com.baidu.inf.iis.bcs.model.X_BS_ACL)
+com.baidu.inf.iis.bcs.request.CreateBucketRequest: com.baidu.inf.iis.bcs.model.X_BS_ACL getAcl()
+com.baidu.inf.iis.bcs.request.CreateBucketRequest: void setAcl(com.baidu.inf.iis.bcs.model.X_BS_ACL)
+com.baidu.inf.iis.bcs.request.DeleteBucketRequest
+com.baidu.inf.iis.bcs.request.DeleteBucketRequest: DeleteBucketRequest(java.lang.String)
+com.baidu.inf.iis.bcs.request.DeleteObjectRequest
+com.baidu.inf.iis.bcs.request.DeleteObjectRequest: DeleteObjectRequest(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.request.GenerateUrlRequest
+com.baidu.inf.iis.bcs.request.GenerateUrlRequest: com.baidu.inf.iis.bcs.auth.BCSSignCondition bcsSignCondition
+com.baidu.inf.iis.bcs.request.GenerateUrlRequest: GenerateUrlRequest(com.baidu.inf.iis.bcs.http.HttpMethodName,java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.request.GenerateUrlRequest: com.baidu.inf.iis.bcs.auth.BCSSignCondition getBcsSignCondition()
+com.baidu.inf.iis.bcs.request.GenerateUrlRequest: void setBcsSignCondition(com.baidu.inf.iis.bcs.auth.BCSSignCondition)
+com.baidu.inf.iis.bcs.request.GetBucketPolicyRequest
+com.baidu.inf.iis.bcs.request.GetBucketPolicyRequest: GetBucketPolicyRequest(java.lang.String)
+com.baidu.inf.iis.bcs.request.GetObjectMetadataRequest
+com.baidu.inf.iis.bcs.request.GetObjectMetadataRequest: GetObjectMetadataRequest(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.request.GetObjectPolicyRequest
+com.baidu.inf.iis.bcs.request.GetObjectPolicyRequest: GetObjectPolicyRequest(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.request.GetObjectRequest
+com.baidu.inf.iis.bcs.request.GetObjectRequest: java.lang.String versionKey
+com.baidu.inf.iis.bcs.request.GetObjectRequest: com.baidu.inf.iis.bcs.model.Pair range
+com.baidu.inf.iis.bcs.request.GetObjectRequest: com.baidu.inf.iis.bcs.model.ObjectMetadata objectMetadata
+com.baidu.inf.iis.bcs.request.GetObjectRequest: GetObjectRequest(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.request.GetObjectRequest: GetObjectRequest(java.lang.String,java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.request.GetObjectRequest: com.baidu.inf.iis.bcs.model.ObjectMetadata getObjectMetadata()
+com.baidu.inf.iis.bcs.request.GetObjectRequest: void setObjectMetadata(com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.request.GetObjectRequest: com.baidu.inf.iis.bcs.model.Pair getRange()
+com.baidu.inf.iis.bcs.request.GetObjectRequest: void setRange(com.baidu.inf.iis.bcs.model.Pair)
+com.baidu.inf.iis.bcs.request.GetObjectRequest: java.lang.String getVersionKey()
+com.baidu.inf.iis.bcs.request.GetObjectRequest: void setVersionKey(java.lang.String)
+com.baidu.inf.iis.bcs.request.IsObjectExistRequest
+com.baidu.inf.iis.bcs.request.IsObjectExistRequest: IsObjectExistRequest(java.lang.String,java.lang.String)
+com.baidu.inf.iis.bcs.request.ListBucketRequest
+com.baidu.inf.iis.bcs.request.ListBucketRequest: ListBucketRequest()
+com.baidu.inf.iis.bcs.request.ListObjectRequest
+com.baidu.inf.iis.bcs.request.ListObjectRequest: java.lang.String prefix
+com.baidu.inf.iis.bcs.request.ListObjectRequest: int start
+com.baidu.inf.iis.bcs.request.ListObjectRequest: int limit
+com.baidu.inf.iis.bcs.request.ListObjectRequest: int listModel
+com.baidu.inf.iis.bcs.request.ListObjectRequest: ListObjectRequest(java.lang.String)
+com.baidu.inf.iis.bcs.request.ListObjectRequest: int getLimit()
+com.baidu.inf.iis.bcs.request.ListObjectRequest: int getListModel()
+com.baidu.inf.iis.bcs.request.ListObjectRequest: java.lang.String getPrefix()
+com.baidu.inf.iis.bcs.request.ListObjectRequest: int getStart()
+com.baidu.inf.iis.bcs.request.ListObjectRequest: void setLimit(int)
+com.baidu.inf.iis.bcs.request.ListObjectRequest: void setListModel(int)
+com.baidu.inf.iis.bcs.request.ListObjectRequest: void setPrefix(java.lang.String)
+com.baidu.inf.iis.bcs.request.ListObjectRequest: void setStart(int)
+com.baidu.inf.iis.bcs.request.ListObjectVersionRequest
+com.baidu.inf.iis.bcs.request.ListObjectVersionRequest: ListObjectVersionRequest()
+com.baidu.inf.iis.bcs.request.PutBucketPolicyRequest
+com.baidu.inf.iis.bcs.request.PutBucketPolicyRequest: com.baidu.inf.iis.bcs.policy.Policy policy
+com.baidu.inf.iis.bcs.request.PutBucketPolicyRequest: com.baidu.inf.iis.bcs.model.X_BS_ACL acl
+com.baidu.inf.iis.bcs.request.PutBucketPolicyRequest: PutBucketPolicyRequest(java.lang.String,com.baidu.inf.iis.bcs.policy.Policy)
+com.baidu.inf.iis.bcs.request.PutBucketPolicyRequest: PutBucketPolicyRequest(java.lang.String,com.baidu.inf.iis.bcs.model.X_BS_ACL)
+com.baidu.inf.iis.bcs.request.PutBucketPolicyRequest: com.baidu.inf.iis.bcs.model.X_BS_ACL getAcl()
+com.baidu.inf.iis.bcs.request.PutBucketPolicyRequest: com.baidu.inf.iis.bcs.policy.Policy getPolicy()
+com.baidu.inf.iis.bcs.request.PutBucketPolicyRequest: void setAcl(com.baidu.inf.iis.bcs.model.X_BS_ACL)
+com.baidu.inf.iis.bcs.request.PutBucketPolicyRequest: void setPolicy(com.baidu.inf.iis.bcs.policy.Policy)
+com.baidu.inf.iis.bcs.request.PutObjectPolicyRequest
+com.baidu.inf.iis.bcs.request.PutObjectPolicyRequest: com.baidu.inf.iis.bcs.policy.Policy policy
+com.baidu.inf.iis.bcs.request.PutObjectPolicyRequest: com.baidu.inf.iis.bcs.model.X_BS_ACL acl
+com.baidu.inf.iis.bcs.request.PutObjectPolicyRequest: PutObjectPolicyRequest(java.lang.String,java.lang.String,com.baidu.inf.iis.bcs.policy.Policy)
+com.baidu.inf.iis.bcs.request.PutObjectPolicyRequest: PutObjectPolicyRequest(java.lang.String,java.lang.String,com.baidu.inf.iis.bcs.model.X_BS_ACL)
+com.baidu.inf.iis.bcs.request.PutObjectPolicyRequest: com.baidu.inf.iis.bcs.model.X_BS_ACL getAcl()
+com.baidu.inf.iis.bcs.request.PutObjectPolicyRequest: com.baidu.inf.iis.bcs.policy.Policy getPolicy()
+com.baidu.inf.iis.bcs.request.PutObjectPolicyRequest: void setAcl(com.baidu.inf.iis.bcs.model.X_BS_ACL)
+com.baidu.inf.iis.bcs.request.PutObjectPolicyRequest: void setPolicy(com.baidu.inf.iis.bcs.policy.Policy)
+com.baidu.inf.iis.bcs.request.PutObjectRequest
+com.baidu.inf.iis.bcs.request.PutObjectRequest: java.io.File file
+com.baidu.inf.iis.bcs.request.PutObjectRequest: java.io.InputStream objectContent
+com.baidu.inf.iis.bcs.request.PutObjectRequest: com.baidu.inf.iis.bcs.model.ObjectMetadata metadata
+com.baidu.inf.iis.bcs.request.PutObjectRequest: com.baidu.inf.iis.bcs.model.X_BS_ACL acl
+com.baidu.inf.iis.bcs.request.PutObjectRequest: PutObjectRequest(java.lang.String,java.lang.String,java.io.File)
+com.baidu.inf.iis.bcs.request.PutObjectRequest: PutObjectRequest(java.lang.String,java.lang.String,java.io.InputStream,com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.request.PutObjectRequest: com.baidu.inf.iis.bcs.model.X_BS_ACL getAcl()
+com.baidu.inf.iis.bcs.request.PutObjectRequest: java.io.File getFile()
+com.baidu.inf.iis.bcs.request.PutObjectRequest: com.baidu.inf.iis.bcs.model.ObjectMetadata getMetadata()
+com.baidu.inf.iis.bcs.request.PutObjectRequest: java.io.InputStream getObjectContent()
+com.baidu.inf.iis.bcs.request.PutObjectRequest: void setAcl(com.baidu.inf.iis.bcs.model.X_BS_ACL)
+com.baidu.inf.iis.bcs.request.PutObjectRequest: void setFile(java.io.File)
+com.baidu.inf.iis.bcs.request.PutObjectRequest: void setMetadata(com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.request.PutObjectRequest: void setObjectContent(java.io.InputStream)
+com.baidu.inf.iis.bcs.request.PutSuperfileRequest
+com.baidu.inf.iis.bcs.request.PutSuperfileRequest: java.util.List subObjectList
+com.baidu.inf.iis.bcs.request.PutSuperfileRequest: com.baidu.inf.iis.bcs.model.ObjectMetadata objectMetadata
+com.baidu.inf.iis.bcs.request.PutSuperfileRequest: com.baidu.inf.iis.bcs.model.X_BS_ACL acl
+com.baidu.inf.iis.bcs.request.PutSuperfileRequest: PutSuperfileRequest(java.lang.String,java.lang.String,java.util.List)
+com.baidu.inf.iis.bcs.request.PutSuperfileRequest: PutSuperfileRequest(java.lang.String,java.lang.String,com.baidu.inf.iis.bcs.model.ObjectMetadata,java.util.List)
+com.baidu.inf.iis.bcs.request.PutSuperfileRequest: com.baidu.inf.iis.bcs.model.X_BS_ACL getAcl()
+com.baidu.inf.iis.bcs.request.PutSuperfileRequest: com.baidu.inf.iis.bcs.model.ObjectMetadata getObjectMetadata()
+com.baidu.inf.iis.bcs.request.PutSuperfileRequest: java.util.List getSubObjectList()
+com.baidu.inf.iis.bcs.request.PutSuperfileRequest: void setAcl(com.baidu.inf.iis.bcs.model.X_BS_ACL)
+com.baidu.inf.iis.bcs.request.PutSuperfileRequest: void setObjectMetadata(com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.request.PutSuperfileRequest: void setSubObjectList(java.util.List)
+com.baidu.inf.iis.bcs.request.SetObjectMetadataRequest
+com.baidu.inf.iis.bcs.request.SetObjectMetadataRequest: com.baidu.inf.iis.bcs.model.ObjectMetadata metadata
+com.baidu.inf.iis.bcs.request.SetObjectMetadataRequest: SetObjectMetadataRequest(java.lang.String,java.lang.String,com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.request.SetObjectMetadataRequest: com.baidu.inf.iis.bcs.model.ObjectMetadata getMetadata()
+com.baidu.inf.iis.bcs.request.SetObjectMetadataRequest: void setMetadata(com.baidu.inf.iis.bcs.model.ObjectMetadata)
+com.baidu.inf.iis.bcs.response.BaiduBCSResponse
+com.baidu.inf.iis.bcs.response.BaiduBCSResponse: java.lang.Object result
+com.baidu.inf.iis.bcs.response.BaiduBCSResponse: java.lang.String requestId
+com.baidu.inf.iis.bcs.response.BaiduBCSResponse: BaiduBCSResponse()
+com.baidu.inf.iis.bcs.response.BaiduBCSResponse: java.lang.String getRequestId()
+com.baidu.inf.iis.bcs.response.BaiduBCSResponse: java.lang.Object getResult()
+com.baidu.inf.iis.bcs.response.BaiduBCSResponse: void setRequestId(java.lang.String)
+com.baidu.inf.iis.bcs.response.BaiduBCSResponse: void setResult(java.lang.Object)
+com.baidu.inf.iis.bcs.utils.Constants
+com.baidu.inf.iis.bcs.utils.Constants: java.lang.String DEFAULT_ENCODING
+com.baidu.inf.iis.bcs.utils.Constants: java.lang.String NULL_VERSION_ID
+com.baidu.inf.iis.bcs.utils.Constants: int KB
+com.baidu.inf.iis.bcs.utils.Constants: int MB
+com.baidu.inf.iis.bcs.utils.Constants: long GB
+com.baidu.inf.iis.bcs.utils.Constants: Constants()
+com.baidu.inf.iis.bcs.utils.Constants: void <clinit>()
+com.baidu.inf.iis.bcs.utils.DateUtils
+com.baidu.inf.iis.bcs.utils.DateUtils: java.text.SimpleDateFormat iso8601DateParser
+com.baidu.inf.iis.bcs.utils.DateUtils: java.text.SimpleDateFormat alternateIo8601DateParser
+com.baidu.inf.iis.bcs.utils.DateUtils: java.text.SimpleDateFormat rfc822DateParser
+com.baidu.inf.iis.bcs.utils.DateUtils: DateUtils()
+com.baidu.inf.iis.bcs.utils.DateUtils: java.lang.String formatIso8601Date(java.util.Date)
+com.baidu.inf.iis.bcs.utils.DateUtils: java.lang.String formatRfc822Date(java.util.Date)
+com.baidu.inf.iis.bcs.utils.DateUtils: java.util.Date parseIso8601Date(java.lang.String)
+com.baidu.inf.iis.bcs.utils.DateUtils: java.util.Date parseRfc822Date(java.lang.String)
+com.baidu.inf.iis.bcs.utils.Mimetypes
+com.baidu.inf.iis.bcs.utils.Mimetypes: org.apache.commons.logging.Log log
+com.baidu.inf.iis.bcs.utils.Mimetypes: java.lang.String MIMETYPE_XML
+com.baidu.inf.iis.bcs.utils.Mimetypes: java.lang.String MIMETYPE_HTML
+com.baidu.inf.iis.bcs.utils.Mimetypes: java.lang.String MIMETYPE_OCTET_STREAM
+com.baidu.inf.iis.bcs.utils.Mimetypes: java.lang.String MIMETYPE_GZIP
+com.baidu.inf.iis.bcs.utils.Mimetypes: com.baidu.inf.iis.bcs.utils.Mimetypes mimetypes
+com.baidu.inf.iis.bcs.utils.Mimetypes: java.util.HashMap extensionToMimetypeMap
+com.baidu.inf.iis.bcs.utils.Mimetypes: Mimetypes()
+com.baidu.inf.iis.bcs.utils.Mimetypes: com.baidu.inf.iis.bcs.utils.Mimetypes getInstance()
+com.baidu.inf.iis.bcs.utils.Mimetypes: java.lang.String getMimetype(java.io.File)
+com.baidu.inf.iis.bcs.utils.Mimetypes: java.lang.String getMimetype(java.lang.String)
+com.baidu.inf.iis.bcs.utils.Mimetypes: void loadAndReplaceMimetypes(java.io.InputStream)
+com.baidu.inf.iis.bcs.utils.Mimetypes: void <clinit>()
+com.baidu.inf.iis.bcs.utils.ServiceUtils
+com.baidu.inf.iis.bcs.utils.ServiceUtils: org.apache.commons.logging.Log log
+com.baidu.inf.iis.bcs.utils.ServiceUtils: com.baidu.inf.iis.bcs.utils.DateUtils dateUtils
+com.baidu.inf.iis.bcs.utils.ServiceUtils: ServiceUtils()
+com.baidu.inf.iis.bcs.utils.ServiceUtils: byte[] computeMD5Hash(byte[])
+com.baidu.inf.iis.bcs.utils.ServiceUtils: byte[] computeMD5Hash(java.io.InputStream)
+com.baidu.inf.iis.bcs.utils.ServiceUtils: java.net.URL convertRequestToUrl(com.baidu.inf.iis.bcs.http.BCSHttpRequest)
+com.baidu.inf.iis.bcs.utils.ServiceUtils: java.lang.String formatIso8601Date(java.util.Date)
+com.baidu.inf.iis.bcs.utils.ServiceUtils: java.lang.String formatRfc822Date(java.util.Date)
+com.baidu.inf.iis.bcs.utils.ServiceUtils: byte[] fromBase64(java.lang.String)
+com.baidu.inf.iis.bcs.utils.ServiceUtils: byte[] fromHex(java.lang.String)
+com.baidu.inf.iis.bcs.utils.ServiceUtils: java.lang.String join(java.util.List)
+com.baidu.inf.iis.bcs.utils.ServiceUtils: java.util.Date parseIso8601Date(java.lang.String)
+com.baidu.inf.iis.bcs.utils.ServiceUtils: java.util.Date parseRfc822Date(java.lang.String)
+com.baidu.inf.iis.bcs.utils.ServiceUtils: java.lang.String removeQuotes(java.lang.String)
+com.baidu.inf.iis.bcs.utils.ServiceUtils: java.lang.String toBase64(byte[])
+com.baidu.inf.iis.bcs.utils.ServiceUtils: byte[] toByteArray(java.lang.String)
+com.baidu.inf.iis.bcs.utils.ServiceUtils: java.lang.String toHex(byte[])
+com.baidu.inf.iis.bcs.utils.ServiceUtils: java.lang.String urlEncode(java.lang.String)
+com.baidu.inf.iis.bcs.utils.ServiceUtils: void <clinit>()
+com.baidu.inf.iis.bcs.utils.StringUtils
+com.baidu.inf.iis.bcs.utils.StringUtils: StringUtils()
+com.baidu.inf.iis.bcs.utils.StringUtils: java.lang.String trimSlash(java.lang.String)
+peng.bo.ploto2003ub.lifetime.savetime.A_MainActivity
+peng.bo.ploto2003ub.lifetime.savetime.B_SetActivity
+peng.bo.ploto2003ub.lifetime.savetime.C_More_info_list
+peng.bo.ploto2003ub.lifetime.savetime.D_ContextActivity
+peng.bo.ploto2003ub.lifetime.savetime.E_BBSActivity
+peng.bo.ploto2003ub.lifetime.savetime.desktop.DigitClock

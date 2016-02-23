@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android提供三种字体：“Sans”，“serif”和“monospace” -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background02"
+    android:scrollbars="vertical" >
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/ll001"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="25.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:background="#FFFF00"
+                android:text="已消耗"
+                android:typeface="monospace" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="25.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="#00CD00"
+                android:text="还剩下" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll002"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll001"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <TextView
+                    android:id="@+id/desktopt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10.0dip"
+                    android:text="消秒365545588"
+                    android:textColor="#000000"
+                    android:textSize="20dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button001" />
+
+                <TextView
+                    android:id="@+id/desktopt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="10.0dip"
+                    android:text="剩秒54451554"
+                    android:textColor="#000000"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll003"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll002"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <TextView
+                    android:id="@+id/desktopt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10.0dip"
+                    android:text="消时36545588"
+                    android:textColor="#FF00FF"
+                    android:textSize="20dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button002" />
+
+                <TextView
+                    android:id="@+id/desktopt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="10.0dip"
+                    android:text="剩时55451554"
+                    android:textColor="#FF00FF"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll004"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll003"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <TextView
+                    android:id="@+id/desktopt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10.0dip"
+                    android:text="消天5545588"
+                    android:textColor="#000000"
+                    android:textSize="20dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button003" />
+
+                <TextView
+                    android:id="@+id/desktopt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="10.0dip"
+                    android:text="剩天75451554"
+                    android:textColor="#000000"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll005"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll004"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <TextView
+                    android:id="@+id/desktopt7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10.0dip"
+                    android:text="消周345588"
+                    android:textColor="#FFAEB9"
+                    android:textSize="20dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button004" />
+
+                <TextView
+                    android:id="@+id/desktopt8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="10.0dip"
+                    android:text="剩天565554"
+                    android:textColor="#FFAEB9"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll006"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll005"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <TextView
+                    android:id="@+id/desktopt9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10.0dip"
+                    android:text="消周5665"
+                    android:textColor="#68228B"
+                    android:textSize="20dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button005" />
+
+                <TextView
+                    android:id="@+id/desktopt10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="10.0dip"
+                    android:text="剩周56688"
+                    android:textColor="#68228B"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll007"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll006"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <TextView
+                    android:id="@+id/desktopt11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10.0dip"
+                    android:text="消年20"
+                    android:textColor="#EE2C2C"
+                    android:textSize="20dip" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button006" />
+
+                <TextView
+                    android:id="@+id/desktopt12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="10.0dip"
+                    android:text="剩年60"
+                    android:textColor="#EE2C2C"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

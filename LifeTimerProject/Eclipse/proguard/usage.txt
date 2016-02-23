@@ -1,0 +1,56 @@
+com.baidu.inf.iis.bcs.http.HttpClientFactory$TrustingSocketFactory
+peng.bo.ploto2003ub.lifetime.common.global:
+    33:39:public java.lang.String getStringByUrl(java.net.URL)
+peng.bo.ploto2003ub.lifetime.savetime.A_MainActivity:
+    java.lang.String savefile
+    android.widget.TextView showview
+    android.widget.TextView showviewp
+    683:688:private void releaseWakeLock()
+    747:749:private void getpoint()
+peng.bo.ploto2003ub.lifetime.savetime.B_SetActivity:
+    static java.lang.String objectMetadataString
+    static com.baidu.inf.iis.bcs.model.ObjectMetadata objectMetadata
+    java.lang.String temp
+    android.widget.Button button100
+    android.widget.Button button90
+    android.widget.Button button80
+    android.widget.Button button70
+    android.widget.Button button120
+    android.widget.Button button110
+    android.widget.Button button60
+    android.widget.Button button50
+peng.bo.ploto2003ub.lifetime.savetime.C_More_info_list:
+    protected static final int MENU_ABOUT
+    protected static final int MENU_SETTING
+peng.bo.ploto2003ub.lifetime.savetime.D_ContextActivity:
+    protected static final int MENU_ABOUT
+    protected static final int MENU_SETTING
+    android.widget.LinearLayout adLayout
+peng.bo.ploto2003ub.lifetime.savetime.E_BBSActivity:
+    java.lang.String value
+    static com.baidu.inf.iis.bcs.model.ObjectMetadata objectMetadata
+    static int ipAddress
+    java.lang.String birthday
+    java.lang.String[] sArray
+    java.lang.String tempblackiplist
+    java.lang.String name
+    java.lang.String temp
+    java.lang.String savefile
+    java.lang.String sex
+    java.lang.String info
+    487:500:public java.lang.String getLocalIpAddress()
+peng.bo.ploto2003ub.lifetime.savetime.QuitPopAd:
+    86:89:public void close()
+peng.bo.ploto2003ub.lifetime.savetime.R
+peng.bo.ploto2003ub.lifetime.savetime.R$anim
+peng.bo.ploto2003ub.lifetime.savetime.R$attr
+peng.bo.ploto2003ub.lifetime.savetime.R$color
+peng.bo.ploto2003ub.lifetime.savetime.R$drawable
+peng.bo.ploto2003ub.lifetime.savetime.R$id
+peng.bo.ploto2003ub.lifetime.savetime.R$layout
+peng.bo.ploto2003ub.lifetime.savetime.R$raw
+peng.bo.ploto2003ub.lifetime.savetime.R$string
+peng.bo.ploto2003ub.lifetime.savetime.R$style
+peng.bo.ploto2003ub.lifetime.savetime.R$xml
+peng.bo.ploto2003ub.lifetime.savetime.desktop.DigitClock:
+    java.lang.Runnable runnable

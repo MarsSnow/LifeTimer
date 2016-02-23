@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+
+		<LinearLayout android:gravity="top|center"
+			android:orientation="vertical" android:id="@id/linearLayout2"
+			android:padding="15.0dip" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<LinearLayout android:gravity="top|left|center"
+				android:orientation="vertical" android:id="@id/ly1"
+				android:background="#ffffffff" android:padding="15.0dip"
+				android:clickable="true" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+
+
+				<TextView android:textColor="#0000FF" android:paddingTop="10.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="请选择人生起点" />
+				<DatePicker android:id="@id/datebirthday"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:startYear="1930" />
+				<TextView android:textColor="#0000FF" android:paddingTop="10.0dip"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="请选择人生长度（寿命）" />
+				<LinearLayout android:orientation="vertical"
+					android:focusable="true" android:focusableInTouchMode="true"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+					<RadioGroup android:id="@+id/howlong"
+						android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+						<RadioButton android:id="@+id/howlong100"
+							android:textColor="#000000" android:text="100" />
+						<RadioButton android:id="@+id/howlong90"
+							android:textColor="#000000" android:text="90" />
+						<RadioButton android:id="@+id/howlong80"
+							android:textColor="#000000" android:text="80" />
+						<RadioButton android:id="@+id/howlong70"
+							android:textColor="#000000" android:text="70" />
+
+					</RadioGroup>
+
+
+					<TextView android:textColor="#ff333333"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="其他人生长度" />
+					<EditText android:id="@id/editname" android:layout_width="fill_parent"
+						android:numeric="integer" android:layout_height="wrap_content">
+
+					</EditText>
+
+
+
+
+				</LinearLayout>
+
+				<LinearLayout android:orientation="vertical"
+					android:paddingTop="20.0dip" android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<LinearLayout android:focusable="true"
+						android:focusableInTouchMode="true" android:layout_width="0px"
+						android:layout_height="0px" />
+
+
+					<LinearLayout android:orientation="horizontal"
+						android:paddingTop="20.0dip" android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+						<Button android:id="@id/buttonsave" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="保存" textColor="#FF7F24"
+							android:layout_weight="1.0" />
+						<Button android:id="@id/buttonback" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="返回" textColor="#FF7F24"
+							android:layout_weight="1.0" />
+					</LinearLayout>
+
+					<Button android:id="@+id/bbsbutton" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="交流反馈版" textColor="#FF7F24"
+						android:layout_weight="1.0" />
+
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>
