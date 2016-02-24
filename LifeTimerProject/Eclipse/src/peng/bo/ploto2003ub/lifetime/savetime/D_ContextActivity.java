@@ -25,39 +25,35 @@ import cn.waps.MiniAdView;
 
 public class D_ContextActivity extends Activity {
 
-	
-	TextView NewCharacterIntroduction01=null;
+	TextView m_newCharacterIntroduction01=null;
 
-	InputStream in = null;
+	InputStream m_inputStream = null;
 	String str = "";
-	int mygonglue03text;
+	int m_mygonglue03text;
 	protected static final int MENU_ABOUT = 1;
 	protected static final int MENU_SETTING = 3;
-	LinearLayout adLayout;
-	android.widget.LinearLayout.LayoutParams adLp;
+	LinearLayout m_adLayout;
+	android.widget.LinearLayout.LayoutParams m_adLayoutParams;
 
-	boolean isShowAdView;
-	PowerManager powerManager1;
-	android.os.PowerManager.WakeLock wakeLock1;
+	boolean m_isShowAdView;
+	PowerManager m_powerManager1;
+	android.os.PowerManager.WakeLock m_wakeLock1;
 
 	// exitTime用于按返回键退出时的两次点击存在时间判断
-	private long exitTime = 0;
+	private long m_exitTime = 0;
 	
 	public D_ContextActivity() {
-		powerManager1 = null;
-		wakeLock1 = null;
-		adLp = new android.widget.LinearLayout.LayoutParams(-1, -2);
-		isShowAdView = false;
-		
+		m_powerManager1 = null;
+		m_wakeLock1 = null;
+		m_adLayoutParams = new android.widget.LinearLayout.LayoutParams(-1, -2);
+		m_isShowAdView = false;
 	}
 	
 	protected void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
 
 		// 强制全屏
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-				WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		
 		// 设置竖屏模式
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
@@ -74,17 +70,17 @@ public class D_ContextActivity extends Activity {
 //		LinearLayout container =(LinearLayout)findViewById(R.id.AdLinearLayout); 
 //		new AdView(this,container).DisplayAd();
 		
-		powerManager1 = (PowerManager) getSystemService("power");
-		wakeLock1 = powerManager1.newWakeLock(26, "My Lock");
+		m_powerManager1 = (PowerManager) getSystemService("power");
+		m_wakeLock1 = m_powerManager1.newWakeLock(26, "My Lock");
 
 		Intent intent = getIntent();
-		mygonglue03text = intent.getExtras().getInt("mygonglue03text");
+		m_mygonglue03text = intent.getExtras().getInt("mygonglue03text");
 		
-		NewCharacterIntroduction01 = (TextView) findViewById(R.id.zz_NewCharacterIntroduction01v6_7_6);
+		m_newCharacterIntroduction01 = (TextView) findViewById(R.id.zz_NewCharacterIntroduction01v6_7_6);
 	
-		in = getResources().openRawResource(mygonglue03text);
+		m_inputStream = getResources().openRawResource(m_mygonglue03text);
 		Mygonlue02();
-		NewCharacterIntroduction01.setText(str);
+		m_newCharacterIntroduction01.setText(str);
 	}
 	
 	//文件的IO操作
@@ -98,12 +94,12 @@ public class D_ContextActivity extends Activity {
 				//String str = null;//?
 				
 				//没读完就会一直往bb中传数据
-				while ((current = in.read()) != -1) {
+				while ((current = m_inputStream.read()) != -1) {
 					bb.append(current);
 				}
 				
 				str = EncodingUtils.getString(bb.toByteArray(), "UTF-8");
-				in.close();
+				m_inputStream.close();
 
 
 			} catch (Exception e) {
@@ -153,13 +149,13 @@ public class D_ContextActivity extends Activity {
 
 	protected void onPause() {
 
-			wakeLock1.release();
+			m_wakeLock1.release();
 		super.onPause();
 	}
 
 	protected void onResume() {
 
-			wakeLock1.acquire();
+			m_wakeLock1.acquire();
 		super.onResume();
 	}
 }

@@ -18,13 +18,13 @@ import peng.bo.ploto2003ub.lifetime.savetime.B_SetActivity;
 //全局类
 public class global {
 
-	String str1;
-	Context c;
-	Properties p;
+	String m_str1;
+	Context m_context;
+	Properties m_properties;
 	int i = 0;
 
 	public global(Context paramContext) {
-		this.c = paramContext;
+		this.m_context = paramContext;
 	}
 
 	// 通过统一资源标识符获取字符串
@@ -50,12 +50,12 @@ public class global {
 		if (paramString2.equals(""))
 			paramString2 = "default";
 		try {
-			this.p = new Properties();
-			FileInputStream localFileInputStream = this.c
+			this.m_properties = new Properties();
+			FileInputStream localFileInputStream = this.m_context
 					.openFileInput(paramString1);
-			this.p.load(localFileInputStream);
-			String str2 = this.p.get(paramString2).toString();
-			str1 = str2;
+			this.m_properties.load(localFileInputStream);
+			String str2 = this.m_properties.get(paramString2).toString();
+			m_str1 = str2;
 
 			// return str1;
 		} catch (FileNotFoundException localFileNotFoundException) {
@@ -65,7 +65,7 @@ public class global {
 			// while (true)
 			// str1 = "";
 		}
-		return str1;
+		return m_str1;
 	}
 
 	// 放入文件
@@ -77,11 +77,11 @@ public class global {
 		if (paramString1.equals(""))
 			paramString1 = "default";
 		try {
-			this.p = new Properties();
-			this.p.put(paramString1, paramString2);
-			FileOutputStream localFileOutputStream = this.c.openFileOutput(
+			this.m_properties = new Properties();
+			this.m_properties.put(paramString1, paramString2);
+			FileOutputStream localFileOutputStream = this.m_context.openFileOutput(
 					paramString3, 2);
-			this.p.store(localFileOutputStream, "");
+			this.m_properties.store(localFileOutputStream, "");
 			i = 1;
 			return true;
 		} catch (FileNotFoundException localFileNotFoundException) {
@@ -96,6 +96,6 @@ public class global {
 
 	//提示框
 	public void toast(String paramString) {
-		Toast.makeText(this.c, paramString, Toast.LENGTH_SHORT).show();
+		Toast.makeText(this.m_context, paramString, Toast.LENGTH_SHORT).show();
 	}
 }

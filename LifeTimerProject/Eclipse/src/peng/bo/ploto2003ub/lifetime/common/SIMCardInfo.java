@@ -28,7 +28,6 @@ public class SIMCardInfo {
 		telephonyManager = (TelephonyManager) context
 
 		.getSystemService(Context.TELEPHONY_SERVICE);
-
 	}
 
 	/**
@@ -101,7 +100,6 @@ public class SIMCardInfo {
 		} else if (IMSI.startsWith("46003")) {
 
 			ProvidersName = "中国电信";
-
 		}
 
 		return ProvidersName;

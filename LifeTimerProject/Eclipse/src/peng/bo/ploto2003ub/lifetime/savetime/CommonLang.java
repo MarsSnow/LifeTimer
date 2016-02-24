@@ -2,7 +2,7 @@ package peng.bo.ploto2003ub.lifetime.savetime;
 
 public class CommonLang {
 	 public static String kSetWidgetInfo = "您可在手机设置里面往桌面添加倒计时小控件！";
-	 
+	 public static String kShareInfo = "向你推荐一款软件《人生计时器》！下载地址：http://pan.baidu.com/share/link?shareid=436786&uk=3590869423";
 	 public	static String str002[] = { 
 		 		"多陪陪父母，爷爷奶奶，多陪陪亲人们！",
 		 		"父母老了，请多陪陪他们！",

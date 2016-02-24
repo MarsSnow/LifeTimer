@@ -1,5 +1,4 @@
 ﻿/**更多选项界面**/
-
 package peng.bo.ploto2003ub.lifetime.savetime;
 
 import android.app.Activity;
@@ -19,7 +18,7 @@ import cn.waps.AppConnect;
 
 public class C_More_info_list extends Activity {
 
-	Context ThisContext = C_More_info_list.this;
+	Context m_context = C_More_info_list.this;
 	protected static final int MENU_ABOUT = 1;
 	protected static final int MENU_SETTING = 3;
 
@@ -37,7 +36,6 @@ public class C_More_info_list extends Activity {
 
 		// 调用加载listView
 		this.LoadListView();
-
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -91,7 +89,6 @@ public class C_More_info_list extends Activity {
 
 	protected void onDestroy() {
 		super.onDestroy();
-
 	}
 
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -100,10 +97,8 @@ public class C_More_info_list extends Activity {
 
 			finish();
 			return false;
-
 		}
 		return false;
-
 	}
 
 	// 加载listView方法
@@ -137,12 +132,11 @@ public class C_More_info_list extends Activity {
 					 intent.putExtra("mygonglue03text",
 					 R.raw.version_info113);
 					
-					 intent.setClass(ThisContext,
+					 intent.setClass(m_context,
 					 D_ContextActivity.class);
 					 startActivity(intent);
 
 					break;
-
 				}
 
 				case 1: {
@@ -151,7 +145,7 @@ public class C_More_info_list extends Activity {
 				}
 
 				case 2: {
-					AppConnect.getInstance(ThisContext).showMore(ThisContext);
+					AppConnect.getInstance(m_context).showMore(m_context);
 					//AppConnect.getInstance(getApplicationContext()).showMore(getApplicationContext());
 					break;
 				}
@@ -160,29 +154,23 @@ public class C_More_info_list extends Activity {
 					Intent intent = new Intent(Intent.ACTION_SEND); // 启动分享发送的属性
 					intent.setType("text/plain"); // 分享发送的数据类型
 					intent.putExtra(Intent.EXTRA_SUBJECT, "subject"); // 分享的主题
-					intent.putExtra(
-							Intent.EXTRA_TEXT,
-							"向你推荐一款软件[人生计时器]！下载地址：http://pan.baidu.com/share/link?shareid=436786&uk=3590869423"); // 分享的内容
+					intent.putExtra(Intent.EXTRA_TEXT, CommonLang.kShareInfo); // 分享的内容
 					intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-					ThisContext.startActivity(Intent
-							.createChooser(intent, "分享"));// 目标应用选择对话框的标题
-
+					m_context.startActivity(Intent.createChooser(intent, "分享"));// 目标应用选择对话框的标题
 					break;
 				}
 
 				case 4: {
-					AppConnect.getInstance(ThisContext)
-					.checkUpdate(ThisContext);
+					AppConnect.getInstance(m_context).checkUpdate(m_context);
 					break;
 				}
 
 				case 5: {
 					 Intent intent = new Intent();
 						
-					 intent.putExtra("mygonglue03text",
-					 R.raw.wight_info113);
+					 intent.putExtra("mygonglue03text",R.raw.wight_info113);
 					
-					 intent.setClass(ThisContext,
+					 intent.setClass(m_context,
 					 D_ContextActivity.class);
 					 startActivity(intent);
 					break;
@@ -202,22 +190,22 @@ public class C_More_info_list extends Activity {
 				}
 				//
 				case 8: {
-					AppConnect.getInstance(ThisContext).showMore(ThisContext);
+					AppConnect.getInstance(m_context).showMore(m_context);
 					//AppConnect.getInstance(this).showMore(this);
 					break;
 				}
 				//
 				case 9: {
 
-					AppConnect.getInstance(ThisContext)
-							.checkUpdate(ThisContext);
+					AppConnect.getInstance(m_context)
+							.checkUpdate(m_context);
 					break;
 				}
 				//
 				case 10: {
-					Toast.makeText(ThisContext, "左上角为您的金币额度！",
+					Toast.makeText(m_context, "左上角为您的金币额度！",
 							Toast.LENGTH_LONG).show();
-					AppConnect.getInstance(ThisContext).showOffers(ThisContext);
+					AppConnect.getInstance(m_context).showOffers(m_context);
 					break;
 				}
 
